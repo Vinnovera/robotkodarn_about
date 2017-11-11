@@ -1,12 +1,12 @@
 {
   "name": "robotkodarn-about",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A site about the project Robotkodarn.",
   "main": "index.js",
   "scripts": {
     "test": "standard",
     "start": "node index.js",
-    "start:dev": "node -r dotenv/config --inspect index.js"
+    "start:dev": "nodemon -r dotenv/config --inspect index.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "koa": "^2.4.1",
     "koa-compose": "^4.0.0",
     "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1",
     "prismic-element": "^0.6.0",
     "prismic-javascript": "^1.4.1",
     "prismic-richtext": "^0.2.7"
@@ -37,6 +38,8 @@
     "choo-devtools": "^2.1.0",
     "dedent": "^0.7.0",
     "dotenv": "^4.0.0",
+    "localenvify": "^1.0.1",
+    "nodemon": "^1.12.1",
     "standard": "^10.0.3"
   }
 }
