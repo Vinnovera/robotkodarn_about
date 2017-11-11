@@ -13,7 +13,10 @@ if (process.env.NODE_ENV === 'development') {
   }))
 }
 
-// Renders app once all the middlewares have had a go at the request
+// Serve static files from public folder
+server.use(require('koa-static')('public'))
+
+// Render app once all the middlewares have had a go at the request
 server.use(render(app))
 
 server.use(prismic(process.env.PRISMIC_ENDPOINT))
