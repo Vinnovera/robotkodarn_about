@@ -31,7 +31,8 @@
     "koa-static": "^4.0.1",
     "prismic-element": "^0.6.0",
     "prismic-javascript": "^1.4.1",
-    "prismic-richtext": "^0.2.7"
+    "prismic-richtext": "^0.2.7",
+    "y18n": "^4.0.0"
   },
   "devDependencies": {
     "browserify": "^14.5.0",
