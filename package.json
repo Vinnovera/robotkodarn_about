@@ -29,7 +29,7 @@
     "koa-compose": "^4.0.0",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
-    "prismic-element": "^0.6.0",
+    "prismic-element": "^0.7.0",
     "prismic-javascript": "^1.4.1",
     "prismic-richtext": "^0.2.7",
     "y18n": "^4.0.0"
