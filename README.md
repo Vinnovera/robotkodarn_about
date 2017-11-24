@@ -1,4 +1,4 @@
-# About Robotkodarn
+# Robotkodarn – The Website
 
 [![Build Status](https://travis-ci.org/Vinnovera/robotkodarn_about.svg?branch=master)](https://travis-ci.org/Vinnovera/robotkodarn_about) [![style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/Vinnovera/robotkodarn_about)
 
