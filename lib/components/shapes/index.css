@@ -1,0 +1,34 @@
+/** @define Shapes */
+
+@import "../base";
+
+.Shapes {
+  background: linear-gradient(135deg, rgba(254, 93, 75, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(246, 41, 12, 1) 0%, rgba(254, 93, 75, 1) 0%, rgba(195, 109, 216, 1) 100%);
+  bottom: 0;
+  color: var(--color-salmon);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+.Shapes-flash1 {
+  transform: rotate(15deg);
+}
+
+.Shapes-cross1 {
+  transform: rotate(60deg) translate(30px, 10px);
+  transform-origin: center;
+}
+
+.Shapes-cross2 {
+  transform: rotate(-26deg) translate(-132px, 353px);
+  transform-origin: center;
+}
+
+.Shapes-cross3 {
+  transform: rotate(9deg) translate(-124px, 528px);
+  transform-origin: center;
+}
+

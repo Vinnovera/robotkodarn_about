@@ -1,0 +1,21 @@
+/** @define utilities */
+
+.u-colorVerdigris {
+  color: var(--color-verdigris) !important;
+}
+
+.u-colorSalmon {
+  color: var(--color-salmon) !important;
+}
+
+.u-colorViolet {
+  color: var(--color-violet) !important;
+}
+
+.u-colorMetal {
+  color: var(--color-metal) !important;
+}
+
+.u-colorSmoke {
+  color: var(--color-smoke) !important;
+}

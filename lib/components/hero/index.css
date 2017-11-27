@@ -3,8 +3,17 @@
 @import "../base";
 
 .Hero {
-  background: var(--color-violet);
   height: 100vh;
   text-align: center;
+  width: 100vw;
+}
+
+.Hero-test {
+  background: url("/Pattern.png") no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100vh;
+  opacity: 0.5;
+  pointer-events: none;
   width: 100vw;
 }
