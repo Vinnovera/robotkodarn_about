@@ -1,0 +1,5 @@
+/** @define utilities */
+
+.u-widthM {
+  max-width: 800px !important;
+}

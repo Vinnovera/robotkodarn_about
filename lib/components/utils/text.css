@@ -1,0 +1,52 @@
+/** @define utilities */
+
+.u-textBreak {
+  word-wrap: break-word !important;
+}
+
+.u-textCenter {
+  text-align: center !important;
+}
+
+.u-textLeft {
+  text-align: left !important;
+}
+
+.u-textRight {
+  text-align: right !important;
+}
+
+/* Sizes */
+
+.u-textM {
+  font-size: 1.2rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-weight: 800 !important;
+}
+
+.u-textXL {
+  font-size: 3rem !important;
+  font-weight: var(--font-weight-extrabold) !important;
+}
+
+@media (--md-viewport) {
+
+  .u-textM {
+    font-size: 1.6rem !important;
+  }
+
+  .u-textXL {
+    font-size: 4rem !important;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .u-textM {
+    font-size: 1.8rem !important;
+  }
+
+  .u-textXL {
+    font-size: 6rem !important;
+  }
+}

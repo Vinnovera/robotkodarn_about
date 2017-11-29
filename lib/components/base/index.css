@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @import "suitcss-base";
 @import "../utils/color";
+@import "../utils/text";
+@import "../utils/size";
 
 :root {
   --font-family: "Open Sans", sans-serif;
+  --font-weight-extrabold: 800;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-weight-light: 300;
