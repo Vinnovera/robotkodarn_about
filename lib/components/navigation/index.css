@@ -1,0 +1,73 @@
+/** @define Navigation */
+
+@import "../base";
+
+/* Navigation icon */
+
+.Navigation-icon {
+  cursor: pointer;
+  height: 45px;
+  margin: 0;
+  position: absolute;
+  right: 1.2rem;
+  top: 1rem;
+  transform: rotate(0deg);
+  width: 60px;
+}
+
+.Navigation-span1,
+.Navigation-span2,
+.Navigation-span3 {
+  background: var(--color-white);
+  border-radius: 8px;
+  display: block;
+  height: 11px;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  transform: rotate(0deg);
+  transition: 150ms ease-in-out;
+  width: 100%;
+}
+
+.Navigation-span1 {
+  top: 0;
+  transform-origin: right center;
+}
+
+.Navigation-span2 {
+  top: 19px;
+  transform-origin: right center;
+  width: 110%;
+}
+
+.Navigation-span3 {
+  top: 38px;
+  transform-origin: right center;
+}
+
+.Navigation-span1--open {
+  right: 8px;
+  top: -3px;
+  transform: rotate(-45deg);
+}
+
+.Navigation-span2--open {
+  opacity: 0;
+  width: 0%;
+}
+
+.Navigation-span3--open {
+  right: 8px;
+  top: 39px;
+  transform: rotate(45deg);
+}
+
+/* Do not display navigation icon on medium or large viewports */
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Navigation-icon {
+    display: none;
+  }
+}

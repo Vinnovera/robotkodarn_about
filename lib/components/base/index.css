@@ -17,7 +17,7 @@
   --color-salmon: #ff9078;
   --color-metal: #1e222a;
   --color-smoke: #f6f7f9;
-  --color-text: #f2f2f2;
+  --color-white: #f2f2f2;
   --color-transparent: rgba(246, 247, 249, 0.3);
   --color-prune: #3e3748;
 }
@@ -28,7 +28,7 @@
 
 html,
 body {
-  color: var(--color-text);
+  color: var(--color-white);
   font-family: var(--font-family);
   font-size: var(--base-font-size);
   font-weight: var(--font-weight-normal);
