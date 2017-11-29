@@ -13,9 +13,13 @@
   z-index: -1;
 }
 
+/* Rotation flash */
+
 .Shapes-flash1 {
   transform: rotate(15deg);
 }
+
+/* Rotation crosses */
 
 .Shapes-cross1 {
   transform: rotate(60deg) translate(30px, 10px);
@@ -32,3 +36,56 @@
   transform-origin: center;
 }
 
+/* Rotation lines */
+
+.Shapes-line2 {
+  transform: rotate(-61deg) translate(267px, -330px);
+  transform-origin: center;
+
+}
+
+.Shapes-line3 {
+  transform: rotate(-130deg) translate(28px, -64px);
+  transform-origin: center;
+}
+
+.Shapes-line4 {
+  transform: rotate(-61deg) translate(-37px, 320px);
+  transform-origin: center;
+}
+
+/* Rotation triangle */
+
+.Shapes-triangle3 {
+  transform: rotate(-56deg) translate(152px, 221px);
+  transform-origin: center;
+}
+
+/* Rotation bows */
+
+.Shapes-bow2 {
+  transform: rotate(-60deg) translate(380px, -43px);
+  transform-origin: center;
+}
+
+.Shapes-bow3 {
+  transform: rotate(100deg);
+  transform-origin: center;
+}
+
+/* Rotation curves (more bent than the "bow" symbols) */
+
+.Shapes-curve2 {
+  transform: rotate(-50deg) translate(20px, -14px);
+  transform-origin: center;
+}
+
+.Shapes-curve3 {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.Shapes-curve4 {
+  transform: rotate(-93deg) translate(24px, -240px);
+  transform-origin: center;
+}
