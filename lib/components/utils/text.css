@@ -50,3 +50,9 @@
     font-size: 6rem !important;
   }
 }
+
+/* Line-height */
+
+.u-lineHeightM {
+  line-height: 1.2 !important;
+}

@@ -1,6 +1,7 @@
 /** @define Hero */
 
 @import "../base";
+@import "../button";
 
 .Hero {
   align-items: center;
