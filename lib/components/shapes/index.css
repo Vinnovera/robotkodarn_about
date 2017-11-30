@@ -13,6 +13,20 @@
   z-index: -1;
 }
 
+/* Animation */
+
+.Shapes-item {
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 /* Rotation flash */
 
 .Shapes-flash1 {
@@ -41,7 +55,6 @@
 .Shapes-line2 {
   transform: rotate(-61deg) translate(267px, -330px);
   transform-origin: center;
-
 }
 
 .Shapes-line3 {
