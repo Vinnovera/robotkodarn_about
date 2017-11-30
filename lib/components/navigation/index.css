@@ -109,14 +109,13 @@
   /* 1. Locally disable stylelint since the selector #menu:target is needed
    * to open menu if javascript is disabled. This is an exception.
    */
-  .Navigation-list--open,
-  #menu:target { /* 1. */
+  .Navigation-list--open {
     background-color: var(--color-metal);
     opacity: 1;
     right: 0;
   }
 
-  `/* stylelint-enable */`
+  /* stylelint-enable */
 
   /* List items */
 
@@ -124,12 +123,12 @@
     margin-bottom: 1.7rem;
     opacity: 0;
     transform: translateX(100px);
+    transition: transform 150ms ease-out, opacity 150ms ease-out;
   }
 
   .Navigation-item--open {
     opacity: 1;
     transform: translateX(0);
-    transition: transform 150ms ease-out, opacity 150ms ease-out;
   }
 
   /* List item transitions */
