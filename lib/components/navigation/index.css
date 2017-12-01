@@ -2,6 +2,12 @@
 
 @import "../base";
 
+.Navigation-listLink {
+  font-size: calc(var(--base-font-size) * 1.25);
+  -webkit-font-smoothing: antialiased;
+  font-weight: var(--font-weight-bold);
+}
+
 /* Burger and navigation list that covers the whole viewport is
  * only visible on small viewports.
  */
@@ -161,8 +167,6 @@
     background-color: var(--color-metal);
     border-radius: 2px;
     font-size: calc(var(--base-font-size) * 1.8);
-    -webkit-font-smoothing: antialiased;
-    font-weight: var(--font-weight-bold);
     padding: 0.2em 0.4em 0.18em;
   }
 
@@ -176,8 +180,30 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Navigation-link,
   .Navigation-list {
-    display: none; /* TODO: Remove before prod */
+    float: right;
+    margin-right: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .Navigation-item {
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 0 0 2px 2px;
+    color: inherit;
+    display: inline-block;
+    padding: 2rem 1rem 1.4rem;
+    transition: 250ms background ease;
+  }
+
+  .Navigation-item:hover {
+    background-color: var(--color-smoke);
+    color: var(--color-salmon);
+  }
+
+  .Navigation-link {
+    display: none;
   }
 }
