@@ -7,7 +7,7 @@
     "test": "standard && stylelint **/*.css",
     "start": "node index.js",
     "start:dev": "nodemon -r dotenv/config -i lib/components --inspect index.js",
-    "build": "browserify -t localenvify -t sheetify lib/app/index.js > public/index.js"
+    "build": "browserify lib/app/index.js -t localenvify -g yo-yoify -t babelify -t sheetify -p [ css-extract -o public/index.css ] -o public/index.js"
   },
   "repository": {
     "type": "git",
@@ -36,8 +36,12 @@
     "y18n": "^4.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
     "browserify": "^14.5.0",
     "choo-devtools": "^2.1.0",
+    "css-extract": "^1.2.0",
     "dedent": "^0.7.0",
     "dotenv": "^4.0.0",
     "localenvify": "^1.0.1",
@@ -52,6 +56,8 @@
     "stylelint-config-suitcss": "^12.0.0",
     "stylelint-selector-bem-pattern": "^2.0.0",
     "suitcss-base": "^4.0.0",
-    "watchify-middleware": "^1.6.0"
+    "tinyify": "^2.4.0",
+    "watchify-middleware": "^1.6.0",
+    "yo-yoify": "^4.2.0"
   }
 }
