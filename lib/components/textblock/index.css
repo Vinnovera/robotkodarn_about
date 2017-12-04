@@ -1,0 +1,9 @@
+/** @define Textblock */
+
+@import "../base";
+
+.Textblock {
+  color: var(--color-metal);
+  max-width: 600px;
+}
+

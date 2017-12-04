@@ -1,0 +1,58 @@
+/** @define Pattern */
+
+@import "../base";
+
+.Pattern {
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+.Pattern--pink {
+  background: linear-gradient(135deg, rgba(254, 93, 75, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(246, 41, 12, 1) 0%, rgba(254, 93, 75, 1) 0%, rgba(195, 109, 216, 1) 100%);
+  color: var(--color-salmon);
+}
+
+.Pattern--blue {
+  background-image: linear-gradient(305deg, #694BFE 0%, #5571D1 21%, #4E7EC1 50%, #4197A4 89%, #3DA099 95%);
+  color: var(--color-verdigris--alt);
+}
+
+/* Retro Computer */
+
+.Pattern-computer2 {
+  transform: rotate(-16deg) translate(-103px, 148px);
+}
+
+.Pattern-computer3 {
+  transform: rotate(160deg) translate(-353px, -1212px);
+}
+
+/* Curly Brackets */
+
+.Pattern-brackets1 {
+  transform: rotate(37deg) translate(93px, -220px);
+}
+
+.Pattern-brackets2 {
+  transform: rotate(-16deg) translate(-71px, -257px);
+}
+
+/* Cogs */
+
+.Pattern-cogs1 {
+  transform: rotate(-17deg) translate(40px, 197px);
+}
+
+/* Robot */
+
+.Pattern-robot1 {
+  transform: rotate(73deg) translate(20px, -83px);
+}
+
+.Pattern-robot2 {
+  transform: rotate(226deg) translate(-842px, 31px);
+}

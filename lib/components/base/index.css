@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @import "suitcss-base";
 @import "../utils/color";
+@import "../utils/display";
 @import "../utils/text";
 @import "../utils/size";
 
@@ -14,6 +15,7 @@
 
   --color-violet: #651bd0;
   --color-verdigris: #59b2ac;
+  --color-verdigris--alt: #59b2ab7c;
   --color-salmon: #ff9078;
   --color-metal: #1e222a;
   --color-smoke: #f6f7f9;

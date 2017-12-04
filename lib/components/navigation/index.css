@@ -173,6 +173,7 @@
   .Navigation-listLink:hover {
     background-color: var(--color-salmon);
     color: var(--color-metal);
+    cursor: pointer;
   }
 }
 
@@ -182,25 +183,35 @@
 
   .Navigation-list {
     float: right;
-    margin-right: 1rem;
+    margin: 2rem 1rem 1.4rem;
     position: absolute;
     right: 0;
     top: 0;
   }
 
   .Navigation-item {
+    display: inline-block;
+  }
+
+  .Navigation-listLink {
     background-color: transparent;
     border: 2px solid transparent;
     border-radius: 0 0 2px 2px;
     color: inherit;
-    display: inline-block;
     padding: 2rem 1rem 1.4rem;
     transition: 250ms background ease;
   }
 
-  .Navigation-item:hover {
+  .Navigation-listLink:hover {
     background-color: var(--color-smoke);
+  }
+
+  .Navigation-listLink--pink:hover {
     color: var(--color-salmon);
+  }
+
+  .Navigation-listLink--blue:hover {
+    color: var(--color-verdigris);
   }
 
   .Navigation-link {
