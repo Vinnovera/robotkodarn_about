@@ -7,7 +7,31 @@
     "test": "standard && stylelint **/*.css",
     "start": "node index.js",
     "start:dev": "nodemon -r dotenv/config -i lib/components --inspect index.js",
-    "build": "browserify lib/app/index.js -t localenvify -g yo-yoify -t babelify -t sheetify -p [ css-extract -o public/index.css ] -o public/index.js"
+    "build": "browserify lib/app/index.js -p [ css-extract -o public/index.css ] -p tinyify -o public/index.js"
+  },
+  "browserify": {
+    "transform": [
+      "localenvify",
+      "babelify",
+      [
+        "sheetify/transform",
+        {
+          "use": [
+            [
+              "sheetify-postcss",
+              {
+                "plugins": [
+                  "postcss-custom-properties",
+                  "postcss-import",
+                  "postcss-custom-media",
+                  "postcss-clean"
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    ]
   },
   "repository": {
     "type": "git",
@@ -46,6 +70,7 @@
     "dotenv": "^4.0.0",
     "localenvify": "^1.0.1",
     "nodemon": "^1.12.1",
+    "postcss-clean": "^1.1.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.2.0",
     "postcss-import": "^11.0.0",
