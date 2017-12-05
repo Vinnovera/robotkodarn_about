@@ -4,20 +4,20 @@
 @import "../button";
 
 .Hero {
-  min-height: 100vh;
   position: relative;
 }
 
 .Hero--homepage {
   align-items: center;
   display: flex;
+  height: 100vh;
   justify-content: center;
   padding: 1rem;
   text-align: center;
 }
 
 .Hero--article {
-  padding: 8rem 0.7rem 0;
+  padding: 8rem 0.7rem 1rem;
 }
 
 /* TODO: Remove once finished */
@@ -41,6 +41,10 @@
 }
 
 @media (--md-viewport), (--lg-viewport) {
+
+  .Hero {
+    min-height: 100vh;
+  }
 
   .Hero--article {
     padding: 8rem 0 2rem 4rem;

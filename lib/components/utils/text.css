@@ -20,14 +20,20 @@
   text-align: right !important;
 }
 
+/* Weight */
+
+.u-textWeightM {
+  font-weight: 600 !important;
+}
+
+.u-textWeightL {
+  font-weight: 800 !important;
+}
+
 /* Sizes */
 
 .u-textM {
   font-size: 1.2rem !important;
-}
-
-.u-textBoldXL {
-  font-weight: 800 !important;
 }
 
 .u-textL {
@@ -61,5 +67,9 @@
 /* Line-height */
 
 .u-lineHeightM {
+  line-height: 1 !important;
+}
+
+.u-lineHeightL {
   line-height: 1.2 !important;
 }

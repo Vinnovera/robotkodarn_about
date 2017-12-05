@@ -1,7 +1,11 @@
 /** @define utilities */
 
 .u-widthM {
-  max-width: 800px !important;
+  max-width: var(--width-md) !important;
+}
+
+.u-widthL {
+  max-width: var(--width-lg) !important;
 }
 
 .u-marginBottomM {

@@ -11,6 +11,8 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-weight-light: 300;
+  --width-md: 650px;
+  --width-lg: 800px;
   --base-font-size: 16;
 
   --color-azure: #4e7ec1;
