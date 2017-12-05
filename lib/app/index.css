@@ -1,14 +1,12 @@
 /** @define App */
 
 .App-article {
-  margin: 15rem 1rem 0;
   max-width: 800px;
 }
 
 @media (--md-viewport), (--lg-viewport) {
 
   .App-article {
-    margin: 15rem 2rem 0;
     max-width: 800px;
   }
 }

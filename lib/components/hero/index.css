@@ -7,10 +7,18 @@
   align-items: center;
   display: flex;
   height: 100vh;
-  justify-content: center;
   padding: 1rem;
-  text-align: center;
   width: 100vw;
+}
+
+.Hero--homepage {
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.Hero--article {
+  justify-content: flex-start;
+  text-align: center;
 }
 
 /* TODO: Remove once finished */
