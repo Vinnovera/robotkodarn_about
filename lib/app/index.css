@@ -2,14 +2,10 @@
 
 @import "../components/base";
 
+/*
+ * 1. Due to padding on Hero img.
+ */
+
 .App-article {
-  margin: 4rem 2rem 6rem;
-  max-width: 800px;
-}
-
-@media (--md-viewport), (--lg-viewport) {
-
-  .App-article {
-    margin: 0 0 6rem 4rem;
-  }
+  max-width: calc(4rem + 800px); /* 1. */
 }

@@ -40,14 +40,14 @@
   font-weight: var(--font-weight-extrabold) !important;
 }
 
-@media (--md-viewport) {
+@media (--md-viewport), (--lg-viewport) {
 
   .u-textM {
     font-size: 1.6rem !important;
   }
 
   .u-textXL {
-    font-size: 4rem !important;
+    font-size: 6rem !important;
   }
 }
 
@@ -55,10 +55,6 @@
 
   .u-textM {
     font-size: 1.8rem !important;
-  }
-
-  .u-textXL {
-    font-size: 6rem !important;
   }
 }
 

@@ -28,7 +28,7 @@
 }
 
 @custom-media --sm-viewport (max-width:799px);
-@custom-media --md-viewport (min-width:800px) and (max-width:1280px);
+@custom-media --md-viewport (min-width:800px) and (max-width:1279px);
 @custom-media --lg-viewport (min-width:1280px);
 
 html,
