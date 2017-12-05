@@ -4,6 +4,38 @@
 
 .Textblock {
   color: var(--color-metal);
-  max-width: 600px;
+  max-width: 760px;
+}
+
+.Textblock p {
+  font-size: calc(20rem / var(--base-font-size));
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.Textblock-title {
+  font-size: calc(30rem / var(--base-font-size));
+  font-weight: 800;
+  line-height: 1;
+  margin: 3rem 0 1rem;
+  text-transform: uppercase;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Textblock-title {
+    font-size: calc(34rem / var(--base-font-size));
+  }
+
+  .Textblock p {
+    font-size: calc(22rem / var(--base-font-size));
+  }
+
+}
+
+@media (--lg-viewport) {
+  .Textblock-title {
+    font-size: calc(42rem / var(--base-font-size));
+  }
 }
 

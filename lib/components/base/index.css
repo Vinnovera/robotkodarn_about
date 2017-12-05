@@ -11,8 +11,9 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-weight-light: 300;
-  --base-font-size: 16px;
+  --base-font-size: 16;
 
+  --color-azure: #4e7ec1;
   --color-violet: #651bd0;
   --color-verdigris: #59b2ac;
   --color-verdigris--alt: #59b2ab7c;
@@ -21,6 +22,7 @@
   --color-smoke: #f6f7f9;
   --color-white: #f2f2f2;
   --color-transparent: rgba(246, 247, 249, 0.3);
+  --color-transparent-dark: rgba(0, 0, 0, 0.3);
   --color-prune: #3e3748;
   --easing: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -34,6 +36,9 @@ body {
   color: var(--color-white);
   font-family: var(--font-family);
   font-size: var(--base-font-size);
+  -moz-osx-font-smoothing: grayscale !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
   font-weight: var(--font-weight-normal);
   height: 100%;
 }

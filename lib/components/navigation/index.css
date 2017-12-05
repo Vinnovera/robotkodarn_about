@@ -3,9 +3,14 @@
 @import "../base";
 
 .Navigation-listLink {
-  font-size: calc(var(--base-font-size) * 1.25);
-  -webkit-font-smoothing: antialiased;
+  font-size: calc(20rem / var(--base-font-size));
   font-weight: var(--font-weight-bold);
+}
+
+/* 1. Needs to be placed above hero component */
+
+.Navigation-list {
+  z-index: 3; /* 1. */
 }
 
 /* Burger and navigation list that covers the whole viewport is
@@ -21,8 +26,10 @@
   .Navigation-link {
     align-items: center;
     display: flex;
-    font-size: calc(var(--base-font-size) * 1.1);
-    -webkit-font-smoothing: antialiased;
+    font-size: calc(18rem / var(--base-font-size));
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+    -webkit-font-smoothing: antialiased; /* Safari */
+    font-smoothing: antialiased;
     font-weight: var(--font-weight-extrabold);
     justify-content: space-between;
     position: absolute;
@@ -50,7 +57,7 @@
   .Navigation-span1,
   .Navigation-span2,
   .Navigation-span3 {
-    background: var(--color-white);
+    background: var(--color-smoke);
     border-radius: 8px;
     display: block;
     height: 11px;
@@ -110,7 +117,6 @@
     top: 0;
     transition: 300ms right ease-out, 300ms opacity ease-out; /* TODO: Fix easing curve */
     width: 100%;
-    z-index: 3; /* 1. */
   }
 
   /* stylelint-disable */
@@ -169,7 +175,7 @@
   .Navigation-listLink {
     background-color: var(--color-metal);
     border-radius: 2px;
-    font-size: calc(var(--base-font-size) * 1.8);
+    font-size: calc(29rem / var(--base-font-size));
     padding: 0.2em 0.4em 0.18em;
   }
 
@@ -209,12 +215,12 @@
     background-color: var(--color-smoke);
   }
 
-  .Navigation-listLink--pink:hover {
+  .Navigation-listLink--homepage:hover {
     color: var(--color-salmon);
   }
 
-  .Navigation-listLink--blue:hover {
-    color: var(--color-verdigris);
+  .Navigation-listLink--article:hover {
+    color: var(--color-azure);
   }
 
   .Navigation-link {

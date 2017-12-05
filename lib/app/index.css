@@ -1,12 +1,15 @@
 /** @define App */
 
+@import "../components/base";
+
 .App-article {
+  margin: 4rem 2rem 6rem;
   max-width: 800px;
 }
 
 @media (--md-viewport), (--lg-viewport) {
 
   .App-article {
-    max-width: 800px;
+    margin: 0 0 6rem 4rem;
   }
 }
