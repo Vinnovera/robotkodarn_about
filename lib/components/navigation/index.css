@@ -36,8 +36,13 @@
     right: 1.2rem;
     text-transform: uppercase;
     top: 1rem;
+    transition: 200ms ease-in-out;
     width: 7.7rem;
     z-index: 4; /* 1. */
+  }
+
+  .Navigation-link--open {
+    color: var(--color-metal);
   }
 
   /*
@@ -45,6 +50,7 @@
   */
 
   .Navigation-icon {
+    color: inherit;
     height: 44px;
     transform: rotate(0deg);
     width: 50px;
@@ -67,6 +73,12 @@
     transform: rotate(0deg);
     transition: 200ms ease-in-out;
     width: 100%;
+  }
+
+  .Navigation-span1--open,
+  .Navigation-span2--open,
+  .Navigation-span3--open {
+    background: var(--color-metal);
   }
 
   .Navigation-span1 {
@@ -105,17 +117,16 @@
   /* 1. Needs to be placed above hero component */
 
   .Navigation-list {
-    background-color: var(--color-metal);
+    background-color: var(--color-smoke);
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    opacity: 0;
     padding: 1rem 0.5rem;
     position: fixed;
     right: -100%;
     top: 0;
-    transition: 300ms right ease-out, 300ms opacity ease-out; /* TODO: Fix easing curve */
+    transition: 300ms right ease-out; /* TODO: Fix easing curve */
     width: 100%;
   }
 
@@ -126,8 +137,8 @@
    */
   .Navigation-list--open,
   .Navigation-list:target {
-    background-color: var(--color-metal);
-    opacity: 1;
+    background-color: var(--color-smoke);
+    color: var(--color-metal);
     right: 0;
   }
 
@@ -173,15 +184,15 @@
   /* Links in navigation list */
 
   .Navigation-listLink {
-    background-color: var(--color-metal);
+    background-color: var(--color-smoke);
     border-radius: 2px;
-    font-size: calc(29rem / var(--base-font-size));
+    font-size: calc(36rem / var(--base-font-size));
     padding: 0.2em 0.4em 0.18em;
   }
 
   .Navigation-listLink:hover {
-    background-color: var(--color-salmon);
-    color: var(--color-metal);
+    background-color: var(--color-verdigris);
+    color: var(--color-smoke);
     cursor: pointer;
   }
 }
