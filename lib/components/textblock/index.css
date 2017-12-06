@@ -15,6 +15,9 @@
   border: none;
   box-shadow: none;
   font-family: var(--font-family);
+  font-size: calc(24rem / var(--base-font-size));
+  font-weight: 700;
+  line-height: 1.1;
   text-align: left;
 }
 
@@ -34,12 +37,6 @@
 
 /* stylelint-enable */
 
-.Textblock-title {
-  font-size: calc(24rem / var(--base-font-size));
-  font-weight: 700;
-  line-height: 1.1;
-}
-
 /* Expand content on smaller screens */
 
 @media (--sm-viewport) {
@@ -51,8 +48,8 @@
   .Textblock-carret {
     height: calc(13rem / var(--base-font-size));
     transform: rotate(-90deg);
-    width: calc(21rem / var(--base-font-size));
     transition: 150ms transform ease-in-out;
+    width: calc(21rem / var(--base-font-size));
   }
 
   .Textblock-carret--expanded {
@@ -95,13 +92,10 @@
   }
 
   .Textblock-button {
-    margin: 3rem 0 1rem;
-  }
-
-  .Textblock-title {
     font-size: calc(34rem / var(--base-font-size));
     font-weight: 800;
     line-height: 1;
+    margin: 3rem 0 1rem;
     text-transform: uppercase;
   }
 
@@ -115,7 +109,7 @@
 
 @media (--lg-viewport) {
 
-  .Textblock-title {
+  .Textblock-button {
     font-size: calc(42rem / var(--base-font-size));
   }
 }
