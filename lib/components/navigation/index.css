@@ -63,7 +63,7 @@
   .Navigation-span1,
   .Navigation-span2,
   .Navigation-span3 {
-    background: var(--color-smoke);
+    background: var(--color-white);
     border-radius: 8px;
     display: block;
     height: 11px;
@@ -117,7 +117,7 @@
   /* 1. Needs to be placed above hero component */
 
   .Navigation-list {
-    background-color: var(--color-smoke);
+    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -137,7 +137,7 @@
    */
   .Navigation-list--open,
   .Navigation-list:target {
-    background-color: var(--color-smoke);
+    background-color: var(--color-white);
     color: var(--color-metal);
     right: 0;
   }
@@ -184,7 +184,7 @@
   /* Links in navigation list */
 
   .Navigation-listLink {
-    background-color: var(--color-smoke);
+    background-color: var(--color-white);
     border-radius: 2px;
     font-size: calc(36rem / var(--base-font-size));
     padding: 0.2em 0.4em 0.18em;
@@ -192,7 +192,7 @@
 
   .Navigation-listLink:hover {
     background-color: var(--color-verdigris);
-    color: var(--color-smoke);
+    color: var(--color-white);
     cursor: pointer;
   }
 }
@@ -223,7 +223,7 @@
   }
 
   .Navigation-listLink:hover {
-    background-color: var(--color-smoke);
+    background-color: var(--color-white);
   }
 
   .Navigation-listLink--homepage:hover {
