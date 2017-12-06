@@ -43,11 +43,11 @@
 @media (--md-viewport), (--lg-viewport) {
 
   .Hero {
-    min-height: 100vh;
+    min-height: 50vh;
   }
 
   .Hero--article {
-    padding: 8rem 0 2rem 4rem;
+    padding: 8rem 0 4rem 4rem;
   }
 
   .Hero-buttons {

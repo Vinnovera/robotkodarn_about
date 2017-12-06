@@ -16,8 +16,12 @@
   color: var(--color-salmon);
 }
 
+/* TODO: Find a better gradient!
+ * linear-gradient(305deg, #058742 0%, #25ae8e 60%, #278fb4 95%);
+ */
+
 .Pattern--blue {
-  background-image: linear-gradient(305deg, #694BFE 0%, #5571D1 21%, #4E7EC1 50%, #4197A4 89%, #3DA099 95%);
+  background-image: linear-gradient(305deg, #694bfe 0%, #5571d1 21%, #4e7eC1 50%, #4197a4 89%, #3da099 95%);
   color: var(--color-verdigris--alt);
 }
 

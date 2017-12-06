@@ -4,41 +4,117 @@
 
 .Textblock {
   color: var(--color-metal);
-  margin: 0 0.7rem;
-  max-width: var(--width-md);
+  width: 100%;
 }
 
+/* Very specific styling related to textblock, hence placement of styling */
+
+.Textblock-button {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  font-family: var(--font-family);
+  text-align: left;
+}
+
+
+/* stylelint-disable */
+/* TODO: Sort out classes on data fetched via prismic-element */
 .Textblock p {
   font-size: calc(20rem / var(--base-font-size));
   line-height: 1.5;
   margin-bottom: 1rem;
 }
 
-.Textblock-title {
-  font-size: calc(30rem / var(--base-font-size));
-  font-weight: 800;
-  line-height: 1;
-  margin: 3rem 0 1rem;
-  text-transform: uppercase;
+.Textblock p:last-of-type {
+  margin-bottom: 3rem;
 }
+
+
+/* stylelint-enable */
+
+.Textblock-title {
+  font-size: calc(24rem / var(--base-font-size));
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Expand content on smaller screens */
+
+@media (--sm-viewport) {
+
+  .Textblock:not(:first-of-type) .Textblock-button {
+    border-top: 2px solid var(--color-grey);
+  }
+
+  .Textblock-carret {
+    height: calc(13rem / var(--base-font-size));
+    transform: rotate(-90deg);
+    width: calc(21rem / var(--base-font-size));
+    transition: 150ms transform ease-in-out;
+  }
+
+  .Textblock-carret--expanded {
+    transform: rotate(0deg);
+  }
+
+  .Textblock-button {
+    align-items: center;
+    color: var(--color-metal);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 1.5rem 0.7rem;
+    width: 100%;
+  }
+
+  .Textblock-section {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0.7rem;
+    transition: all 250ms ease-in-out;
+  }
+
+  .Textblock-section--expanded {
+    max-height: 2000px;
+  }
+}
+
+/* Align text to left on medium and large screens  */
 
 @media (--md-viewport), (--lg-viewport) {
 
+  .Textblock-carret {
+    display: none;
+  }
+
   .Textblock {
     margin-left: 4rem;
+    max-width: var(--width-md);
+  }
+
+  .Textblock-button {
+    margin: 3rem 0 1rem;
   }
 
   .Textblock-title {
     font-size: calc(34rem / var(--base-font-size));
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
   }
 
+  /* stylelint-disable */
   .Textblock p {
     font-size: calc(22rem / var(--base-font-size));
   }
+  /* stylelint-enable */
 
 }
 
 @media (--lg-viewport) {
+
   .Textblock-title {
     font-size: calc(42rem / var(--base-font-size));
   }
