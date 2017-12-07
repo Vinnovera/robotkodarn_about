@@ -25,7 +25,7 @@
 /* stylelint-disable */
 /* TODO: Sort out classes on data fetched via prismic-element */
 .Textblock p {
-  font-size: calc(20rem / var(--base-font-size));
+  font-size: calc(18rem / var(--base-font-size));
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -41,19 +41,26 @@
 
 @media (--sm-viewport) {
 
-  .Textblock:not(:first-of-type) .Textblock-button {
-    border-top: 2px solid var(--color-grey);
+  .Textblock .Textblock-button {
+    border-bottom: 1px solid var(--color-grey);
   }
 
+  /* stylelint-disable */
+  .Textblock p:first-of-type {
+    margin-top: 1rem;
+  }
+
+/* stylelint-enable */
+
   .Textblock-carret {
-    height: calc(13rem / var(--base-font-size));
-    transform: rotate(-90deg);
-    transition: 150ms transform ease-in-out;
-    width: calc(21rem / var(--base-font-size));
+    height: calc(9rem / var(--base-font-size));
+    transform: rotate(0deg);
+    transition: 250ms transform ease-in-out;
+    width: calc(15rem / var(--base-font-size));
   }
 
   .Textblock-carret--expanded {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
 
   .Textblock-button {
@@ -66,7 +73,12 @@
     width: 100%;
   }
 
+  .Textblock-button:focus {
+    outline: none;
+  }
+
   .Textblock-section {
+    box-sizing: border-box;
     max-height: 0;
     overflow: hidden;
     padding: 0 0.7rem;
@@ -74,7 +86,8 @@
   }
 
   .Textblock-section--expanded {
-    max-height: 2000px;
+    background-color: var(--color-offset);
+    max-height: 10000px;
   }
 }
 

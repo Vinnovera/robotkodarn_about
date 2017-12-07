@@ -23,7 +23,8 @@
   --color-metal: #1e222a;
   --color-smoke: #f2f2f2;
   --color-white: #fff;
-  --color-grey: #c3c9d5;
+  --color-grey: #dbe3f3;
+  --color-offset: #f8f8f8;
   --color-transparent-dark: rgba(0, 0, 0, 0.3);
   --color-prune: #3e3748;
   --easing: cubic-bezier(0.075, 0.82, 0.165, 1);

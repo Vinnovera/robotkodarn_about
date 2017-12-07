@@ -1,9 +1,10 @@
 {
   "Email": "E-postadress",
-  "Menu": "Meny",
   "Exit": "Stäng",
+  "Loading": "Laddar",
+  "Home": "Hem",
+  "Menu": "Meny",
   "Page not found": "Sidan kunde inte hittas",
   "Phone": "Telefonnummer",
-  "Loading": "Laddar",
   "Site title": "Robotkodarn"
 }

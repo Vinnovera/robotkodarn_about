@@ -37,7 +37,5 @@
 
 .Button--article:hover {
   background-color: var(--color-smoke);
-  border-radius: 2px;
   color: var(--color-azure);
-  margin: 0.4rem 0.4rem 0 0;
 }
