@@ -2,9 +2,27 @@
 
 @import "../base";
 
-.Blurb {
+.Blurb-text {
   background-color: gold;
   font-size: 2rem;
   height: 100vh;
   padding: 4rem;
 }
+
+
+.Blurb-content {
+  transform: translateY(150px);
+  transition: 550ms transform ease-out 150ms;
+}
+
+.Blurb-content--visible {
+  transform: translateY(0);
+}
+
+.Blurb-testimonial {
+  background-color: red;
+  font-size: 2rem;
+  height: 100vh;
+  padding: 4rem;
+}
+
