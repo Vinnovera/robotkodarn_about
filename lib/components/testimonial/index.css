@@ -8,3 +8,12 @@
   height: 100vh;
   padding: 4rem;
 }
+
+.Testimonial-content {
+  transform: translateY(150px);
+  transition: 550ms transform ease-out 150ms;
+}
+
+.Testimonial-content--visible {
+  transform: translateY(0);
+}
