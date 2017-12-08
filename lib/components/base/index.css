@@ -46,6 +46,13 @@ body {
   height: 100%;
 }
 
+button {
+  font-family: var(--font-family);
+  -moz-osx-font-smoothing: grayscale !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -62,10 +69,6 @@ p {
 
 p:first-of-type {
   margin-top: 1rem;
-}
-
-p:last-of-type {
-  margin-bottom: 3rem;
 }
 
 @media (--md-viewport), (--lg-viewport) {

@@ -63,9 +63,14 @@
   }
 
   .Textblock-section--expanded {
-    background-color: var(--color-offset);
     max-height: 10000px;
   }
+
+  /* stylelint-disable */
+  .Textblock-section p:last-of-type {
+    margin-bottom: 3rem;
+  }
+  /* stylelint-enable */
 }
 
 /* Align text to left on medium and large screens  */

@@ -12,6 +12,19 @@
   max-width: var(--width-lg) !important;
 }
 
+.u-paddingTopL {
+  padding-top: 3rem !important;
+}
+
+.u-paddingBottomXL {
+  padding-bottom: 4rem !important;
+}
+
+.u-paddingSidesL {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
 .u-marginTopM {
   margin-top: 1rem !important;
 }
