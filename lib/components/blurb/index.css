@@ -2,27 +2,90 @@
 
 @import "../base";
 
-.Blurb-text {
-  background-color: gold;
-  font-size: 2rem;
-  height: 100vh;
-  padding: 4rem;
+.Blurb-text,
+.Blurb-testimonial {
+  color: var(--color-metal);
 }
 
-
-.Blurb-content {
+.Blurb-textContent,
+.Blurb-testimonialContent {
   transform: translateY(150px);
-  transition: 550ms transform ease-out 150ms;
+  transition: 1000ms transform ease-out;
 }
 
-.Blurb-content--visible {
+.Blurb-textContent--visible,
+.Blurb-testimonialContent--visible {
   transform: translateY(0);
 }
 
-.Blurb-testimonial {
-  background-color: red;
-  font-size: 2rem;
-  height: 100vh;
-  padding: 4rem;
+/* Styling related to Blurb-text */
+
+.Blurb-textContent {
+  display: grid;
+  grid-column-gap: 5%;
+  grid-template-columns: 45% 50%;
+  grid-template-rows: 100%;
+  line-height: 1.5;
+  min-height: 70vh;
+  padding: 4rem 3rem 3rem;
 }
 
+.Blurb-title {
+  font-family: var(--font-family);
+  font-size: calc(24rem / var(--base-font-size));
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* stylelint-disable */
+.Blurb-content p {
+  font-size: 1.2rem;
+}
+/* stylelint-enable */
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Blurb-title {
+    font-size: calc(42rem / var(--base-font-size));
+  }
+
+  /* stylelint-disable */
+  .Blurb-content p {
+    font-size: 1.6rem;
+  }
+  /* stylelint-enable */
+}
+
+@media (--lg-viewport) {
+
+  /* stylelint-disable */
+  .Blurb-content p {
+    font-size: 1.8rem;
+  }
+  /* stylelint-enable */
+}
+
+.Blurb-imageContainer {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.Blurb-image {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
+/* Styling related to Blurb-testimonial */
+
+.Blurb-testimonial {
+  color: var(--color-white);
+  font-size: calc(42rem / var(--base-font-size));
+  font-weight: 700;
+  min-height: 70vh;
+  padding: 4rem;
+  position: relative;
+}

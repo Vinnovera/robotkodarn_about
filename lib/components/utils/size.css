@@ -4,6 +4,10 @@
   max-width: var(--width-md) !important;
 }
 
+.u-width50 {
+  width: 50% !important;
+}
+
 .u-widthL {
   max-width: var(--width-lg) !important;
 }

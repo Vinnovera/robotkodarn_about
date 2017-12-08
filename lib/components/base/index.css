@@ -51,3 +51,26 @@ a {
   text-decoration: none;
   transition: color 250ms var(--easing), background-color 250ms var(--easing);
 }
+
+/* Base styling for paragraphs */
+
+p {
+  font-size: calc(18rem / var(--base-font-size));
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+p:first-of-type {
+  margin-top: 1rem;
+}
+
+p:last-of-type {
+  margin-bottom: 3rem;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  p {
+    font-size: calc(22rem / var(--base-font-size));
+  }
+}

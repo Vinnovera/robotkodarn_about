@@ -21,22 +21,6 @@
   text-align: left;
 }
 
-
-/* stylelint-disable */
-/* TODO: Sort out classes on data fetched via prismic-element */
-.Textblock p {
-  font-size: calc(18rem / var(--base-font-size));
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.Textblock p:last-of-type {
-  margin-bottom: 3rem;
-}
-
-
-/* stylelint-enable */
-
 /* Expand content on smaller screens */
 
 @media (--sm-viewport) {
@@ -44,13 +28,6 @@
   .Textblock .Textblock-button {
     border-bottom: 1px solid var(--color-grey);
   }
-
-  /* stylelint-disable */
-  .Textblock p:first-of-type {
-    margin-top: 1rem;
-  }
-
-/* stylelint-enable */
 
   .Textblock-carret {
     height: calc(9rem / var(--base-font-size));
@@ -111,13 +88,6 @@
     margin: 3rem 0 1rem;
     text-transform: uppercase;
   }
-
-  /* stylelint-disable */
-  .Textblock p {
-    font-size: calc(22rem / var(--base-font-size));
-  }
-  /* stylelint-enable */
-
 }
 
 @media (--lg-viewport) {
