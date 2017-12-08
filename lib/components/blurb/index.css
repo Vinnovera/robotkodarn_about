@@ -1,0 +1,10 @@
+/** @define Blurb */
+
+@import "../base";
+
+.Blurb {
+  background-color: gold;
+  font-size: 2rem;
+  height: 100vh;
+  padding: 4rem;
+}

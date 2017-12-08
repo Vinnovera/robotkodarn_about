@@ -184,14 +184,13 @@
   /* Links in navigation list */
 
   .Navigation-listLink {
-    background-color: var(--color-white);
     border-radius: 2px;
     font-size: calc(30rem / 16);
     padding: 0.2rem 1rem 0.18rem;
   }
 
   .Navigation-listLink:hover {
-    background-color: var(--color-salmon);
+    color: var(--color-salmon);
     cursor: pointer;
   }
 }

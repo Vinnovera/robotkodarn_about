@@ -1,0 +1,10 @@
+/** @define Testimonial */
+
+@import "../base";
+
+.Testimonial {
+  background-color: red;
+  font-size: 2rem;
+  height: 100vh;
+  padding: 4rem;
+}
