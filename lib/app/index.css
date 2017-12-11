@@ -7,6 +7,5 @@
  */
 
 .App-article {
-  margin-bottom: 6rem;
   max-width: calc(4rem + 800px); /* 1. */
 }

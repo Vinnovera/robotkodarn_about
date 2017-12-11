@@ -1,5 +1,7 @@
 /** @define utilities */
 
+/* Width */
+
 .u-widthM {
   max-width: var(--width-md) !important;
 }
@@ -12,12 +14,10 @@
   max-width: var(--width-lg) !important;
 }
 
+/* Paddings */
+
 .u-paddingTopL {
   padding-top: 3rem !important;
-}
-
-.u-paddingBottomXL {
-  padding-bottom: 4rem !important;
 }
 
 .u-paddingSidesL {
@@ -25,12 +25,14 @@
   padding-right: 3rem !important;
 }
 
-.u-marginTopM {
-  margin-top: 1rem !important;
+.u-paddingBottomXL {
+  padding-bottom: 4rem !important;
 }
 
-.u-marginTopXL {
-  margin-top: 3rem !important;
+/* Margins */
+
+.u-marginBottomXS {
+  margin-bottom: 0.3rem !important;
 }
 
 .u-marginBottomS {
@@ -43,4 +45,12 @@
 
 .u-marginBottomL {
   margin-bottom: 1.5rem !important;
+}
+
+.u-marginTopM {
+  margin-top: 1rem !important;
+}
+
+.u-marginTopXL {
+  margin-top: 3rem !important;
 }

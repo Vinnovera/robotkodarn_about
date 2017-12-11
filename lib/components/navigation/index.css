@@ -185,13 +185,14 @@
 
   .Navigation-listLink {
     border-radius: 2px;
+    cursor: pointer;
     font-size: calc(30rem / 16);
     padding: 0.2rem 1rem 0.18rem;
+    transition: padding 100ms ease-in-out;
   }
 
   .Navigation-listLink:hover {
-    color: var(--color-salmon);
-    cursor: pointer;
+    padding: 0.2rem 1.8rem 0.18rem;
   }
 }
 

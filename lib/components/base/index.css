@@ -6,7 +6,7 @@
 @import "../utils/size";
 
 :root {
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-weight-extrabold: 800;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
@@ -20,6 +20,7 @@
   --color-verdigris: #59b2ac;
   --color-verdigris--alt: #59b2ab7c;
   --color-salmon: #ff9078;
+  --color-grape: #fe5d4b;
   --color-metal: #1e222a;
   --color-smoke: #f2f2f2;
   --color-white: #fff;
@@ -37,6 +38,7 @@
 html,
 body {
   color: var(--color-white);
+  font-display: optional;
   font-family: var(--font-family);
   font-size: var(--base-font-size);
   -moz-osx-font-smoothing: grayscale !important;
@@ -64,11 +66,7 @@ a {
 p {
   font-size: calc(18rem / var(--base-font-size));
   line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-p:first-of-type {
-  margin-top: 1rem;
+  margin: 0;
 }
 
 @media (--md-viewport), (--lg-viewport) {

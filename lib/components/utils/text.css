@@ -27,10 +27,24 @@
 }
 
 .u-textWeightL {
+  font-weight: 700 !important;
+}
+
+.u-textWeightXL {
   font-weight: 800 !important;
 }
 
+/* Styling */
+
+.u-textStyleNormal {
+  font-style: normal !important;
+}
+
 /* Sizes */
+
+.u-textS {
+  font-size: calc(16rem / var(--font-base-size)) !important;
+}
 
 .u-textM {
   font-size: 1.2rem !important;

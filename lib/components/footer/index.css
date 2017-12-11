@@ -1,0 +1,36 @@
+/** @define Footer */
+
+@import "../base";
+
+.Footer {
+  border-bottom: 9px solid var(--color-grape);
+  color: var(--color-metal);
+  padding: 1.4rem 0.7rem 1rem;
+}
+
+.Footer--article {
+  border-bottom: 9px solid var(--color-azure);
+}
+
+.Footer-link {
+  color: var(--color-grape);
+  font-weight: 800;
+}
+
+.Footer-link--article {
+  color: var(--color-azure);
+}
+
+/* Align text to left on medium and large screens  */
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Footer {
+    color: var(--color-metal);
+    padding: 3.5rem 4rem 2rem;
+  }
+
+  .Footer-content {
+    max-width: var(--width-md);
+  }
+}

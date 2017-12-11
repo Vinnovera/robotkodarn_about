@@ -19,3 +19,7 @@
 .u-colorSmoke {
   color: var(--color-smoke) !important;
 }
+
+.u-colorGrape {
+  color: var(--color-grape) !important;
+}
