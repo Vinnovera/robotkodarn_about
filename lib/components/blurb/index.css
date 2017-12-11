@@ -2,6 +2,15 @@
 
 @import "../base";
 
+/*
+ * 1. Temporary styling used during development
+ */
+
+.Blurb {
+  border: 2px dashed red; /* 1. */
+  min-height: 30vh;
+}
+
 .Blurb-text,
 .Blurb-testimonial {
   color: var(--color-metal);
@@ -9,6 +18,8 @@
 
 .Blurb-textContent,
 .Blurb-testimonialContent {
+  margin: 0 auto;
+  max-width: 1024px;
   transform: translateY(150px);
   transition: 1000ms transform ease-out;
 }
@@ -32,13 +43,6 @@
 }
 /* stylelint-enable */
 
-.Blurb-carret {
-  height: calc(11rem / var(--base-font-size));
-  position: absolute;
-  transform: rotate(-90deg) translate(-8px, 14px);
-  width: calc(20rem / var(--base-font-size));
-}
-
 .Blurb-imageContainer {
   background-color: var(--color-grey);
   border: 2px solid var(--color-metal);
@@ -46,11 +50,15 @@
   width: 100%;
 }
 
+/*
+ * 1. Temporary styling used during development
+ */
+
 .Blurb-image {
-  min-height: 70vh;
+  min-height: 300px; /* 1. */
+  min-width: 300px; /* 1. */
   object-fit: cover;
   object-position: center center;
-  width: 100vw;
 }
 
 /* Styling related to Blurb-testimonial */
@@ -71,7 +79,6 @@
     align-items: flex-start;
     display: flex;
     line-height: 1.5;
-    min-height: 70vh;
     padding: 4rem 3rem 3rem;
   }
 
