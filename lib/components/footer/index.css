@@ -12,13 +12,26 @@
   border-bottom: 9px solid var(--color-azure);
 }
 
+/* Footer Link */
+
 .Footer-link {
+  border-bottom: 3px solid transparent;
   color: var(--color-grape);
   font-weight: 800;
+  padding-bottom: 0.1rem;
+  transition: border 250ms ease-in-out;
+}
+
+.Footer-link:hover {
+  border-bottom: 3px solid var(--color-grape);
 }
 
 .Footer-link--article {
   color: var(--color-azure);
+}
+
+.Footer-link--article:hover {
+  border-bottom: 3px solid var(--color-azure);
 }
 
 /* Align text to left on medium and large screens  */
