@@ -17,7 +17,7 @@
   font-family: var(--font-family);
   font-size: calc(24rem / var(--base-font-size));
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
   text-align: left;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .Textblock p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 /* stylelint-enable */
 
@@ -78,7 +78,7 @@
 
   /* stylelint-disable */
   .Textblock-section p:last-of-type {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   /* stylelint-enable */
 }
@@ -92,16 +92,15 @@
   }
 
   .Textblock {
-    margin-left: 4rem;
+    margin-left: 6rem;
     max-width: var(--width-md);
   }
 
   .Textblock-button {
     font-size: calc(34rem / var(--base-font-size));
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.2;
     margin: 3rem 0 1rem;
-    text-transform: uppercase;
   }
 }
 

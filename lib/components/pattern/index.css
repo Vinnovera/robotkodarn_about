@@ -4,6 +4,7 @@
 
 .Pattern {
   bottom: 0;
+  color: var(--color-transparent);
   height: 100%;
   left: 0;
   position: absolute;
@@ -11,18 +12,12 @@
   z-index: -1;
 }
 
-.Pattern--pink {
-  background: linear-gradient(135deg, rgba(254, 93, 75, 1) 0%, rgba(241, 111, 92, 1) 0%, rgba(246, 41, 12, 1) 0%, rgba(254, 93, 75, 1) 0%, rgba(195, 109, 216, 1) 100%);
-  color: var(--color-salmon);
+.Pattern--snow {
+  background-image: var(--gradient-snow);
 }
 
-/* TODO: Find a better gradient!
- * linear-gradient(305deg, #058742 0%, #25ae8e 60%, #278fb4 95%);
- */
-
-.Pattern--blue {
-  background-image: linear-gradient(305deg, #694bfe 0%, #5571d1 21%, #4e7eC1 50%, #4197a4 89%, #3da099 95%);
-  color: var(--color-verdigris--alt);
+.Pattern--gagarin {
+  background-image: var(--gradient-gagarin);
 }
 
 /* Retro Computer */

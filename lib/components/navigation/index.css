@@ -3,6 +3,7 @@
 @import "../base";
 
 .Navigation-listLink {
+  font-family: var(--font-family-sans);
   font-size: calc(20rem / var(--base-font-size));
   font-weight: var(--font-weight-bold);
 }
@@ -26,10 +27,8 @@
   .Navigation-link {
     align-items: center;
     display: flex;
+    font-family: var(--font-family-sans);
     font-size: calc(18rem / var(--base-font-size));
-    -moz-osx-font-smoothing: grayscale; /* Firefox */
-    -webkit-font-smoothing: antialiased; /* Safari */
-    font-smoothing: antialiased;
     font-weight: var(--font-weight-extrabold);
     justify-content: space-between;
     position: absolute;
@@ -63,7 +62,7 @@
   .Navigation-span1,
   .Navigation-span2,
   .Navigation-span3 {
-    background: var(--color-white);
+    background: var(--color-metal);
     border-radius: 8px;
     display: block;
     height: 11px;
@@ -130,19 +129,16 @@
     width: 100%;
   }
 
-  /* stylelint-disable */
-
   /* 1. Locally disable stylelint since the selector #menu:target is needed
    * to open menu if javascript is disabled. This is an exception.
    */
+
   .Navigation-list--open,
   .Navigation-list:target {
     background-color: var(--color-white);
     color: var(--color-metal);
     right: 0;
   }
-
-  /* stylelint-enable */
 
   /* List items */
 
@@ -220,21 +216,13 @@
     transition: 250ms border ease;
   }
 
-  .Navigation-listLink:hover {
+  .Navigation-listLink:hover:not(.Navigation-listLink--active) {
     border-bottom: 3px solid var(--color-white);
   }
 
   .Navigation-item--active {
     background-color: var(--color-white);
     border-radius: 0 0 2px 2px;
-  }
-
-  .Navigation-listLink--active.Navigation-listLink--homepage {
-    color: var(--color-salmon);
-  }
-
-  .Navigation-listLink--active.Navigation-listLink--article {
-    color: var(--color-azure);
   }
 
   .Navigation-link {
