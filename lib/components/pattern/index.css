@@ -12,8 +12,16 @@
   z-index: -1;
 }
 
+/* Colors 🌈  */
+
 .Pattern--snow {
   background-image: var(--gradient-snow);
+  color: var(--color-snow);
+}
+
+.Pattern--green {
+  background-image: var(--gradient-green);
+  color: var(--color-transparent);
 }
 
 .Pattern--purple {
@@ -22,6 +30,23 @@
 
 .Pattern--gagarin {
   background-image: var(--gradient-gagarin);
+}
+
+.Pattern--orange {
+  background-image: var(--gradient-orange);
+}
+
+.Pattern--peach {
+  background-image: var(--gradient-peach);
+}
+
+.Pattern--vanilla {
+  background-image: var(--gradient-vanilla);
+}
+
+.Pattern--celestial {
+  background-image: var(--gradient-celestial);
+  color: var(--color-celestial);
 }
 
 /* Retro Computer */

@@ -199,9 +199,14 @@
 
   .Navigation-list {
     float: right;
+    padding-right: 2rem;
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  .Navigation-list--dark {
+    color: var(--color-white);
   }
 
   .Navigation-item {
@@ -224,6 +229,7 @@
   .Navigation-item--active {
     background-color: var(--color-white);
     border-radius: 0 0 2px 2px;
+    color: var(--color-metal);
   }
 
   .Navigation-link {

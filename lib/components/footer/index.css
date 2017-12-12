@@ -8,23 +8,6 @@
   padding: 2.5rem 1rem 2rem;
 }
 
-.Footer--snow {
-  border-bottom: 9px solid var(--color-snow);
-}
-
-.Footer--gagarin {
-  border-bottom: 9px solid var(--color-gagarin);
-}
-
-.Footer--purple {
-  border-bottom: 9px solid var(--color-purple);
-}
-
-.Footer-address {
-  font-family: var(--fontFamilySans);
-  font-style: normal;
-}
-
 /* Footer Link */
 
 .Footer-link {
@@ -37,6 +20,41 @@
 
 .Footer-link:hover {
   border-bottom: 1px solid var(--color-snow);
+}
+
+/* Colors 🌈  */
+
+.Footer--snow {
+  border-bottom: 9px solid var(--color-snow);
+}
+
+.Footer--celestial {
+  border-bottom: 9px solid var(--color-celestial);
+}
+
+.Footer--purple {
+  border-bottom: 9px solid var(--color-purple);
+}
+
+.Footer--orange {
+  border-bottom: 9px solid var(--color-orange);
+}
+
+.Footer--gagarin {
+  border-bottom: 9px solid var(--color-gagarin);
+}
+
+.Footer--vanilla {
+  border-bottom: 9px solid var(--color-vanilla);
+}
+
+.Footer--peach {
+  border-bottom: 9px solid var(--color-peach);
+}
+
+.Footer-address {
+  font-family: var(--fontFamilySans);
+  font-style: normal;
 }
 
 /* Align text to left on medium and large screens  */

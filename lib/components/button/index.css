@@ -3,6 +3,10 @@
 @import "../base";
 
 .Button {
+  background-color: var(--color-metal);
+  border: 4px solid var(--color-metal);
+  border-radius: 50px;
+  color: var(--color-white);
   display: inline-block;
   font-family: var(--font-family-sans);
   font-size: calc(16rem / var(--base-font-size));
@@ -16,27 +20,35 @@
   transition-property: background, border-color, color;
 }
 
-.Button--md {
-  font-size: calc(21rem / var(--base-font-size));
-}
-
 .Button:not(.Button--loading) {
-  background-color: var(--color-metal);
-  border: 4px solid var(--color-metal);
-  border-radius: 2px;
-  color: var(--color-white);
   cursor: pointer;
 }
 
-.Button:hover:not(.Button--loading) {
+.Button:hover {
   background: none;
   color: var(--color-metal);
 }
 
-.Button--square {
-  background-color: inherit;
+/* Modifiers */
+
+.Button--md {
+  font-size: calc(21rem / var(--base-font-size));
+}
+
+.Button--article {
   border-radius: 2px;
   margin: 0.4rem 0.4rem 0 0;
+}
+
+.Button--inverted {
+  background: none;
+  border: 4px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.Button--inverted:hover {
+  background-color: var(--color-white);
+  color: var(--color-metal);
 }
 
 /* Used as placeholder when content is loading */
