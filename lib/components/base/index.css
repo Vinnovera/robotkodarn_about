@@ -12,7 +12,7 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-weight-light: 300;
-  --width-md: 550px;
+  --width-md: 750px;
   --width-lg: 800px;
   --base-font-size: 16;
 
@@ -80,7 +80,7 @@ a {
 
 p {
   font-family: var(--font-family-serif);
-  font-size: calc(18rem / var(--base-font-size));
+  font-size: calc(19rem / var(--base-font-size));
   line-height: 1.5;
   margin: 0;
 }
@@ -88,6 +88,6 @@ p {
 @media (--md-viewport), (--lg-viewport) {
 
   p {
-    font-size: calc(21rem / var(--base-font-size));
+    font-size: calc(22rem / var(--base-font-size));
   }
 }

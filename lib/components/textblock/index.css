@@ -56,7 +56,7 @@
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 1rem 1.5rem 0.7rem;
+    padding: 1.5rem 1rem 1.5rem;
     width: 100%;
   }
 
@@ -68,7 +68,7 @@
     box-sizing: border-box;
     max-height: 0;
     overflow: hidden;
-    padding: 0 0.7rem;
+    padding: 0 1.5rem;
     transition: all 250ms ease-in-out;
   }
 

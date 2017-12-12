@@ -5,6 +5,7 @@
 
 .Hero {
   min-height: 100vh;
+  position: relative;
 }
 
 .Hero-introduction {
@@ -31,7 +32,7 @@
 
 .Hero--article,
 .Hero--contact {
-  padding: 8rem 0.7rem 1rem;
+  padding: 8rem 1.5rem 1rem;
 }
 
 /* TODO: Remove once finished */
@@ -59,6 +60,10 @@
   .Hero--article,
   .Hero--contact {
     padding: 8rem 0 6rem 6rem;
+  }
+
+  .Hero-introduction {
+    margin-bottom: 1.5rem;
   }
 
   .Hero-buttons {
