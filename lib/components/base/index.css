@@ -16,11 +16,15 @@
   --width-lg: 800px;
   --base-font-size: 16;
 
-  --gradient-snow: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  /* Test of new gradients */
   --gradient-gagarin: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);
+  --gradient-purple: linear-gradient(47deg, #764ba2, #667eea);
+  --gradient-snow: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 
-  --color-snow: #ace0f9;
+  /* Test of new colors */
   --color-gagarin: #eaccf8;
+  --color-snow: #ace0f9;
+  --color-purple: #667eea;
 
   --color-azure: #4e7ec1;
   --color-violet: #d7d9f0;

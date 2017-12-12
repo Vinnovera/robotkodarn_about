@@ -16,6 +16,10 @@
   background-image: var(--gradient-snow);
 }
 
+.Pattern--purple {
+  background-image: var(--gradient-purple);
+}
+
 .Pattern--gagarin {
   background-image: var(--gradient-gagarin);
 }

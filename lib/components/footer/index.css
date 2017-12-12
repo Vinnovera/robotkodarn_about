@@ -16,6 +16,10 @@
   border-bottom: 9px solid var(--color-gagarin);
 }
 
+.Footer--purple {
+  border-bottom: 9px solid var(--color-purple);
+}
+
 .Footer-address {
   font-family: var(--fontFamilySans);
   font-style: normal;
