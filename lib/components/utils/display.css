@@ -4,6 +4,10 @@
   display: none !important;
 }
 
+.u-overflowHidden {
+  overflow: hidden !important;
+}
+
 .u-zIndexTwo {
   z-index: 2 !important;
 }

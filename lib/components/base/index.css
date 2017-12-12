@@ -88,6 +88,6 @@ p {
 @media (--md-viewport), (--lg-viewport) {
 
   p {
-    font-size: calc(22rem / var(--base-font-size));
+    font-size: calc(21.5rem / var(--base-font-size));
   }
 }
