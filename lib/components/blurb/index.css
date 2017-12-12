@@ -16,28 +16,27 @@
   color: var(--color-metal);
 }
 
-.Blurb-textContent,
-.Blurb-testimonialContent {
+.Blurb-content {
   margin: 0 auto;
   max-width: 1024px;
   transform: translateY(150px);
   transition: 1000ms transform ease-out;
 }
 
-.Blurb-textContent--visible,
-.Blurb-testimonialContent--visible {
+.Blurb-content--visible {
   transform: translateY(0);
 }
 
 .Blurb-title {
   font-size: calc(24rem / var(--base-font-size));
   font-weight: 700;
-  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 /* stylelint-disable */
 .Blurb-content p {
-  font-size: 1.2rem;
+  font-family: var(--font-family-sans);
+  font-size: calc(24rem / var(--base-font-size));
 }
 /* stylelint-enable */
 
@@ -72,7 +71,7 @@
 
   /* Styling related to Blurb-text */
 
-  .Blurb-textContent {
+  .Blurb-content {
     align-items: flex-start;
     display: flex;
     line-height: 1.5;
@@ -85,16 +84,7 @@
 
   /* stylelint-disable */
   .Blurb-content p {
-    font-size: 1.6rem;
-  }
-  /* stylelint-enable */
-}
-
-@media (--lg-viewport) {
-
-  /* stylelint-disable */
-  .Blurb-content p {
-    font-size: 1.8rem;
+    font-size: calc(21rem / var(--base-font-size));
   }
   /* stylelint-enable */
 }

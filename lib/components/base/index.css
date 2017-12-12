@@ -45,7 +45,6 @@
 
 html,
 body {
-  border: 10px dashed red;
   color: var(--color-metal);
   font-display: optional;
   font-size: var(--base-font-size);

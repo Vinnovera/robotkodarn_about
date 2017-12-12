@@ -20,6 +20,16 @@
   color: var(--color-smoke) !important;
 }
 
+.u-colorWhite {
+  color: var(--color-white) !important;
+}
+
 .u-colorGrape {
   color: var(--color-grape) !important;
+}
+
+/* Background colors */
+
+.u-backgroundWhite {
+  background-color: var(--color-white) !important;
 }

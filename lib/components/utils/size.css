@@ -6,6 +6,10 @@
   max-width: var(--width-md) !important;
 }
 
+.u-heightXL {
+  min-height: 600px !important;
+}
+
 .u-width50 {
   width: 50% !important;
 }
@@ -53,4 +57,8 @@
 
 .u-marginTopXL {
   margin-top: 3rem !important;
+}
+
+.u-marginAuto {
+  margin: 0 auto !important;
 }

@@ -1,11 +1,16 @@
 {
   "Email": "E-postadress",
   "Exit": "Stäng",
-  "Loading": "Laddar",
+  "Error": "Ooops!",
+  "Something went wrong": "Något gick fel. Kom tillbaka om en stund.",
+  "Loading": "Sidan laddar",
+  "Loading introduction text": "Här kommer snart en introduktion till sidan att visas.",
+  "Loading button": "Knapp",
   "Home": "Hem",
   "At": "På",
   "Menu": "Meny",
   "Page not found": "Sidan kunde inte hittas",
+  "That page does not exist. Try again!": "Sidan du vill besöka finns inte. Prova igen!",
   "Phone": "Telefonnummer",
   "Site title": "Robotkodarn"
 }
