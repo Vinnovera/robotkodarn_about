@@ -6,8 +6,8 @@
   max-width: var(--width-md) !important;
 }
 
-.u-heightXL {
-  min-height: 600px !important;
+.u-heightL {
+  min-height: 350px !important;
 }
 
 .u-width50 {

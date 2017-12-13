@@ -60,6 +60,11 @@
     width: 100%;
   }
 
+  .Textblock-button--loading {
+    background-color: var(--color-grey);
+    color: var(--color-grey);
+  }
+
   .Textblock-button:focus {
     outline: none;
   }
@@ -81,6 +86,10 @@
     margin-bottom: 5rem;
   }
   /* stylelint-enable */
+
+  .Textblock-section--loading {
+    display: none;
+  }
 }
 
 /* Align text to left on medium and large screens  */
@@ -101,6 +110,17 @@
     font-weight: 800;
     line-height: 1.2;
     margin: 3rem 0 1rem;
+  }
+
+  .Textblock-button--loading {
+    background-color: var(--color-grey);
+    color: var(--color-grey);
+  }
+
+  .Textblock-section--loading {
+    background-color: var(--color-grey);
+    color: var(--color-grey);
+    height: 300px;
   }
 }
 

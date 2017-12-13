@@ -61,17 +61,23 @@
 /* Styling related to Blurb-testimonial */
 
 .Blurb-testimonial {
-  color: var(--color-metal);
-  font-size: calc(42rem / var(--base-font-size));
+  align-items: center;
+  background-color: var(--color-celestial);
+  display: flex;
+  font-size: calc(34rem / var(--base-font-size));
   font-weight: 700;
+  line-height: 1.6;
+  justify-content: center;
+  min-height: 80vh;
   padding: 6rem;
+  position: relative;
 }
 
 @media (--md-viewport), (--lg-viewport) {
 
   /* Styling related to Blurb-text */
 
-  .Blurb-content {
+  .Blurb-content--column {
     align-items: flex-start;
     display: flex;
     line-height: 1.5;

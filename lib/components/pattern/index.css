@@ -30,6 +30,7 @@
 
 .Pattern--gagarin {
   background-image: var(--gradient-gagarin);
+  color: var(--color-gagarin);
 }
 
 .Pattern--orange {
@@ -40,8 +41,9 @@
   background-image: var(--gradient-peach);
 }
 
-.Pattern--vanilla {
-  background-image: var(--gradient-vanilla);
+.Pattern--sun {
+  background-image: var(--gradient-sun);
+  color: var(--color-sun);
 }
 
 .Pattern--celestial {

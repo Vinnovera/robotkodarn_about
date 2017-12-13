@@ -19,6 +19,7 @@
 .Hero-introduction--loading {
   background-color: var(--color-white);
   color: var(--color-white);
+  opacity: 0.3;
 }
 
 .Hero--homepage,
@@ -32,6 +33,7 @@
 
 .Hero--article,
 .Hero--contact {
+  min-height: 50vh;
   padding: 8rem 1.5rem 1rem;
 }
 

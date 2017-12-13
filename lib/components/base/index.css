@@ -18,8 +18,15 @@
 
   /* Test of new gradients */
   --gradient-pink: linear-gradient(36deg, #aa076b, #61045f);
-  --gradient-celestial: linear-gradient(56deg, #c33764, #1d2671);
   --gradient-gagarin: linear-gradient(47deg, #fca5f1, #b5ffff);
+
+  /* Bright colors */
+  --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
+
+  --gradient-grass: linear-gradient(12deg, #1b9a91, #4db865);
+  --gradient-suntoo: linear-gradient(155deg, #feac28, #ea6d30);
+  --gradient-celestial: linear-gradient(56deg, #c33764, #1d2671);
+  --gradient-ocean: linear-gradient(49deg, #69b1d7, #34d8de);
 
   --gradient-purple: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   --gradient-orange: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
@@ -35,6 +42,10 @@
   --color-lemon: #d299c2;
   --color-green: #d5dee7;
 
+  /* Test of bright new colors */
+  --color-sun: #f6ae3980;
+
+  --color-grey: #e5e7eb;
   --color-azure: #4e7ec1;
   --color-violet: #d7d9f0;
   --color-verdigris: #59b2ac;
@@ -80,6 +91,14 @@ button {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   line-height: 1.2;
+}
+
+button:focus,
+button:active,
+a:focus,
+a:active {
+  box-shadow: none;
+  outline: 0;
 }
 
 a {
