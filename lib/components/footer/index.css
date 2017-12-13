@@ -45,8 +45,8 @@
   border-bottom: 9px solid var(--color-grass);
 }
 
-.Footer--fire {
-  border-bottom: 9px solid var(--color-fire);
+.Footer--mauve {
+  border-bottom: 9px solid var(--color-mauve);
 }
 
 /* Align text to left on medium and large screens  */

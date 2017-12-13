@@ -34,9 +34,9 @@
   color: var(--color-ocean);
 }
 
-.Pattern--fire {
-  background-image: var(--gradient-fire);
-  color: var(--color-fire);
+.Pattern--mauve {
+  background-image: var(--gradient-mauve);
+  color: var(--color-mauve);
 }
 
 /* Retro Computer */

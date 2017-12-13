@@ -31,13 +31,13 @@
   --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
   --gradient-grass: linear-gradient(12deg, #0e7352, #3cbd59);
   --gradient-ocean: linear-gradient(49deg, #499ac5, #34d8de);
-  --gradient-fire: linear-gradient(-94deg, #b41e4c, #851359 100%);
+  --gradient-mauve: linear-gradient(-94deg, #b41e4c, #851359 100%);
 
   --color-celestial: #98128d;
   --color-sun: #f5913b;
   --color-grass: #0e7352;
   --color-ocean: #499ac5;
-  --color-fire: #b41e4c;
+  --color-mauve: #b41e4c;
 
   /* Test of pale new colors */
   --color-gagarin: #fca5f1;

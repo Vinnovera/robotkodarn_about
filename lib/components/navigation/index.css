@@ -222,16 +222,17 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
+  .Navigation-link {
+    display: none;
+  }
+
   .Navigation-list {
+    color: var(--color-white);
     float: right;
     padding-right: 2rem;
     position: absolute;
     right: 0;
     top: 0;
-  }
-
-  .Navigation-list--dark {
-    color: var(--color-white);
   }
 
   .Navigation-item {
@@ -254,10 +255,28 @@
   .Navigation-item--active {
     background-color: var(--color-white);
     border-radius: 0 0 2px 2px;
-    color: var(--color-metal);
   }
 
-  .Navigation-link {
-    display: none;
+  /* Colors 🌈  */
+
+  .Navigation-listLink--active.Navigation-listLink--ocean {
+    color: var(--color-ocean);
   }
+
+  .Navigation-listLink--active.Navigation-listLink--celestial {
+    color: var(--color-celestial);
+  }
+
+  .Navigation-listLink--active.Navigation-listLink--grass {
+    color: var(--color-grass);
+  }
+
+  .Navigation-listLink--active.Navigation-listLink--sun {
+    color: var(--color-sun);
+  }
+
+  .Navigation-listLink--active.Navigation-listLink--mauve {
+    color: var(--color-mauve);
+  }
+
 }

@@ -80,12 +80,12 @@
   color: var(--color-celestial);
 }
 
-.Button--fire {
-  background-color: var(--color-fire);
+.Button--mauve {
+  background-color: var(--color-mauve);
 }
 
-.Button--fire:hover {
-  color: var(--color-fire);
+.Button--mauve:hover {
+  color: var(--color-mauve);
 }
 
 .Button--inverted {
