@@ -26,6 +26,7 @@
 
   .Navigation-link {
     align-items: center;
+    color: var(--color-white);
     display: flex;
     font-family: var(--font-family-sans);
     font-size: calc(18rem / var(--base-font-size));
@@ -50,9 +51,9 @@
 
   .Navigation-icon {
     color: inherit;
-    height: 44px;
+    height: 40px;
     transform: rotate(0deg);
-    width: 50px;
+    width: 48px;
   }
 
   .Navigation-icon--open {
@@ -62,10 +63,10 @@
   .Navigation-span1,
   .Navigation-span2,
   .Navigation-span3 {
-    background: var(--color-metal);
+    background: var(--color-white);
     border-radius: 8px;
     display: block;
-    height: 11px;
+    height: 9px;
     opacity: 1;
     position: absolute;
     right: 0;
@@ -86,13 +87,13 @@
   }
 
   .Navigation-span2 {
-    top: 17px;
+    top: 16.5px;
     transform-origin: right center;
     width: 119%;
   }
 
   .Navigation-span3 {
-    top: 34px;
+    top: 33px;
     transform-origin: right center;
   }
 
@@ -200,6 +201,21 @@
   .Navigation-listLink:hover:not(.Navigation-listLink--active) {
     color: var(--color-dark-grey);
   }
+}
+
+/* Landscape 🌄 */
+
+@media (--sm-landscape-viewport) {
+
+  .Navigation-list {
+    display: block;
+    padding: 2.5rem 0 2.5rem;
+  }
+
+  .Navigation-item {
+    margin-bottom: 1rem;
+  }
+
 }
 
 /* Medium or larger screens 🖥 */
