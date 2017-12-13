@@ -20,20 +20,21 @@
   /* Base colors */
   --color-metal: #1e222a;
   --color-smoke: #f2f2f2;
+  --color-grey: #e5e7eb;
   --color-white: #fff;
   --color-transparent: rgba(255, 255, 255, 0.4);
 
   /* Bright colors */
   --gradient-celestial: linear-gradient(56deg, #c33764, #1d2671);
   --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
-  --gradient-grass: linear-gradient(12deg, #1b9a91, #4db865);
+  --gradient-grass: linear-gradient(12deg, #159b70, #4db865);
   --gradient-ocean: linear-gradient(49deg, #69b1d7, #34d8de);
   --gradient-fire: linear-gradient(-94deg, #db3737, #9f0542 100%);
 
   --color-celestial: #c33764;
-  --color-sun: #feac28;
-  --color-grass: #1b9a91;
-  --color-ocean: #69b1d7;
+  --color-sun: #f5913b;
+  --color-grass: #159b70;
+  --color-ocean: #329cd4;
   --color-fire: #9f0542;
 
   /* Test of pale new colors */

@@ -36,8 +36,56 @@
 }
 
 .Button--article {
+  border: 3px solid var(--color-white);
   border-radius: 2px;
+  color: var(--color-white);
   margin: 0.4rem 0.4rem 0 0;
+}
+
+.Button--article:hover {
+  background-color: var(--color-white);
+}
+
+/* Colors 🌈 */
+
+.Button--grass {
+  background-color: var(--color-grass);
+}
+
+.Button--grass:hover {
+  color: var(--color-grass);
+}
+
+.Button--sun {
+  background-color: var(--color-sun);
+}
+
+.Button--sun:hover {
+  color: var(--color-sun);
+}
+
+.Button--ocean {
+  background-color: var(--color-ocean);
+}
+
+.Button--ocean:hover {
+  color: var(--color-ocean);
+}
+
+.Button--celestial {
+  background-color: var(--color-celestial);
+}
+
+.Button--celestial:hover {
+  color: var(--color-celestial);
+}
+
+.Button--fire {
+  background-color: var(--color-fire);
+}
+
+.Button--fire:hover {
+  color: var(--color-fire);
 }
 
 .Button--inverted {
