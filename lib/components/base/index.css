@@ -27,16 +27,17 @@
 
   /* Bright colors */
   --gradient-celestial: linear-gradient(56deg, #c33764, #1d2671);
+  --gradient-celestial: linear-gradient(44deg, #98128d 0%, #202b89 100%);
   --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
-  --gradient-grass: linear-gradient(12deg, #159b70, #4db865);
+  --gradient-grass: linear-gradient(12deg, #0e7352, #3cbd59);
   --gradient-ocean: linear-gradient(49deg, #69b1d7, #34d8de);
-  --gradient-fire: linear-gradient(-94deg, #db3737, #9f0542 100%);
+  --gradient-fire: linear-gradient(-94deg, #b41e4c, #851359 100%);
 
-  --color-celestial: #c33764;
+  --color-celestial: #98128d;
   --color-sun: #f5913b;
-  --color-grass: #159b70;
+  --color-grass: #0e7352;
   --color-ocean: #329cd4;
-  --color-fire: #9f0542;
+  --color-fire: #b41e4c;
 
   /* Test of pale new colors */
   --color-gagarin: #fca5f1;
