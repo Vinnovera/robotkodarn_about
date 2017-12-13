@@ -66,11 +66,40 @@
   display: flex;
   font-size: calc(34rem / var(--base-font-size));
   font-weight: 700;
-  line-height: 1.6;
   justify-content: center;
+  line-height: 1.6;
   min-height: 80vh;
   padding: 6rem;
   position: relative;
+}
+
+/* Placeholder styling while waiting for content being fetched from CMS */
+
+.Blurb-content--loading {
+  min-height: 300px;
+  min-width: 100%;
+}
+
+.Blurb-text--loading {
+  min-height: 60vh;
+}
+
+.Blurb-text--loading .Blurb-content--loading,
+.Blurb-title--loading {
+  background: var(--color-grey);
+  color: var(--color-grey);
+}
+
+.Blurb-testimonial--loading .Blurb-content--loading {
+  background: var(--color-white);
+  color: var(--color-white);
+  opacity: 0.3;
+}
+
+.Blurb-testimonial--loading .Blurb-content--loading {
+  background: var(--color-white);
+  color: var(--color-white);
+  opacity: 0.3;
 }
 
 @media (--md-viewport), (--lg-viewport) {
