@@ -14,31 +14,9 @@
 
 /* Colors 🌈  */
 
-.Pattern--snow {
-  background-image: var(--gradient-snow);
-  color: var(--color-snow);
-}
-
-.Pattern--green {
-  background-image: var(--gradient-green);
-  color: var(--color-transparent);
-}
-
-.Pattern--purple {
-  background-image: var(--gradient-purple);
-}
-
-.Pattern--gagarin {
-  background-image: var(--gradient-gagarin);
-  color: var(--color-gagarin);
-}
-
-.Pattern--orange {
-  background-image: var(--gradient-orange);
-}
-
-.Pattern--peach {
-  background-image: var(--gradient-peach);
+.Pattern--grass {
+  background-image: var(--gradient-grass);
+  color: var(--color-grass);
 }
 
 .Pattern--sun {
@@ -49,6 +27,16 @@
 .Pattern--celestial {
   background-image: var(--gradient-celestial);
   color: var(--color-celestial);
+}
+
+.Pattern--ocean {
+  background-image: var(--gradient-ocean);
+  color: var(--color-ocean);
+}
+
+.Pattern--fire {
+  background-image: var(--gradient-fire);
+  color: var(--color-fire);
 }
 
 /* Retro Computer */

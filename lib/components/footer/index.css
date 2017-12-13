@@ -22,39 +22,31 @@
   border-bottom: 1px solid var(--color-snow);
 }
 
-/* Colors 🌈  */
-
-.Footer--snow {
-  border-bottom: 9px solid var(--color-snow);
+.Footer-address {
+  font-family: var(--fontFamilySans);
+  font-style: normal;
 }
+
+/* Colors 🌈  */
 
 .Footer--celestial {
   border-bottom: 9px solid var(--color-celestial);
 }
 
-.Footer--purple {
-  border-bottom: 9px solid var(--color-purple);
+.Footer--ocean {
+  border-bottom: 9px solid var(--color-ocean);
 }
 
-.Footer--orange {
-  border-bottom: 9px solid var(--color-orange);
+.Footer--sun {
+  border-bottom: 9px solid var(--color-sun);
 }
 
-.Footer--gagarin {
-  border-bottom: 9px solid var(--color-gagarin);
+.Footer--grass {
+  border-bottom: 9px solid var(--color-grass);
 }
 
-.Footer--vanilla {
-  border-bottom: 9px solid var(--color-vanilla);
-}
-
-.Footer--peach {
-  border-bottom: 9px solid var(--color-peach);
-}
-
-.Footer-address {
-  font-family: var(--fontFamilySans);
-  font-style: normal;
+.Footer--fire {
+  border-bottom: 9px solid var(--color-fire);
 }
 
 /* Align text to left on medium and large screens  */
