@@ -8,10 +8,15 @@
   position: relative;
 }
 
+.Hero-content--homepage {
+  max-width: var(--width-lg);
+}
+
 .Hero-introduction {
   font-family: var(--font-family-sans);
-  font-size: calc(24rem / var(--base-font-size));
+  font-size: calc(21rem / var(--base-font-size));
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 /* Used as placeholder while waiting for content to load */
@@ -34,7 +39,7 @@
 .Hero--article,
 .Hero--contact {
   min-height: 50vh;
-  padding: 8rem 1.5rem 1rem;
+  padding: 8rem 1.5rem 2rem;
 }
 
 /* TODO: Remove once finished */
@@ -57,19 +62,37 @@
   }
 }
 
-@media (--md-viewport), (--lg-viewport) {
+@media (--md-viewport) {
+
+  .Hero-introduction {
+    font-size: calc(24rem / var(--base-font-size));
+  }
+
+  .Hero--article,
+  .Hero--contact {
+    padding: 8rem 0 3rem 6rem;
+  }
+
+}
+
+@media (--lg-viewport) {
 
   .Hero--article,
   .Hero--contact {
     padding: 8rem 0 6rem 6rem;
   }
 
-  .Hero-introduction {
-    margin-bottom: 1.5rem;
+  .Hero-content--lg {
+    max-width: var(--width-xl);
+  }
+
+  .Hero-introduction--lg {
+    font-size: calc(34rem / var(--base-font-size));
   }
 
   .Hero-buttons {
     display: block;
   }
+
 }
 

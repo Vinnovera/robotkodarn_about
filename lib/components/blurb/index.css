@@ -2,29 +2,13 @@
 
 @import "../base";
 
-/*
- * 1. Temporary styling used during development
- */
+/* Only Blurb-text related styling */
 
-.Blurb {
-  border: 2px dashed red; /* 1. */
-  min-height: 30vh;
-}
-
-.Blurb-text,
-.Blurb-testimonial {
-  color: var(--color-metal);
-}
-
-.Blurb-content {
-  margin: 0 auto;
-  max-width: 1024px;
-  transform: translateY(150px);
-  transition: 1000ms transform ease-out;
-}
-
-.Blurb-content--visible {
-  transform: translateY(0);
+.Blurb-imageContainer {
+  background-color: var(--color-light-grey);
+  border: 2px solid var(--color-metal);
+  overflow: hidden;
+  width: 100%;
 }
 
 .Blurb-title {
@@ -33,22 +17,39 @@
   margin-bottom: 1.5rem;
 }
 
+.Blurb-textContent {
+  padding: 2.5rem;
+}
+
 /* stylelint-disable */
-.Blurb-content p {
+.Blurb-textContent p {
   font-family: var(--font-family-sans);
   font-size: calc(24rem / var(--base-font-size));
 }
 /* stylelint-enable */
 
-.Blurb-imageContainer {
-  background-color: var(--color-grey);
-  border: 2px solid var(--color-metal);
-  overflow: hidden;
-  width: 100%;
+@media (--md-viewport), (--lg-viewport) {
+
+  .Blurb-textContent {
+    align-items: flex-start;
+    display: flex;
+    line-height: 1.5;
+    padding: 4rem 3rem 3rem;
+  }
+
+  .Blurb-title {
+    font-size: calc(42rem / var(--base-font-size));
+  }
+
+  /* stylelint-disable */
+  .Blurb-textContent p {
+    font-size: calc(21rem / var(--base-font-size));
+  }
+  /* stylelint-enable */
 }
 
 /*
- * 1. Temporary styling used during development
+ * 1. TODO: Temporary styling used during development
  */
 
 .Blurb-image {
@@ -58,19 +59,68 @@
   object-position: center center;
 }
 
-/* Styling related to Blurb-testimonial */
+/* Only Blurb-testimonial related styling */
 
 .Blurb-testimonial {
-  align-items: center;
-  background-color: var(--color-celestial);
-  display: flex;
-  font-size: calc(34rem / var(--base-font-size));
+  background-color: var(--color-purple-light);
+  background-image: url("/img/quote.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: var(--font-family-serif);
+  font-size: calc(21rem / var(--base-font-size));
   font-weight: 700;
-  justify-content: center;
-  line-height: 1.6;
-  min-height: 80vh;
-  padding: 6rem;
+  line-height: 1.5;
+  padding: 4rem 1.5rem;
   position: relative;
+}
+
+.Blurb-author {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Blurb-testimonial {
+    line-height: 1.4;
+    padding: 6rem 4rem;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Blurb-testimonial {
+    font-size: calc(34rem / var(--base-font-size));
+    line-height: 1.4;
+  }
+}
+
+/* Blurb Content Container (both testimonial and text) */
+
+.Blurb-testimonialContent,
+.Blurb-textContent {
+  transform: translateY(150px);
+  transition: 1000ms transform ease-out;
+}
+
+.Blurb-testimonialContent--visible,
+.Blurb-textContent--visible {
+  transform: translateY(0);
+}
+
+.Blurb-textContent {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+@media (--md-viewport) {
+
+  .Blurb-testimonialContent {
+    max-width: 60%;
+  }
 }
 
 /* Placeholder styling while waiting for content being fetched from CMS */
@@ -86,8 +136,8 @@
 
 .Blurb-text--loading .Blurb-content--loading,
 .Blurb-title--loading {
-  background: var(--color-grey);
-  color: var(--color-grey);
+  background: var(--color-light-grey);
+  color: var(--color-light-grey);
 }
 
 .Blurb-testimonial--loading .Blurb-content--loading {
@@ -100,26 +150,4 @@
   background: var(--color-white);
   color: var(--color-white);
   opacity: 0.3;
-}
-
-@media (--md-viewport), (--lg-viewport) {
-
-  /* Styling related to Blurb-text */
-
-  .Blurb-content--column {
-    align-items: flex-start;
-    display: flex;
-    line-height: 1.5;
-    padding: 4rem 3rem 3rem;
-  }
-
-  .Blurb-title {
-    font-size: calc(42rem / var(--base-font-size));
-  }
-
-  /* stylelint-disable */
-  .Blurb-content p {
-    font-size: calc(21rem / var(--base-font-size));
-  }
-  /* stylelint-enable */
 }

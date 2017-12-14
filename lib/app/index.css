@@ -5,11 +5,11 @@
 @media (--md-viewport), (--lg-viewport) {
 
   /*
-  * 1. Due to padding on Hero img.
+  * 1. Due to left padding (6rem) on Hero img.
   */
 
   .App--left {
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
     max-width: calc(6rem + 800px); /* 1. */
   }
 }

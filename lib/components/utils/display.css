@@ -4,6 +4,22 @@
   display: none !important;
 }
 
+.u-flex {
+  display: flex !important;
+}
+
+.u-flexEnd {
+  justify-content: flex-end !important;
+}
+
+.u-marginAuto {
+  margin: 0 auto !important;
+}
+
+.u-floatRight {
+  float: right;
+}
+
 .u-overflowHidden {
   overflow: hidden !important;
 }

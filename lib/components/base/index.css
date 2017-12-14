@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,600,700,800");
 @import "suitcss-base";
 @import "../utils/color";
 @import "../utils/display";
@@ -12,48 +12,36 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --font-weight-light: 300;
+  --width-sm: 600px;
   --width-md: 750px;
   --width-lg: 800px;
+  --width-xl: 1024px;
   --base-font-size: 16;
   --easing: cubic-bezier(0.075, 0.82, 0.165, 1);
 
   /* Base colors */
   --color-metal: #1e222a;
   --color-smoke: #f2f2f2;
-  --color-grey: #e5e7eb;
-  --color-dark-grey: #d5d7da;
+  --color-light-grey: #e5e7eb;
+  --color-grey: #757575;
+  --color-dark-grey: #393f51;
   --color-white: #fff;
   --color-transparent: rgba(255, 255, 255, 0.4);
+  --color-purple-light: #ebedff;
 
-  /* Bright colors */
-  --gradient-celestial: linear-gradient(56deg, #c33764, #1d2671);
+  /* Gradients */
   --gradient-celestial: linear-gradient(44deg, #98128d 0%, #202b89 100%);
   --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
   --gradient-grass: linear-gradient(12deg, #0e7352, #3cbd59);
   --gradient-ocean: linear-gradient(49deg, #499ac5, #34d8de);
   --gradient-mauve: linear-gradient(-94deg, #b41e4c, #851359 100%);
 
+  /* Bright colors corresponding to gradients */
   --color-celestial: #98128d;
   --color-sun: #f5913b;
-  --color-grass: #0e7352;
+  --color-grass: #0b855d;
   --color-ocean: #499ac5;
-  --color-mauve: #b41e4c;
-
-  /* Test of pale new colors */
-  --color-gagarin: #fca5f1;
-  --color-purple: #accbee;
-  --color-peach: #fef9d7;
-  --color-orange: #fddb92;
-  --color-lemon: #d299c2;
-  --color-green: #d5dee7;
-  --gradient-pink: linear-gradient(36deg, #aa076b, #61045f);
-  --gradient-gagarin: linear-gradient(47deg, #fca5f1, #b5ffff);
-
-  /* Test of pale new colors */
-  --gradient-purple: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-  --gradient-orange: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-  --gradient-peach: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
-  --gradient-green: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+  --color-mauve: #851359;
 }
 
 @custom-media --sm-viewport (max-width:799px);

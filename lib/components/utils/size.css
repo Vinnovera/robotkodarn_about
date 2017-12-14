@@ -2,6 +2,10 @@
 
 /* Width */
 
+.u-widthS {
+  max-width: var(--width-sm) !important;
+}
+
 .u-widthM {
   max-width: var(--width-md) !important;
 }
@@ -16,6 +20,10 @@
 
 .u-widthL {
   max-width: var(--width-lg) !important;
+}
+
+.u-widthXL {
+  max-width: var(--width-xl) !important;
 }
 
 /* Paddings */

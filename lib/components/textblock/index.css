@@ -36,7 +36,7 @@
 @media (--sm-viewport) {
 
   .Textblock .Textblock-button {
-    border-bottom: 1px solid var(--color-grey);
+    border-bottom: 1px solid var(--color-light-grey);
   }
 
   .Textblock-carret {
@@ -61,8 +61,8 @@
   }
 
   .Textblock-button--loading {
-    background-color: var(--color-grey);
-    color: var(--color-grey);
+    background-color: var(--color-light-grey);
+    color: var(--color-light-grey);
   }
 
   .Textblock-button:focus {
@@ -113,13 +113,13 @@
   }
 
   .Textblock-button--loading {
-    background-color: var(--color-grey);
-    color: var(--color-grey);
+    background-color: var(--color-light-grey);
+    color: var(--color-light-grey);
   }
 
   .Textblock-section--loading {
-    background-color: var(--color-grey);
-    color: var(--color-grey);
+    background-color: var(--color-light-grey);
+    color: var(--color-light-grey);
     height: 300px;
   }
 }
