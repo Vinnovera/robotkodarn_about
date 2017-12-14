@@ -66,6 +66,7 @@
 
   .Hero-introduction {
     font-size: calc(24rem / var(--base-font-size));
+    max-width: var(--width-lg);
   }
 
   .Hero--article,

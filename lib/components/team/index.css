@@ -1,15 +1,15 @@
-/** @define Textblock */
+/** @define Team */
 
 @import "../base";
 
-.Textblock {
+.Team {
   color: var(--color-metal);
   width: 100%;
 }
 
-/* Very specific styling related to textblock, hence placement of styling */
+/* Very specific styling related to Team, hence placement of styling */
 
-.Textblock-button {
+.Team-button {
   background-color: transparent;
   background-image: none;
   border: none;
@@ -22,63 +22,34 @@
 }
 
 /* stylelint-disable */
-.Textblock p:first-of-type {
+.Team p:first-of-type {
   margin-top: 1rem;
 }
 
-.Textblock p {
+.Team p {
   margin-bottom: 2rem;
 }
-
-
-/* Inline quotes using em */
-
-.Textblock-section em {
-  font-family: var(--font-family-sans);
-  font-size: calc(21rem / var(--base-font-size));
-  font-style: normal;
-  line-height: 1.6;
-  font-weight: 700;
-  display: block;
-  margin: 3rem 1rem;
-}
-
-.Textblock-section--celestial em::first-line,
-.Textblock-section--sun em::first-line,
-.Textblock-section--ocean em::first-line {
-  color: var(--color-celestial);
-}
-
-.Textblock-section--mauve em::first-line {
-  color: var(--color-mauve);
-}
-
-.Textblock-section--grass em::first-line {
-  color: var(--color-grass);
-}
-
-/* stylelint-enable */
 
 /* Expand content on smaller screens */
 
 @media (--sm-viewport) {
 
-  .Textblock .Textblock-button {
+  .Team .Team-button {
     border-bottom: 1px solid var(--color-light-grey);
   }
 
-  .Textblock-carret {
+  .Team-carret {
     height: calc(9rem / var(--base-font-size));
     transform: rotate(0deg);
     transition: 250ms transform ease-in-out;
     width: calc(15rem / var(--base-font-size));
   }
 
-  .Textblock-carret--expanded {
+  .Team-carret--expanded {
     transform: rotate(180deg);
   }
 
-  .Textblock-button {
+  .Team-button {
     align-items: center;
     color: var(--color-metal);
     cursor: pointer;
@@ -88,16 +59,16 @@
     width: 100%;
   }
 
-  .Textblock-button--loading {
+  .Team-button--loading {
     background-color: var(--color-light-grey);
     color: var(--color-light-grey);
   }
 
-  .Textblock-button:focus {
+  .Team-button:focus {
     outline: none;
   }
 
-  .Textblock-section {
+  .Team-section {
     box-sizing: border-box;
     max-height: 0;
     overflow: hidden;
@@ -105,17 +76,17 @@
     transition: all 250ms ease-in-out;
   }
 
-  .Textblock-section--expanded {
+  .Team-section--expanded {
     max-height: 10000px;
   }
 
   /* stylelint-disable */
-  .Textblock-section p:last-of-type {
+  .Team-section p:last-of-type {
     margin-bottom: 5rem;
   }
   /* stylelint-enable */
 
-  .Textblock-section--loading {
+  .Team-section--loading {
     display: none;
   }
 }
@@ -124,35 +95,35 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Textblock-carret {
+  .Team-carret {
     display: none;
   }
 
-  .Textblock {
+  .Team {
     margin-left: 6rem;
     max-width: var(--width-md);
   }
 
-  .Textblock-button {
+  .Team-button {
     font-size: calc(34rem / var(--base-font-size));
     font-weight: 800;
     line-height: 1.2;
     margin: 3rem 0 1rem;
   }
 
-  .Textblock-button--loading {
+  .Team-button--loading {
     background-color: var(--color-light-grey);
     color: var(--color-light-grey);
   }
 
-  .Textblock-section--loading {
+  .Team-section--loading {
     background-color: var(--color-light-grey);
     color: var(--color-light-grey);
     height: 300px;
   }
 
   /* stylelint-disable */
-  .Textblock-section em {
+  .Team-section em {
     margin: 3rem 2.5rem;
   }
   /* stylelint-enable */
@@ -160,7 +131,7 @@
 
 @media (--lg-viewport) {
 
-  .Textblock-button {
+  .Team-button {
     font-size: calc(42rem / var(--base-font-size));
   }
 }
