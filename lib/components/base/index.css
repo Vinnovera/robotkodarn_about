@@ -59,6 +59,7 @@ body {
   font-smoothing: antialiased;
   font-weight: var(--font-weight-normal);
   min-height: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 h1,

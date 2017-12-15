@@ -17,7 +17,7 @@
   font-family: var(--font-family-sans);
   font-size: calc(21rem / var(--base-font-size));
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3.5rem;
 }
 
 /* Used as placeholder while waiting for content to load */
@@ -38,6 +38,8 @@
 
 .Hero--article,
 .Hero--contact {
+  align-items: flex-end;
+  display: flex;
   padding: 8rem 1.5rem 2rem;
 }
 
@@ -61,7 +63,7 @@
   }
 }
 
-@media (--md-viewport) {
+@media (--md-viewport), (--lg-viewport) {
 
   .Hero-introduction {
     font-size: calc(24rem / var(--base-font-size));
@@ -79,7 +81,7 @@
 
   .Hero--article,
   .Hero--contact {
-    padding: 8rem 0 6rem 6rem;
+    padding: 8rem 0 4rem 6rem;
   }
 
   .Hero-content--lg {
