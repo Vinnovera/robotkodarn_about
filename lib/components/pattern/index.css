@@ -39,38 +39,92 @@
   color: var(--color-mauve);
 }
 
-/* Retro Computer */
+/* Animation */
 
-.Pattern-computer2 {
-  transform: rotate(-16deg) translate(-103px, 148px);
+.Pattern-item {
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn;
+  opacity: 0;
 }
 
-.Pattern-computer3 {
-  transform: rotate(160deg) translate(-353px, -1212px);
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-/* Curly Brackets */
+/* Rotation flash */
 
-.Pattern-brackets1 {
-  transform: rotate(37deg) translate(93px, -220px);
+.Pattern-flash1 {
+  transform: rotate(15deg);
 }
 
-.Pattern-brackets2 {
-  transform: rotate(-16deg) translate(-71px, -257px);
+/* Rotation crosses */
+
+.Pattern-cross1 {
+  transform: rotate(60deg) translate(30px, 10px);
+  transform-origin: center;
 }
 
-/* Cogs */
-
-.Pattern-cogs1 {
-  transform: rotate(-17deg) translate(40px, 197px);
+.Pattern-cross2 {
+  transform: rotate(-26deg) translate(-132px, 353px);
+  transform-origin: center;
 }
 
-/* Robot */
-
-.Pattern-robot1 {
-  transform: rotate(73deg) translate(20px, -83px);
+.Pattern-cross3 {
+  transform: rotate(9deg) translate(-124px, 528px);
+  transform-origin: center;
 }
 
-.Pattern-robot2 {
-  transform: rotate(226deg) translate(-842px, 31px);
+/* Rotation lines */
+
+.Pattern-line2 {
+  transform: rotate(-61deg) translate(267px, -330px);
+  transform-origin: center;
+}
+
+.Pattern-line3 {
+  transform: rotate(-130deg) translate(28px, -64px);
+  transform-origin: center;
+}
+
+.Pattern-line4 {
+  transform: rotate(-61deg) translate(-37px, 320px);
+  transform-origin: center;
+}
+
+/* Rotation triangle */
+
+.Pattern-triangle3 {
+  transform: rotate(-56deg) translate(152px, 221px);
+  transform-origin: center;
+}
+
+/* Rotation bows */
+
+.Pattern-bow2 {
+  transform: rotate(-60deg) translate(380px, -43px);
+  transform-origin: center;
+}
+
+.Pattern-bow3 {
+  transform: rotate(100deg);
+  transform-origin: center;
+}
+
+/* Rotation curves (more bent than the "bow" symbols) */
+
+.Pattern-curve2 {
+  transform: rotate(-50deg) translate(20px, -14px);
+  transform-origin: center;
+}
+
+.Pattern-curve3 {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.Pattern-curve4 {
+  transform: rotate(-93deg) translate(24px, -240px);
+  transform-origin: center;
 }
