@@ -4,7 +4,8 @@
 @import "../button";
 
 .Hero {
-  min-height: 100vh;
+  color: var(--color-white);
+  min-height: 82vh;
   position: relative;
 }
 
@@ -23,7 +24,6 @@
 
 .Hero-introduction--loading {
   background-color: var(--color-white);
-  color: var(--color-white);
   opacity: 0.3;
 }
 
@@ -38,7 +38,6 @@
 
 .Hero--article,
 .Hero--contact {
-  min-height: 50vh;
   padding: 8rem 1.5rem 2rem;
 }
 
