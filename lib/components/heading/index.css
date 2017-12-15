@@ -11,7 +11,7 @@
 }
 
 .Heading--lg {
-  font-size: calc(55rem / var(--base-font-size));
+  font-size: calc(44rem / var(--base-font-size));
 }
 
 .Heading--loading {
