@@ -1,9 +1,11 @@
+const path = require('path')
 const Koa = require('koa')
-const server = new Koa()
+const koaStatic = require('koa-static')
+const compress = require('koa-compress')
 const app = require('./lib/app')
 const render = require('./lib/middleware/render')
 const prismic = require('./lib/middleware/prismic')
-const path = require('path')
+const server = new Koa()
 
 // Compiles assets on request during development
 if (process.env.NODE_ENV === 'development') {
@@ -14,7 +16,12 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // Serve static files from public folder
-server.use(require('koa-static')('public'))
+server.use(koaStatic('public', { maxage: (1000 * 60 * 60 * 24 * 365) }))
+
+if (process.env.NODE_ENV !== 'development') {
+  // Compress html
+  server.use(compress())
+}
 
 // Render app once all the middlewares have had a go at the request
 server.use(render(app))
