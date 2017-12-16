@@ -12,18 +12,18 @@
 
 .Footer-link {
   border-bottom: 3px solid transparent;
-  color: var(--color-snow);
-  font-family: var(--fontFamilySans);
+  color: var(--color-ocean);
+  font-family: var(--font-family-sans);
   padding-bottom: 0.1em;
   transition: border 250ms ease-in-out;
 }
 
 .Footer-link:hover {
-  border-bottom: 1px solid var(--color-snow);
+  border-bottom: 1px solid var(--color-ocean);
 }
 
 .Footer-address {
-  font-family: var(--fontFamilySans);
+  font-family: var(--font-family-sans);
   font-style: normal;
 }
 

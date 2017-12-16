@@ -7,30 +7,14 @@
     "test": "standard && stylelint **/*.css",
     "start": "node index.js",
     "start:dev": "nodemon -r dotenv/config -i lib/components --inspect index.js",
-    "build": "browserify lib/app/index.js -p [ css-extract -o public/index.css ] -p tinyify -o public/index.js"
+    "build:js": "browserify lib/app/index.js -p [ css-extract -o public/index.css ] -p tinyify -o public/index.js",
+    "build:css": "postcss lib/app/index.css --no-map -o public/index.css",
+    "build": "npm run build:css && npm run build:js"
   },
   "browserify": {
     "transform": [
       "localenvify",
-      "babelify",
-      [
-        "sheetify/transform",
-        {
-          "use": [
-            [
-              "sheetify-postcss",
-              {
-                "plugins": [
-                  "postcss-custom-properties",
-                  "postcss-import",
-                  "postcss-custom-media",
-                  "postcss-clean"
-                ]
-              }
-            ]
-          ]
-        }
-      ]
+      "babelify"
     ]
   },
   "repository": {
@@ -61,22 +45,25 @@
     "y18n": "^4.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browserify": "^14.5.0",
+    "chokidar": "^1.7.0",
     "choo-devtools": "^2.1.0",
     "css-extract": "^1.2.0",
+    "cssnano": "^3.10.0",
     "dedent": "^0.7.0",
     "dotenv": "^4.0.0",
     "localenvify": "^1.0.1",
     "nodemon": "^1.12.1",
-    "postcss-clean": "^1.1.0",
+    "postcss": "^6.0.14",
+    "postcss-cli": "^4.1.1",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.2.0",
+    "postcss-flexboxfixer": "0.0.5",
     "postcss-import": "^11.0.0",
-    "sheetify": "^6.2.0",
-    "sheetify-postcss": "^1.1.0",
     "standard": "^10.0.3",
     "stylelint": "^8.2.0",
     "stylelint-config-suitcss": "^12.0.0",

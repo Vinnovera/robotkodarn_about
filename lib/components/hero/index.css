@@ -7,7 +7,6 @@
   color: var(--color-white);
   display: flex;
   min-height: 100vh;
-  padding: 8rem 1.5rem 2rem;
   position: relative;
 }
 
@@ -51,12 +50,13 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Hero {
+  .Hero:not(.Hero--error) {
     min-height: 82vh;
   }
 
   .Hero-introduction {
     font-size: calc(24rem / var(--base-font-size));
+    margin: 0 auto;
     max-width: var(--width-lg);
   }
 

@@ -8,8 +8,8 @@ const path = require('path')
 // Compiles assets on request during development
 if (process.env.NODE_ENV === 'development') {
   server.use(require('./lib/middleware/assets')({
-    entries: 'app/index',
-    basedir: path.resolve(__dirname, 'lib')
+    entry: 'app/index',
+    root: path.resolve(__dirname, 'lib')
   }))
 }
 

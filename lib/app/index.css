@@ -1,6 +1,15 @@
 /** @define App */
 
 @import "../components/base";
+@import "../components/blurb";
+@import "../components/button";
+@import "../components/footer";
+@import "../components/heading";
+@import "../components/hero";
+@import "../components/navigation";
+@import "../components/pattern";
+@import "../components/team";
+@import "../components/textblock";
 
 @media (--md-viewport), (--lg-viewport) {
 
