@@ -11,15 +11,37 @@
 /* Footer Link */
 
 .Footer-link {
-  border-bottom: 3px solid transparent;
-  color: var(--color-ocean);
+  color: inherit;
   font-family: var(--font-family-sans);
-  padding-bottom: 0.1em;
-  transition: border 250ms ease-in-out;
 }
 
-.Footer-link:hover {
-  border-bottom: 1px solid var(--color-ocean);
+.Footer-link--expressive {
+  border-bottom: 2px solid var(--color-ocean);
+  color: var(--color-ocean);
+  font-weight: 700;
+  padding: 0.1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.Footer-link--expressive:hover {
+  color: var(--color-metal);
+}
+
+.Footer-link--expressive::after {
+  background-color: var(--color-ocean);
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  transition: height 200ms ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.Footer-link--expressive:hover::after {
+  height: 100%;
 }
 
 .Footer-address {

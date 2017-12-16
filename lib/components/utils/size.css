@@ -43,6 +43,10 @@
 
 /* Margins */
 
+.u-marginRightS {
+  margin-right: 0.5rem !important;
+}
+
 .u-marginBottomXS {
   margin-bottom: 0.3rem !important;
 }

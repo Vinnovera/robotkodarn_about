@@ -88,6 +88,10 @@
   line-height: 1.5 !important;
 }
 
+.u-lineHeightXL {
+  line-height: 1.8 !important;
+}
+
 /* Font Families */
 
 .u-fontFamilySerif {
