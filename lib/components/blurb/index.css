@@ -17,12 +17,12 @@
   margin-bottom: 1.5rem;
 }
 
-.Blurb-textContent {
+.Blurb-text .Blurb-content {
   padding: 2.5rem;
 }
 
 /* stylelint-disable */
-.Blurb-textContent p {
+.Blurb-text .Blurb-content p {
   font-family: var(--font-family-sans);
   font-size: calc(24rem / var(--base-font-size));
 }
@@ -30,7 +30,7 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Blurb-textContent {
+  .Blurb-text .Blurb-content {
     align-items: flex-start;
     display: flex;
     line-height: 1.5;
@@ -42,7 +42,7 @@
   }
 
   /* stylelint-disable */
-  .Blurb-textContent p {
+  .Blurb-text .Blurb-content p {
     font-size: calc(21rem / var(--base-font-size));
   }
   /* stylelint-enable */
@@ -50,6 +50,7 @@
 
 /*
  * 1. TODO: Temporary styling used during development
+ * Remove once finished
  */
 
 .Blurb-image {
@@ -100,25 +101,22 @@
 
 /* Blurb Content Container (both testimonial and text) */
 
-.Blurb-testimonialContent,
-.Blurb-textContent {
-  transform: translateY(150px);
+.Blurb-content {
   transition: 1000ms transform ease-out;
 }
 
-.Blurb-testimonialContent--visible,
-.Blurb-textContent--visible {
+.Blurb-content--visible {
   transform: translateY(0);
 }
 
-.Blurb-textContent {
+.Blurb-text .Blurb-content {
   margin: 0 auto;
   max-width: 1024px;
 }
 
 @media (--md-viewport) {
 
-  .Blurb-testimonialContent {
+  .Blurb-testimonial .Blurb-content {
     max-width: 60%;
   }
 }
