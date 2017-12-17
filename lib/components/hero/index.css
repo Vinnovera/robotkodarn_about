@@ -50,19 +50,14 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Hero:not(.Hero--error) {
-    min-height: 82vh;
-  }
-
   .Hero-introduction {
     font-size: calc(24rem / var(--base-font-size));
-    margin: 0 auto;
     max-width: var(--width-lg);
   }
 
   .Hero--article,
   .Hero--contact {
-    padding: 8rem 0 3rem 6rem;
+    padding: 8rem 0 5rem 6rem;
   }
 
 }

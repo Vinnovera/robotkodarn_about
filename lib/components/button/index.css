@@ -105,6 +105,7 @@
   border: 3px solid var(--color-white);
   color: var(--color-white);
   opacity: 0.3;
+  pointer-events: none;
 }
 
 @media (--md-viewport), (--lg-viewport) {

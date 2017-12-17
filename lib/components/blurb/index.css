@@ -67,7 +67,7 @@
   background-image: url("/img/quote.svg");
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   font-family: var(--font-family-serif);
   font-size: calc(21rem / var(--base-font-size));
   font-weight: 700;

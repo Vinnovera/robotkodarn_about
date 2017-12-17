@@ -1,17 +1,17 @@
 {
-  "Email": "E-postadress",
+  "Email": "E-post",
   "Exit": "Stäng",
   "Error": "Ooops!",
   "Something went wrong": "Något gick fel. Kom tillbaka om en stund.",
   "Loading": "Sidan laddar",
   "Loading introduction text": "Här kommer snart en introduktion till sidan att visas.",
-  "Loading textblock text": "Här kommer snart en paragraf med text att visas.",
+  "Loading text": "Innehållet håller på att laddar och inom kort kommer här en paragraf med text att visas. Om du upplever att det går långsamt kan du prova att ladda om sidan.",
   "Loading button": "Här kommer snart en knapp",
   "Home": "Hem",
-  "At": "På",
   "Menu": "Meny",
   "Page not found": "Sidan kunde inte hittas",
   "That page does not exist. Try again!": "Sidan du vill besöka finns inte. Prova igen!",
-  "Phone": "Telefonnummer",
-  "Site title": "Robotkodarn"
+  "Phone": "Telefon",
+  "Site title": "Robotkodarn",
+  "Loading textblock text": "Loading textblock text"
 }

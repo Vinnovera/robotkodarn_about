@@ -12,6 +12,10 @@
   justify-content: flex-end !important;
 }
 
+.u-inlineBlock {
+  display: inline-block;
+}
+
 .u-marginAuto {
   margin: 0 auto !important;
 }
