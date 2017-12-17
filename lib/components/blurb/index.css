@@ -4,6 +4,10 @@
 
 /* Only Blurb-text related styling */
 
+.Blurb-text {
+  padding: 3rem;
+}
+
 .Blurb-imageContainer {
   background-color: var(--color-light-grey);
   border: 2px solid var(--color-metal);
@@ -11,9 +15,25 @@
   width: 100%;
 }
 
-.Blurb-title {
+/* stylelint-disable */
+.Blurb-title,
+.Blurb-content h3 {
+  background: var(--gradient-sun);
   font-size: calc(24rem / var(--base-font-size));
-  font-weight: 700;
+  font-weight: 800;
+  line-height: 1.2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.Blurb-content h3 {
+  margin: 2rem 0 1rem;
+}
+/* stylelint-enable */
+
+.Blurb-title {
   margin-bottom: 1.5rem;
 }
 
@@ -34,7 +54,6 @@
     align-items: flex-start;
     display: flex;
     line-height: 1.5;
-    padding: 4rem 3rem 3rem;
   }
 
   .Blurb-title {
