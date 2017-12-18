@@ -21,27 +21,13 @@
   font-weight: 700;
   padding: 0.1rem;
   position: relative;
+  transition: color 150ms ease-in, border 150ms ease-in;
   z-index: 1;
 }
 
 .Footer-link--expressive:hover {
-  color: var(--color-metal);
-}
-
-.Footer-link--expressive::after {
-  background-color: var(--color-ocean);
-  bottom: 0;
-  content: "";
-  height: 0;
-  left: 0;
-  position: absolute;
-  transition: height 200ms ease;
-  width: 100%;
-  z-index: -1;
-}
-
-.Footer-link--expressive:hover::after {
-  height: 100%;
+  border-bottom: 2px solid var(--color-white);
+  color: var(--color-white);
 }
 
 .Footer-address {

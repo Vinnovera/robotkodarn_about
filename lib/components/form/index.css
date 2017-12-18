@@ -4,13 +4,17 @@
 
 .Form {
   padding: 4rem 1.5rem;
+  position: relative;
 }
 
 .Form-title {
-  color: var(--color-sun);
   font-size: calc(28rem / var(--base-font-size));
   font-weight: 800;
   margin-bottom: 1.5rem;
+}
+
+.Form--sun .Form-title {
+  color: var(--color-sun);
 }
 
 .Form-aside {
@@ -41,12 +45,6 @@
   border-bottom: 2px solid var(--color-ocean);
   font-weight: 800;
   padding: 0.1rem;
-  transition: color 100ms ease-in, border 100ms ease-in;
-}
-
-.Form a:hover {
-  border-bottom: 2px solid var(--color-mauve);
-  color: var(--color-mauve);
 }
 
 /* stylelint-enable */
