@@ -3,12 +3,16 @@
 @import "../base";
 
 .Blurb-text {
-  padding: 3rem;
+  padding: 6rem 1.5rem;
 }
 
 .Blurb-content--text {
-  margin: 0 auto;
-  max-width: 1024px;
+  max-width: var(--width-md);
+}
+
+.Blurb-title {
+  font-size: calc(28rem / var(--base-font-size));
+  margin-bottom: 1.5rem;
 }
 
 /* stylelint-disable */
@@ -16,35 +20,31 @@
 .Blurb-content h3 {
   background: var(--gradient-sun);
   background-clip: text;
-  font-size: calc(24rem / var(--base-font-size));
+  color: var(--color-sun);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.4;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-.Blurb-title {
-  margin-bottom: 1.5rem;
-}
-
 .Blurb-content h3 {
+  font-size: calc(22rem / var(--base-font-size));
   margin: 2rem 0 1rem;
 }
 
 .Blurb-content--text p {
   font-family: var(--font-family-sans);
-  font-size: calc(24rem / var(--base-font-size));
+  font-size: calc(19rem / var(--base-font-size));
+  max-width: var(--width-sm);
 }
 
 /* stylelint-enable */
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Blurb-content--text {
-    align-items: flex-start;
-    display: flex;
-    line-height: 1.5;
+  .Blurb-text {
+    padding: 5rem 6rem 7rem;
   }
 
   .Blurb-title {
@@ -52,8 +52,12 @@
   }
 
   /* stylelint-disable */
+  .Blurb-content--text h3 {
+    font-size: calc(28rem / var(--base-font-size));
+  }
   .Blurb-content--text p {
-    font-size: calc(21rem / var(--base-font-size));
+    font-size: calc(24rem / var(--base-font-size));
+    max-width: var(--width-md);
   }
   /* stylelint-enable */
 }

@@ -30,20 +30,6 @@
   margin-top: 1rem;
 }
 
-/* Loading state */
-
-.Blurb-testimonial--loading .Blurb-content--loading {
-  background: var(--color-white);
-  color: var(--color-white);
-  opacity: 0.3;
-}
-
-.Blurb-testimonial--loading .Blurb-content--loading {
-  background: var(--color-white);
-  color: var(--color-white);
-  opacity: 0.3;
-}
-
 @media (--sm-viewport) {
 
   .Blurb-testimonial {
@@ -90,3 +76,18 @@
     line-height: 1.4;
   }
 }
+
+/* Loading state */
+
+.Blurb-testimonial--loading .Blurb-content--loading {
+  background: var(--color-white);
+  color: var(--color-white);
+  opacity: 0.3;
+}
+
+.Blurb-testimonial--loading .Blurb-content--loading {
+  background: var(--color-white);
+  color: var(--color-white);
+  opacity: 0.3;
+}
+
