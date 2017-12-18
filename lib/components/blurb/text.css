@@ -1,0 +1,71 @@
+/** @define Blurb */
+
+@import "../base";
+
+.Blurb-text {
+  padding: 3rem;
+}
+
+.Blurb-content--text {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* stylelint-disable */
+.Blurb-title,
+.Blurb-content h3 {
+  background: var(--gradient-sun);
+  background-clip: text;
+  font-size: calc(24rem / var(--base-font-size));
+  font-weight: 800;
+  line-height: 1.2;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.Blurb-title {
+  margin-bottom: 1.5rem;
+}
+
+.Blurb-content h3 {
+  margin: 2rem 0 1rem;
+}
+
+.Blurb-content--text p {
+  font-family: var(--font-family-sans);
+  font-size: calc(24rem / var(--base-font-size));
+}
+
+/* stylelint-enable */
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Blurb-content--text {
+    align-items: flex-start;
+    display: flex;
+    line-height: 1.5;
+  }
+
+  .Blurb-title {
+    font-size: calc(42rem / var(--base-font-size));
+  }
+
+  /* stylelint-disable */
+  .Blurb-content--text p {
+    font-size: calc(21rem / var(--base-font-size));
+  }
+  /* stylelint-enable */
+}
+
+/* loading */
+
+.Blurb-text--loading {
+  min-height: 60vh;
+}
+
+.Blurb-text--loading .Blurb-content--loading,
+.Blurb-title--loading {
+  background: var(--color-light-grey);
+  color: var(--color-light-grey);
+}

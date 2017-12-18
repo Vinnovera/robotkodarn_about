@@ -1,124 +1,8 @@
 /** @define Blurb */
 
+@import "./testimonial";
+@import "./text";
 @import "../base";
-
-/* Only Blurb-text related styling */
-
-.Blurb-text {
-  padding: 3rem;
-}
-
-.Blurb-imageContainer {
-  background-color: var(--color-light-grey);
-  border: 2px solid var(--color-metal);
-  overflow: hidden;
-  width: 100%;
-}
-
-/* stylelint-disable */
-.Blurb-title,
-.Blurb-content h3 {
-  background: var(--gradient-sun);
-  font-size: calc(24rem / var(--base-font-size));
-  font-weight: 800;
-  line-height: 1.2;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.Blurb-content h3 {
-  margin: 2rem 0 1rem;
-}
-/* stylelint-enable */
-
-.Blurb-title {
-  margin-bottom: 1.5rem;
-}
-
-.Blurb-text .Blurb-content {
-  padding: 2.5rem;
-}
-
-/* stylelint-disable */
-.Blurb-text .Blurb-content p {
-  font-family: var(--font-family-sans);
-  font-size: calc(24rem / var(--base-font-size));
-}
-/* stylelint-enable */
-
-@media (--md-viewport), (--lg-viewport) {
-
-  .Blurb-text .Blurb-content {
-    align-items: flex-start;
-    display: flex;
-    line-height: 1.5;
-  }
-
-  .Blurb-title {
-    font-size: calc(42rem / var(--base-font-size));
-  }
-
-  /* stylelint-disable */
-  .Blurb-text .Blurb-content p {
-    font-size: calc(21rem / var(--base-font-size));
-  }
-  /* stylelint-enable */
-}
-
-/*
- * 1. TODO: Temporary styling used during development
- * Remove once finished
- */
-
-.Blurb-image {
-  min-height: 300px; /* 1. */
-  min-width: 300px; /* 1. */
-  object-fit: cover;
-  object-position: center center;
-}
-
-/* Only Blurb-testimonial related styling */
-
-.Blurb-testimonial {
-  background-color: var(--color-purple-light);
-  background-image: url("/img/quote.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: auto;
-  font-family: var(--font-family-serif);
-  font-size: calc(21rem / var(--base-font-size));
-  font-weight: 700;
-  line-height: 1.5;
-  padding: 4rem 1.5rem;
-  position: relative;
-}
-
-.Blurb-author {
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  margin-top: 1rem;
-}
-
-@media (--md-viewport), (--lg-viewport) {
-
-  .Blurb-testimonial {
-    line-height: 1.4;
-    padding: 6rem 4rem;
-  }
-}
-
-@media (--lg-viewport) {
-
-  .Blurb-testimonial {
-    font-size: calc(34rem / var(--base-font-size));
-    line-height: 1.4;
-  }
-}
-
-/* Blurb Content Container (both testimonial and text) */
 
 .Blurb-content {
   transition: 1000ms transform ease-out;
@@ -128,43 +12,9 @@
   transform: translateY(0);
 }
 
-.Blurb-text .Blurb-content {
-  margin: 0 auto;
-  max-width: 1024px;
-}
-
-@media (--md-viewport) {
-
-  .Blurb-testimonial .Blurb-content {
-    max-width: 60%;
-  }
-}
-
 /* Placeholder styling while waiting for content being fetched from CMS */
 
 .Blurb-content--loading {
   min-height: 300px;
   min-width: 100%;
-}
-
-.Blurb-text--loading {
-  min-height: 60vh;
-}
-
-.Blurb-text--loading .Blurb-content--loading,
-.Blurb-title--loading {
-  background: var(--color-light-grey);
-  color: var(--color-light-grey);
-}
-
-.Blurb-testimonial--loading .Blurb-content--loading {
-  background: var(--color-white);
-  color: var(--color-white);
-  opacity: 0.3;
-}
-
-.Blurb-testimonial--loading .Blurb-content--loading {
-  background: var(--color-white);
-  color: var(--color-white);
-  opacity: 0.3;
 }

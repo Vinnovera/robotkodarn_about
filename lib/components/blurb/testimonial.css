@@ -1,0 +1,92 @@
+/** @define Blurb */
+
+@import "../base";
+
+.Blurb-testimonial {
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 6rem 1.5rem;
+  position: relative;
+}
+
+.Blurb-quote,
+.Blurb-author {
+  font-family: var(--font-family-sans);
+  font-size: calc(24rem / var(--base-font-size));
+  line-height: 1.5;
+}
+
+.Blurb-quote::first-letter {
+  font-size: calc(72rem / var(--base-font-size));
+  font-weight: 800;
+  line-height: 0.1;
+  margin: 0 0.2rem 0 -0.2rem;
+}
+
+.Blurb-author {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* Loading state */
+
+.Blurb-testimonial--loading .Blurb-content--loading {
+  background: var(--color-white);
+  color: var(--color-white);
+  opacity: 0.3;
+}
+
+.Blurb-testimonial--loading .Blurb-content--loading {
+  background: var(--color-white);
+  color: var(--color-white);
+  opacity: 0.3;
+}
+
+@media (--sm-viewport) {
+
+  .Blurb-testimonial {
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+  }
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Blurb-testimonial {
+    line-height: 1.4;
+    padding: 10rem 6rem 8rem;
+  }
+
+  /* 1. These values needs to be adjusted depending on letter */
+
+  .Blurb-quote::first-letter {
+    font-size: calc(256rem / 16);
+    line-height: 0.1;
+    margin-left: -15.4rem; /* 1. */
+    vertical-align: -5.3rem;
+  }
+
+  /* 2. Gives space to big first-letter */
+
+  .Blurb-content--testimonial {
+    padding-left: 14rem; /* 2. */
+  }
+
+  /* 3. Compensation due to padding-left */
+
+  .Blurb-quote {
+    font-size: calc(28rem / var(--base-font-size));
+    max-width: calc(10rem + var(--width-lg)); /* 3 */
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Blurb-testimonial {
+    font-size: calc(34rem / var(--base-font-size));
+    line-height: 1.4;
+  }
+}
