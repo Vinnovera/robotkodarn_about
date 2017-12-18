@@ -3,9 +3,8 @@
 @import "../base";
 
 .Button {
-  background-color: var(--color-metal);
-  border: 3px solid var(--color-metal);
-  border-radius: 50px;
+  border: 3px solid var(--color-white);
+  border-radius: 2px;
   color: var(--color-white);
   display: inline-block;
   font-family: var(--font-family-sans);
@@ -16,10 +15,11 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .Button:hover {
-  transition: 300ms ease;
+  transition: 200ms ease;
   transition-property: background, border-color, color;
 }
 
@@ -39,6 +39,7 @@
   border-radius: 2px;
   color: var(--color-white);
   margin: 0.4rem 0.4rem 0 0;
+  width: auto;
 }
 
 .Button--article:hover {
@@ -60,6 +61,7 @@
 }
 
 .Button--sun:hover {
+  border: 3px solid var(--color-sun);
   color: var(--color-sun);
 }
 

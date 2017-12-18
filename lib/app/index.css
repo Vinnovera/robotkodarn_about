@@ -4,8 +4,10 @@
 @import "../components/blurb";
 @import "../components/button";
 @import "../components/footer";
+@import "../components/form";
 @import "../components/heading";
 @import "../components/hero";
+@import "../components/input";
 @import "../components/navigation";
 @import "../components/pattern";
 @import "../components/team";

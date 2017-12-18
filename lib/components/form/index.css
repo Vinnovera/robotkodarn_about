@@ -1,0 +1,85 @@
+/** @define Form */
+
+@import "../base";
+
+.Form {
+  padding: 4rem 1.5rem;
+}
+
+.Form-title {
+  color: var(--color-sun);
+  font-size: calc(28rem / var(--base-font-size));
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.Form-aside {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(18rem / var(--base-font-size));
+  justify-content: center;
+  margin-right: 1rem;
+  padding: 2rem 1rem 0.5rem;
+  text-align: center;
+}
+
+.Form-text {
+  font-family: var(--font-family-sans);
+  font-size: calc(16rem / var(--base-font-size));
+  margin-bottom: 1.5rem;
+}
+
+/* stylelint-disable */
+
+.Form p,
+.Form a {
+  font-family: var(--font-family-sans);
+}
+
+.Form a {
+  color: var(--color-ocean);
+  border-bottom: 2px solid var(--color-ocean);
+  font-weight: 800;
+  padding: 0.1rem;
+  transition: color 100ms ease-in, border 100ms ease-in;
+}
+
+.Form a:hover {
+  border-bottom: 2px solid var(--color-mauve);
+  color: var(--color-mauve);
+}
+
+/* stylelint-enable */
+
+.Form-aside--sun {
+  border-bottom: 2px solid var(--color-sun);
+  border-top: 2px solid var(--color-sun);
+}
+
+/* Visually hide, but keep for a11y purposes */
+
+.Form-label--hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Form {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4rem 6rem;
+  }
+
+  .Form-title {
+    font-size: calc(42rem / var(--base-font-size));
+  }
+
+  .Form-aside {
+    margin-right: 2.5rem;
+    min-width: 250px;
+  }
+}

@@ -51,8 +51,7 @@
 }
 
 .u-textL {
-  font-size: 1.8rem !important;
-  font-weight: var(--font-weight-bold) !important;
+  font-size: calc(28rem / var(--base-font-size)) !important;
 }
 
 .u-textXL {
@@ -64,6 +63,10 @@
 
   .u-textM {
     font-size: 1.6rem !important;
+  }
+
+  .u-textL {
+    font-size: calc(42rem / var(--base-font-size)) !important;
   }
 
   .u-textXL {

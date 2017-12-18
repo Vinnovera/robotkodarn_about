@@ -1,5 +1,6 @@
 {
   "Email": "E-post",
+  "Your email": "Din e-postadress",
   "Exit": "Stäng",
   "Error": "Ooops!",
   "Something went wrong": "Något gick fel. Kom tillbaka om en stund.",
@@ -14,5 +15,6 @@
   "Phone": "Telefon",
   "Site title": "Robotkodarn",
   "Loading textblock text": "Loading textblock text",
-  "Something went wrong. Please come back later.": "Something went wrong. Please come back later."
+  "Something went wrong. Please come back later.": "Something went wrong. Please come back later.",
+  "Signup": "Anmäl mig"
 }

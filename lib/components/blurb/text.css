@@ -52,13 +52,16 @@
   }
 
   /* stylelint-disable */
+
   .Blurb-content--text h3 {
     font-size: calc(28rem / var(--base-font-size));
   }
+
   .Blurb-content--text p {
     font-size: calc(24rem / var(--base-font-size));
     max-width: var(--width-md);
   }
+
   /* stylelint-enable */
 }
 
