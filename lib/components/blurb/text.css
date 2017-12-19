@@ -3,11 +3,7 @@
 @import "../base";
 
 .Blurb-text {
-  padding: 6rem 1.5rem;
-}
-
-.Blurb-content--text {
-  max-width: var(--width-md);
+  padding: 3rem 1.5rem;
 }
 
 .Blurb-title {
@@ -30,7 +26,7 @@
 
 .Blurb-content h3 {
   font-size: calc(22rem / var(--base-font-size));
-  margin: 2rem 0 1rem;
+  margin: 1.5rem 0 0.4rem;
 }
 
 .Blurb-content--text p {
@@ -43,8 +39,12 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
+  .Blurb-content--text {
+    max-width: var(--width-lg);
+  }
+
   .Blurb-text {
-    padding: 5rem 6rem 7rem;
+    padding: 3.5rem 6rem 4rem;
   }
 
   .Blurb-title {
@@ -54,11 +54,11 @@
   /* stylelint-disable */
 
   .Blurb-content--text h3 {
-    font-size: calc(28rem / var(--base-font-size));
+    font-size: calc(26rem / var(--base-font-size));
   }
 
   .Blurb-content--text p {
-    font-size: calc(24rem / var(--base-font-size));
+    font-size: calc(22rem / var(--base-font-size));
     max-width: var(--width-md);
   }
 

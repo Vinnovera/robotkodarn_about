@@ -29,7 +29,8 @@
 }
 
 .Hero--homepage,
-.Hero--error {
+.Hero--error,
+.Hero--thanks {
   align-items: center;
   justify-content: center;
   text-align: center;
