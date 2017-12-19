@@ -40,8 +40,7 @@
 }
 
 .Form-link {
-  border-bottom: 2px solid var(--color-metal);
-  padding: 0.1rem;
+  font-weight: 800;
 }
 
 @media (--sm-viewport) {
@@ -75,7 +74,7 @@
   .Form {
     display: flex;
     flex-direction: row-reverse;
-    padding: 2.5rem 6rem 1.5rem;
+    padding: 4rem 6rem 3rem;
   }
 
   .Form-paragraph,
@@ -90,7 +89,6 @@
   .Form-aside {
     margin-right: 2.5rem;
     min-width: 250px;
-    text-align: center;
   }
 }
 

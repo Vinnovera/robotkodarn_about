@@ -3,22 +3,19 @@
 @import "../base";
 
 .Team {
-  color: var(--color-metal);
+  margin: 2rem 1.5rem;
+}
+
+.Team-title {
+  font-size: calc(26rem / var(--base-font-size));
+  font-weight: 800;
+  line-height: 1.2;
+  padding-top: 0.5rem;
   width: 100%;
 }
 
-/* Very specific styling related to Team, hence placement of styling */
-
-.Team-button {
-  background-color: transparent;
-  background-image: none;
-  border: none;
-  box-shadow: none;
-  font-family: var(--font-family-sans);
-  font-size: calc(24rem / var(--base-font-size));
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: left;
+.Team-paragraph:last-of-type {
+  margin-bottom: 3rem;
 }
 
 .Team-paragraph:first-of-type {
@@ -29,101 +26,37 @@
   margin-bottom: 2rem;
 }
 
-/* Expand content on smaller screens */
-
-@media (--sm-viewport) {
-
-  .Team .Team-button {
-    border-bottom: 1px solid var(--color-light-grey);
-  }
-
-  .Team-carret {
-    height: calc(9rem / var(--base-font-size));
-    transform: rotate(0deg);
-    transition: 250ms transform ease-in-out;
-    width: calc(15rem / var(--base-font-size));
-  }
-
-  .Team-carret--expanded {
-    transform: rotate(180deg);
-  }
-
-  .Team-button {
-    align-items: center;
-    color: var(--color-metal);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 1rem 1.5rem;
-    width: 100%;
-  }
-
-  .Team-button--loading {
-    background-color: var(--color-light-grey);
-    color: var(--color-light-grey);
-  }
-
-  .Team-button:focus {
-    outline: none;
-  }
-
-  .Team-section {
-    box-sizing: border-box;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 1.5rem;
-    transition: all 250ms ease-in-out;
-  }
-
-  .Team-section--expanded {
-    max-height: 10000px;
-  }
-
-  .Team-paragraph:last-of-type {
-    margin-bottom: 5rem;
-  }
-
-  .Team-section--loading {
-    display: none;
-  }
-}
-
-/* Align text to left on medium and large screens  */
-
 @media (--md-viewport), (--lg-viewport) {
-
-  .Team-carret {
-    display: none;
-  }
 
   .Team {
     margin-left: 6rem;
     max-width: var(--width-md);
   }
 
-  .Team-button {
+  .Team-title {
     font-size: calc(34rem / var(--base-font-size));
-    font-weight: 800;
-    line-height: 1.2;
-    margin: 3rem 0 1rem;
+    margin: 3rem 0 2rem;
   }
 
-  .Team-button--loading {
-    background-color: var(--color-light-grey);
-    color: var(--color-light-grey);
-  }
-
-  .Team-section--loading {
-    background-color: var(--color-light-grey);
-    color: var(--color-light-grey);
-    height: 300px;
-  }
 }
 
 @media (--lg-viewport) {
 
-  .Team-button {
+  .Team-title {
     font-size: calc(42rem / var(--base-font-size));
   }
+}
+
+/* loading state */
+
+.Team-section--loading {
+  background-color: var(--color-light-grey);
+  color: var(--color-light-grey);
+  height: 300px;
+}
+
+.Team-title--loading {
+  background-color: var(--color-light-grey);
+  color: var(--color-light-grey);
 }
 

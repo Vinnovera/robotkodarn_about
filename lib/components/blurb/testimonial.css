@@ -46,27 +46,15 @@
     padding: 10rem 6rem 8rem;
   }
 
-  /* 1. These values needs to be adjusted depending on letter */
-
-  .Blurb-quote::first-letter {
-    font-size: calc(256rem / 16);
-    line-height: 0.1;
-    margin-left: -15.4rem; /* 1. */
-    vertical-align: -5.3rem;
-  }
-
-  /* 2. Gives space to big first-letter */
-
-  .Blurb-content--testimonial {
-    padding-left: 14rem; /* 2. */
-  }
-
-  /* 3. Compensation due to padding-left */
-
   .Blurb-quote {
     font-size: calc(28rem / var(--base-font-size));
-    max-width: calc(10rem + var(--width-lg)); /* 3 */
+    max-width: var(--width-lg);
   }
+
+  .Blurb-quote::first-letter {
+    font-size: calc(84rem / var(--base-font-size));
+  }
+
 }
 
 @media (--lg-viewport) {

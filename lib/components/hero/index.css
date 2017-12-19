@@ -6,7 +6,7 @@
 .Hero {
   color: var(--color-white);
   display: flex;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
 }
 
@@ -18,7 +18,7 @@
   font-family: var(--font-family-sans);
   font-size: calc(21rem / var(--base-font-size));
   font-weight: 700;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* Used as placeholder while waiting for content to load */
@@ -45,7 +45,7 @@
 @media (--sm-viewport) {
 
   .Hero-buttons {
-    display: none;
+    width: 100%;
   }
 }
 
