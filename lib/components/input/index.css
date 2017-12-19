@@ -19,7 +19,3 @@
   border: 3px solid var(--color-ocean);
   box-shadow: 0 1px 3px var(--color-transparent) inset, 0 0 8px var(--color-ocean);
 }
-
-.Input--sun {
-  border-color: var(--color-sun);
-}

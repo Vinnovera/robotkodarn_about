@@ -4,6 +4,7 @@
 
 .Footer {
   background-color: var(--color-metal);
+  border-bottom: 9px solid var(--color-mint);
   color: var(--color-white);
   padding: 2.5rem 1rem 2rem;
 }
@@ -16,8 +17,8 @@
 }
 
 .Footer-link--expressive {
-  border-bottom: 2px solid var(--color-ocean);
-  color: var(--color-ocean);
+  border-bottom: 2px solid var(--color-mint);
+  color: var(--color-mint);
   font-weight: 700;
   padding: 0.1rem;
   position: relative;
@@ -33,28 +34,6 @@
 .Footer-address {
   font-family: var(--font-family-sans);
   font-style: normal;
-}
-
-/* Colors 🌈  */
-
-.Footer--celestial {
-  border-bottom: 9px solid var(--color-celestial);
-}
-
-.Footer--ocean {
-  border-bottom: 9px solid var(--color-ocean);
-}
-
-.Footer--sun {
-  border-bottom: 9px solid var(--color-sun);
-}
-
-.Footer--grass {
-  border-bottom: 9px solid var(--color-grass);
-}
-
-.Footer--mauve {
-  border-bottom: 9px solid var(--color-mauve);
 }
 
 /* Align text to left on medium and large screens  */

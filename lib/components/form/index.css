@@ -5,13 +5,17 @@
 .Form {
   background-image: var(--gradient-mint);
   padding: 4rem 1.5rem;
-  position: relative;
 }
 
 .Form-title {
   font-size: calc(28rem / var(--base-font-size));
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Form-heading3 {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
 }
 
 .Form-aside {
@@ -23,10 +27,10 @@
   text-align: center;
 }
 
-.Form-text {
+.Form-aside .Form-text {
   font-family: var(--font-family-sans);
   font-size: calc(16rem / var(--base-font-size));
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .Form-paragraph,
@@ -37,10 +41,15 @@
 }
 
 .Form-link {
-  border-bottom: 2px solid var(--color-ocean);
-  color: var(--color-ocean);
-  font-weight: 800;
+  border-bottom: 2px solid var(--color-metal);
   padding: 0.1rem;
+}
+
+@media (--sm-viewport) {
+
+  .Form-paragraph {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Visually hide, but keep for a11y purposes */
@@ -58,12 +67,12 @@
   .Form {
     display: flex;
     flex-direction: row-reverse;
-    padding: 2.5rem 6rem;
+    padding: 2.5rem 6rem 1.5rem;
   }
 
   .Form-paragraph,
   .Form-link {
-    font-size: calc(28rem / var(--base-font-size));
+    font-size: calc(20rem / var(--base-font-size));
   }
 
   .Form-title {

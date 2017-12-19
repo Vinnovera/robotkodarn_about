@@ -10,17 +10,14 @@
   font-family: var(--font-family-sans);
   font-size: calc(16rem / var(--base-font-size));
   font-weight: var(--font-weight-extrabold);
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   padding: 1rem 3rem 0.9rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 100%;
-}
-
-.Button:hover {
   transition: 200ms ease;
   transition-property: background, border-color, color;
+  width: 100%;
 }
 
 .Button:not(.Button--loading) {
@@ -90,13 +87,13 @@
 }
 
 .Button--inverted {
-  background: none;
-  border: 3px solid var(--color-white);
+  background-color: var(--color-metal);
+  border: 3px solid var(--color-metal);
   color: var(--color-white);
 }
 
 .Button--inverted:hover {
-  background-color: var(--color-white);
+  background: none;
   color: var(--color-metal);
 }
 
