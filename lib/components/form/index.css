@@ -3,6 +3,7 @@
 @import "../base";
 
 .Form {
+  background-image: var(--gradient-mint);
   padding: 4rem 1.5rem;
   position: relative;
 }
@@ -11,40 +12,6 @@
   font-size: calc(28rem / var(--base-font-size));
   font-weight: 800;
   margin-bottom: 1.5rem;
-}
-
-/* colors 🌈 */
-
-.Form--sun {
-  border-top: 7px solid var(--color-sun);
-}
-
-.Form--sun .Form-title {
-  color: var(--color-sun);
-}
-
-.Form--mauve {
-  border-top: 7px solid var(--color-mauve);
-}
-
-.Form--mauve .Form-title {
-  color: var(--color-mauve);
-}
-
-.Form--ocean {
-  border-top: 7px solid var(--color-ocean);
-}
-
-.Form--ocean .Form-title {
-  color: var(--color-ocean);
-}
-
-.Form--grass {
-  border-top: 7px solid var(--color-grass);
-}
-
-.Form--grass .Form-title {
-  color: var(--color-grass);
 }
 
 .Form-aside {

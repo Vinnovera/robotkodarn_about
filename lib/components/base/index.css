@@ -33,12 +33,17 @@
   --gradient-ocean: linear-gradient(49deg, #499ac5, #34d8de);
   --gradient-mauve: linear-gradient(-94deg, #b41e4c, #851359 100%);
 
+  --gradient-brightblue: linear-gradient(-90deg, #05c8e5, #008bff 100%);
+  --gradient-babyblue: linear-gradient(115deg, #6becff, #5ab4ff);
+  --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
+
   /* Bright colors corresponding to gradients */
   --color-celestial: #98128d;
   --color-sun: #f5913b;
   --color-grass: #0b855d;
   --color-ocean: #499ac5;
   --color-mauve: #851359;
+  --color-mint: #05e5b1;
 }
 
 @custom-media --sm-viewport (max-width:799px);
