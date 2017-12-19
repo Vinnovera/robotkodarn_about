@@ -21,43 +21,37 @@
   text-align: left;
 }
 
-/* stylelint-disable */
-.Textblock p:first-of-type {
+.Textblock-paragraph:first-of-type {
   margin-top: 1rem;
 }
 
-.Textblock p {
+.Textblock-paragraph {
   margin-bottom: 2rem;
 }
 
-
-/* Inline quotes using em */
-
-.Textblock-section em {
+.Textblock-quote {
+  display: block;
   font-family: var(--font-family-sans);
   font-size: calc(21rem / var(--base-font-size));
   font-style: normal;
-  line-height: 1.6;
   font-weight: 700;
-  display: block;
+  line-height: 1.6;
   margin: 3rem 1rem;
 }
 
-.Textblock-section--celestial em::first-line,
-.Textblock-section--sun em::first-line,
-.Textblock-section--ocean em::first-line {
+.Textblock-section--celestial .Textblock-quote::first-line,
+.Textblock-section--sun .Textblock-quote::first-line,
+.Textblock-section--ocean .Textblock-quote::first-line {
   color: var(--color-celestial);
 }
 
-.Textblock-section--mauve em::first-line {
+.Textblock-section--mauve .Textblock-quote::first-line {
   color: var(--color-mauve);
 }
 
-.Textblock-section--grass em::first-line {
+.Textblock-section--grass .Textblock-quote::first-line {
   color: var(--color-grass);
 }
-
-/* stylelint-enable */
 
 /* Expand content on smaller screens */
 
@@ -109,11 +103,9 @@
     max-height: 10000px;
   }
 
-  /* stylelint-disable */
-  .Textblock-section p:last-of-type {
+  .Textblock-paragraph:last-of-type {
     margin-bottom: 5rem;
   }
-  /* stylelint-enable */
 
   .Textblock-section--loading {
     display: none;
@@ -151,11 +143,9 @@
     height: 300px;
   }
 
-  /* stylelint-disable */
-  .Textblock-section em {
+  .Textblock-quote {
     margin: 3rem 2.5rem;
   }
-  /* stylelint-enable */
 }
 
 @media (--lg-viewport) {

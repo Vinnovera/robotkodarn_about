@@ -21,12 +21,11 @@
   text-align: left;
 }
 
-/* stylelint-disable */
-.Team p:first-of-type {
+.Team-paragraph:first-of-type {
   margin-top: 1rem;
 }
 
-.Team p {
+.Team-paragraph {
   margin-bottom: 2rem;
 }
 
@@ -80,11 +79,9 @@
     max-height: 10000px;
   }
 
-  /* stylelint-disable */
-  .Team-section p:last-of-type {
+  .Team-paragraph:last-of-type {
     margin-bottom: 5rem;
   }
-  /* stylelint-enable */
 
   .Team-section--loading {
     display: none;
@@ -121,12 +118,6 @@
     color: var(--color-light-grey);
     height: 300px;
   }
-
-  /* stylelint-disable */
-  .Team-section em {
-    margin: 3rem 2.5rem;
-  }
-  /* stylelint-enable */
 }
 
 @media (--lg-viewport) {

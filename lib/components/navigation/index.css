@@ -131,10 +131,6 @@
     width: 100%;
   }
 
-  /* 1. Locally disable stylelint since the selector #menu:target is needed
-   * to open menu if javascript is disabled. This is an exception.
-   */
-
   .Navigation-list--open,
   .Navigation-list:target {
     background-color: var(--color-white);

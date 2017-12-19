@@ -29,22 +29,19 @@
   margin-bottom: 1.5rem;
 }
 
-/* stylelint-disable */
-
-.Form p,
-.Form a {
+.Form-paragraph,
+.Form-link {
   font-family: var(--font-family-sans);
   font-size: calc(18rem / var(--base-font-size));
+  font-weight: 600;
 }
 
-.Form a {
-  color: var(--color-ocean);
+.Form-link {
   border-bottom: 2px solid var(--color-ocean);
+  color: var(--color-ocean);
   font-weight: 800;
   padding: 0.1rem;
 }
-
-/* stylelint-enable */
 
 /* Visually hide, but keep for a11y purposes */
 
@@ -62,6 +59,11 @@
     display: flex;
     flex-direction: row-reverse;
     padding: 2.5rem 6rem;
+  }
+
+  .Form-paragraph,
+  .Form-link {
+    font-size: calc(28rem / var(--base-font-size));
   }
 
   .Form-title {

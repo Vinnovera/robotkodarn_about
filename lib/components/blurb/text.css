@@ -11,31 +11,35 @@
   margin-bottom: 1.5rem;
 }
 
-/* stylelint-disable */
+/**
+ * 1. Locally disable stylelint since it's usually not permitted to use
+ * vendor prefixes. This is an exception.
+ */
+
 .Blurb-title,
-.Blurb-content h3 {
+.Blurb-heading3 {
   background: var(--gradient-sun);
+  /* stylelint-disable */
+  -webkit-background-clip: text;
+  /* stylelint-enable */
   background-clip: text;
   color: var(--color-sun);
   font-weight: 800;
   line-height: 1.4;
-  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  text-fill-color: transparent;
 }
 
-.Blurb-content h3 {
+.Blurb-heading3 {
   font-size: calc(22rem / var(--base-font-size));
   margin: 1.5rem 0 0.4rem;
 }
 
-.Blurb-content--text p {
+.Blurb-paragraph {
   font-family: var(--font-family-sans);
   font-size: calc(19rem / var(--base-font-size));
   max-width: var(--width-sm);
 }
-
-/* stylelint-enable */
 
 @media (--md-viewport), (--lg-viewport) {
 
@@ -51,18 +55,14 @@
     font-size: calc(42rem / var(--base-font-size));
   }
 
-  /* stylelint-disable */
-
-  .Blurb-content--text h3 {
+  .Blurb-heading3 {
     font-size: calc(26rem / var(--base-font-size));
   }
 
-  .Blurb-content--text p {
+  .Blurb-paragraph {
     font-size: calc(22rem / var(--base-font-size));
     max-width: var(--width-md);
   }
-
-  /* stylelint-enable */
 }
 
 /* loading */
