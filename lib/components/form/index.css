@@ -84,3 +84,15 @@
     min-width: 250px;
   }
 }
+
+/* loading */
+
+.Form-title--loading,
+.Form-paragraph--loading,
+.Form-heading3--loading,
+.Form-text--loading {
+  background-color: var(--color-white);
+  border: 3px solid var(--color-white);
+  color: var(--color-white);
+  opacity: 0.3;
+}
