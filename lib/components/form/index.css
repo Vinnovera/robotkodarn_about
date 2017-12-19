@@ -24,10 +24,9 @@
   font-size: calc(18rem / var(--base-font-size));
   justify-content: center;
   margin-right: 1rem;
-  text-align: center;
 }
 
-.Form-aside .Form-text {
+.Form-text {
   font-family: var(--font-family-sans);
   font-size: calc(16rem / var(--base-font-size));
   margin-bottom: 1rem;
@@ -48,6 +47,15 @@
 @media (--sm-viewport) {
 
   .Form-paragraph {
+    margin-bottom: 3rem;
+  }
+
+  .Form {
+    min-height: 100vh;
+  }
+
+  .Form-text {
+    font-weight: 600;
     margin-bottom: 2rem;
   }
 }
@@ -82,6 +90,7 @@
   .Form-aside {
     margin-right: 2.5rem;
     min-width: 250px;
+    text-align: center;
   }
 }
 
