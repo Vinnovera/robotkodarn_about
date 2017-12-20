@@ -47,7 +47,7 @@
 .Button--soft:hover {
   background-color: var(--color-white);
   color: var(--color-metal);
-  font-size: calc(18rem / var(--font-base-size));
+  font-size: calc(18rem / var(--base-font-size));
   padding: 0 1.4rem;
   text-transform: none;
   width: auto;
