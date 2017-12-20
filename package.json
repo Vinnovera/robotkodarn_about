@@ -44,6 +44,7 @@
     "koa-compress": "^2.0.0",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
+    "nanocomponent": "^6.5.0",
     "nanoraf": "^3.0.1",
     "prismic-element": "^0.7.0",
     "prismic-helpers": "^1.0.0",

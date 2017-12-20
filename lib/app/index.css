@@ -13,22 +13,6 @@
 @import "../components/pattern";
 @import "../components/section";
 
-.App-content {
-  padding-bottom: 6rem;
-}
-
-@media (--md-viewport), (--lg-viewport) {
-
-  /*
-  * 1. Due to left padding (6rem) on Hero img.
-  */
-
-  .App--left {
-    margin-bottom: 8rem;
-    max-width: calc(6rem + 800px); /* 1. */
-  }
-}
-
 /*
  * 1. Used when menu is open.
  */

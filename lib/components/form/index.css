@@ -43,6 +43,11 @@
   font-weight: 800;
 }
 
+.Form-link:hover,
+.Form-link:focus {
+  color: var(--color-white);
+}
+
 @media (--sm-viewport) {
 
   .Form-paragraph {

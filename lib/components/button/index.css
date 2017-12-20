@@ -24,9 +24,10 @@
   cursor: pointer;
 }
 
-.Button:hover {
-  background: none;
-  color: var(--color-metal);
+.Button:hover,
+.Button:focus {
+  background: var(--color-metal);
+  color: var(--color-white);
 }
 
 /* Modifiers */
@@ -38,19 +39,10 @@
   margin: 0.3rem 0;
 }
 
-.Button--article:hover {
+.Button--article:hover,
+.Button--article:focus {
   background-color: var(--color-white);
   border: 3px solid var(--color-white);
-}
-
-.Button--soft,
-.Button--soft:hover {
-  background-color: var(--color-white);
-  color: var(--color-metal);
-  font-size: calc(18rem / var(--base-font-size));
-  padding: 0 1.4rem;
-  text-transform: none;
-  width: auto;
 }
 
 /* Colors 🌈 */
@@ -59,7 +51,8 @@
   background-color: var(--color-grass);
 }
 
-.Button--grass:hover {
+.Button--grass:hover,
+.Button--grass:focus {
   color: var(--color-grass);
 }
 
@@ -67,7 +60,8 @@
   background-color: var(--color-sun);
 }
 
-.Button--sun:hover {
+.Button--sun:hover,
+.Button--sun:focus {
   border: 3px solid var(--color-sun);
   color: var(--color-sun);
 }
@@ -76,7 +70,8 @@
   background-color: var(--color-ocean);
 }
 
-.Button--ocean:hover {
+.Button--ocean:hover,
+.Button--ocean:focus {
   color: var(--color-ocean);
 }
 
@@ -84,7 +79,8 @@
   background-color: var(--color-celestial);
 }
 
-.Button--celestial:hover {
+.Button--celestial:hover,
+.Button--celestial:focus {
   color: var(--color-celestial);
 }
 
@@ -92,7 +88,8 @@
   background-color: var(--color-mauve);
 }
 
-.Button--mauve:hover {
+.Button--mauve:hover,
+.Button--mauve:focus {
   color: var(--color-mauve);
 }
 
@@ -102,6 +99,7 @@
   color: var(--color-metal);
 }
 
+.Button--inverted:focus
 .Button--inverted:hover {
   background-color: var(--color-metal);
   color: var(--color-white);
@@ -119,7 +117,7 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Button:not(.Button--soft) {
+  .Button {
     padding: 1rem 3rem 0.9rem;
   }
 

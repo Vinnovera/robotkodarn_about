@@ -8,6 +8,14 @@
   color: var(--color-white) !important;
 }
 
+.u-colorLightGrey {
+  color: var(--color-light-grey) !important;
+}
+
+.u-colorMint {
+  color: var(--color-mint) !important;
+}
+
 /* Background colors */
 
 .u-backgroundWhite {

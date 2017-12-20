@@ -7,6 +7,7 @@
   --font-family-serif: "Lora", Georgia, serif;
   --font-weight-extrabold: 800;
   --font-weight-bold: 700;
+  --font-weight-semi: 600;
   --font-weight-normal: 400;
   --font-weight-light: 300;
   --width-sm: 600px;
@@ -15,6 +16,7 @@
   --width-xl: 1024px;
   --base-font-size: 16;
   --easing: cubic-bezier(0.075, 0.82, 0.165, 1);
+  --expander-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   /* Base colors */
   --color-metal: #1e222a;
@@ -43,7 +45,7 @@
   --color-grass: #0b855d;
   --color-ocean: #499ac5;
   --color-mauve: #851359;
-  --color-mint: #00dcff;
+  --color-mint: #05e5b1;
 }
 
 @custom-media --sm-viewport (max-width:799px);
@@ -77,11 +79,16 @@ button {
   line-height: 1.2;
 }
 
+/* Remove default styling on active and focus since elements in focus will be
+ * using the same styling as element in focus.
+ */
+
 button:focus,
 button:active,
 a:focus,
 a:active {
   box-shadow: none;
+  outline: none;
 }
 
 a {

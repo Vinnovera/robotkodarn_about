@@ -63,6 +63,10 @@
   margin-bottom: 1.5rem !important;
 }
 
+.u-marginBottomXXL {
+  margin-bottom: 4rem !important;
+}
+
 .u-marginTopM {
   margin-top: 1rem !important;
 }
@@ -73,4 +77,10 @@
 
 .u-marginAuto {
   margin: 0 auto !important;
+}
+
+/* Heights */
+
+.u-minHeightXL {
+  min-height: 90vh !important;
 }

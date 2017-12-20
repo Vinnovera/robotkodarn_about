@@ -61,7 +61,7 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Hero {
+  .Hero:not(.Hero--homepage) {
     min-height: 90vh;
   }
 
@@ -75,6 +75,7 @@
 
   .Hero--article,
   .Hero--contact {
+    max-width: calc(6rem + 800px);
     padding: 8rem 0 5rem 6rem;
   }
 

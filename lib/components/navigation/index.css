@@ -246,7 +246,8 @@
     transition: 250ms border ease;
   }
 
-  .Navigation-listLink:hover:not(.Navigation-listLink--active) {
+  .Navigation-listLink:hover:not(.Navigation-listLink--active),
+  .Navigation-listLink:focus:not(.Navigation-listLink--active) {
     border-bottom: 3px solid var(--color-white);
   }
 
