@@ -20,6 +20,10 @@
   width: 100%;
 }
 
+.Section--article.Section--text:last-of-type {
+  margin-bottom: 6rem;
+}
+
 .Section-cards {
   background-color: var(--color-white);
   display: grid;
@@ -58,10 +62,6 @@
 
 .Section-paragraph {
   margin-bottom: 2rem;
-}
-
-.Section--article .Section-paragraph::first-line {
-  font-weight: var(--font-weight-bold);
 }
 
 .Section-paragraph:last-of-type {
