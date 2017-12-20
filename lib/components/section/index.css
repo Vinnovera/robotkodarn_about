@@ -9,7 +9,7 @@
 .Section-heading3--card {
   color: var(--color-ocean);
   display: inline;
-  font-size: calc(16rem / var(--font-base-size));
+  font-size: calc(16rem / var(--base-font-size));
 }
 
 .Section--team {
