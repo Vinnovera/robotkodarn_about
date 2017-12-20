@@ -6,7 +6,7 @@
 .Hero {
   color: var(--color-white);
   display: flex;
-  min-height: 90vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -18,6 +18,12 @@
   font-family: var(--font-family-sans);
   font-size: calc(21rem / var(--base-font-size));
   font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.Hero-introduction--lg {
+  font-size: calc(24rem / var(--base-font-size));
   margin-bottom: 2.5rem;
 }
 
@@ -29,6 +35,7 @@
 }
 
 .Hero--homepage,
+.Hero--contact,
 .Hero--error,
 .Hero--thanks {
   align-items: center;
@@ -36,8 +43,12 @@
   text-align: center;
 }
 
-.Hero--article,
+.Hero--homepage,
 .Hero--contact {
+  padding: 1.5rem;
+}
+
+.Hero--article {
   align-items: flex-end;
   padding: 8rem 1.5rem 2rem;
 }
@@ -51,13 +62,19 @@
 
 @media (--md-viewport), (--lg-viewport) {
 
+  .Hero {
+    min-height: 90vh;
+  }
+
   .Hero-introduction {
-    font-size: calc(24rem / var(--base-font-size));
     max-width: var(--width-lg);
   }
 
-  .Hero--article,
-  .Hero--contact {
+  .Hero-introduction--lg {
+    font-size: calc(28rem / var(--base-font-size));
+  }
+
+  .Hero--article {
     padding: 8rem 0 5rem 6rem;
   }
 
@@ -65,8 +82,7 @@
 
 @media (--lg-viewport) {
 
-  .Hero--article,
-  .Hero--contact {
+  .Hero--article {
     padding: 8rem 0 4rem 6rem;
   }
 

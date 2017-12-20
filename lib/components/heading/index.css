@@ -4,14 +4,18 @@
 
 .Heading {
   color: var(--color-white);
-  font-size: calc(34rem / var(--base-font-size));
+  font-size: calc(44rem / var(--base-font-size));
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.5rem;
 }
+
+/* 1. Test to make element fill the viewport */
 
 .Heading--lg {
   font-size: calc(44rem / var(--base-font-size));
+  font-size: calc((98vw - 3rem) / 7); /* 1. */
+  margin-bottom: 0.4rem;
 }
 
 .Heading--loading {

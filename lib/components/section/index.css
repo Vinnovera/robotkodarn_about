@@ -1,0 +1,137 @@
+/** @define Section */
+
+@import "../base";
+
+.Section {
+  margin: 2rem 1.5rem;
+}
+
+.Section-paragraph:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.Section-paragraph:first-of-type {
+  margin-top: 1rem;
+}
+
+.Section-paragraph {
+  margin-bottom: 2rem;
+}
+
+/* Quotes */
+
+.Section-quote {
+  display: block;
+  font-family: var(--font-family-sans);
+  font-size: calc(21rem / var(--base-font-size));
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 3rem 1rem;
+}
+
+.Section-section--celestial .Section-quote::first-line,
+.Section-section--sun .Section-quote::first-line,
+.Section-section--ocean .Section-quote::first-line {
+  color: var(--color-celestial);
+}
+
+.Section-section--mauve .Section-quote::first-line {
+  color: var(--color-mauve);
+}
+
+.Section-section--grass .Section-quote::first-line {
+  color: var(--color-grass);
+}
+
+/* Align text to left on medium and large screens  */
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Section-quote {
+    margin: 3rem 2.5rem;
+  }
+}
+
+
+/* stylelint-disable */
+
+.has-js .Section-content {
+  margin-bottom: 1rem;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+  transition: 550ms;
+}
+
+.has-js .Section-content::before {
+  background: linear-gradient(transparent 120px, var(--color-transparent));
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.has-js .Section-content--expand {
+  max-height: 250px;
+}
+
+.has-js .Section-content--expand::before {
+  background: linear-gradient(transparent, transparent);
+}
+
+/* stylelint-enable */
+
+.Section:last-of-type {
+  margin-bottom: 6rem;
+}
+
+.Section-title {
+  font-size: calc(26rem / var(--base-font-size));
+  font-weight: 800;
+  line-height: 1.2;
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+/* Align text to left on medium and large screens  */
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Section {
+    margin-left: 6rem;
+    max-width: var(--width-md);
+  }
+
+  .Section-title {
+    font-size: calc(34rem / var(--base-font-size));
+    margin: 3rem 0 0.5rem;
+  }
+
+  .Section-quote {
+    margin: 3rem 2.5rem;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Section-title {
+    font-size: calc(42rem / var(--base-font-size));
+  }
+}
+
+
+/* loading state */
+
+.Section-text--loading {
+  background-color: var(--color-light-grey);
+  color: var(--color-light-grey);
+  height: 200px;
+}
+
+.Section-title--loading {
+  background-color: var(--color-light-grey);
+  color: var(--color-light-grey);
+}

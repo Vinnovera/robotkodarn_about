@@ -10,8 +10,7 @@
 @import "../components/input";
 @import "../components/navigation";
 @import "../components/pattern";
-@import "../components/team";
-@import "../components/textblock";
+@import "../components/section";
 
 @media (--md-viewport), (--lg-viewport) {
 
