@@ -35,7 +35,6 @@
 }
 
 .Hero--homepage,
-.Hero--contact,
 .Hero--error,
 .Hero--thanks {
   align-items: center;
@@ -43,12 +42,12 @@
   text-align: center;
 }
 
-.Hero--homepage,
-.Hero--contact {
+.Hero--homepage {
   padding: 1.5rem;
 }
 
-.Hero--article {
+.Hero--article,
+.Hero--contact {
   align-items: flex-end;
   padding: 8rem 1.5rem 2rem;
 }
@@ -74,7 +73,8 @@
     font-size: calc(28rem / var(--base-font-size));
   }
 
-  .Hero--article {
+  .Hero--article,
+  .Hero--contact {
     padding: 8rem 0 5rem 6rem;
   }
 
@@ -92,6 +92,7 @@
 
   .Hero-introduction--lg {
     font-size: calc(34rem / var(--base-font-size));
+    max-width: var(--width-xl);
   }
 
   .Hero-buttons {

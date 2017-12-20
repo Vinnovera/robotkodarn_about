@@ -4,7 +4,7 @@
 
 .Footer {
   background-color: var(--color-metal);
-  border-bottom: 9px solid var(--color-mint);
+  border-bottom: 9px solid var(--color-ocean);
   color: var(--color-white);
   padding: 2.5rem 1rem 2rem;
 }
@@ -17,8 +17,8 @@
 }
 
 .Footer-link--expressive {
-  border-bottom: 2px solid var(--color-mint);
-  color: var(--color-mint);
+  border-bottom: 2px solid var(--color-ocean);
+  color: var(--color-ocean);
   font-weight: 700;
   padding: 0.1rem;
   position: relative;

@@ -1,5 +1,6 @@
 /** @define App */
 
+@import "../components/address";
 @import "../components/base";
 @import "../components/blurb";
 @import "../components/button";
@@ -11,6 +12,10 @@
 @import "../components/navigation";
 @import "../components/pattern";
 @import "../components/section";
+
+.App-content {
+  padding-bottom: 6rem;
+}
 
 @media (--md-viewport), (--lg-viewport) {
 

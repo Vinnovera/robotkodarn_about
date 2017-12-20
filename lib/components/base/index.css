@@ -43,7 +43,7 @@
   --color-grass: #0b855d;
   --color-ocean: #499ac5;
   --color-mauve: #851359;
-  --color-mint: #499ac5;
+  --color-mint: #00dcff;
 }
 
 @custom-media --sm-viewport (max-width:799px);
