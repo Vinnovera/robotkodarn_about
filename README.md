@@ -13,7 +13,7 @@ To start project:
 $ npm install
 
 # Start project under development
-$ npm run dev
+$ npm run start:dev
 
 ```
 
