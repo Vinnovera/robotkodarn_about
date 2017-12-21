@@ -77,9 +77,14 @@
 @media (--md-viewport), (--lg-viewport) {
 
   .Form {
+    padding: 4rem 6rem 3rem;
+  }
+
+  .Form-content {
     display: flex;
     flex-direction: row-reverse;
-    padding: 4rem 6rem 3rem;
+    justify-content: flex-end;
+    max-width: var(--width-xl);
   }
 
   .Form-paragraph,
@@ -92,6 +97,7 @@
   }
 
   .Form-aside {
+    flex-shrink: 0;
     margin-right: 2.5rem;
     min-width: 230px;
     width: 300px;
