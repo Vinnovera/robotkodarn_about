@@ -1,9 +1,9 @@
 {
     "name": "Robotkodarn",
     "short_name": "Robotkodarn",
-    "background_color": "#fff",
+    "background_color": "#f5913b",
     "display": "standalone",
-    "theme_color": "#59b2ac",
+    "theme_color": "#f5913b",
     "orientation": "portrait",
     "icons": [
         {
@@ -15,11 +15,6 @@
             "src": "/android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
-        },
-        {
-          "src": "/icon-512x512.png",
-          "sizes": "512x512",
-          "type": "image/png"
         }
     ]
 }
