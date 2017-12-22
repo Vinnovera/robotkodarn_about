@@ -50,8 +50,8 @@
   font-size: calc(26rem / var(--base-font-size));
   font-weight: var(--font-weight-extrabold);
   line-height: 1.2;
-  margin: 3rem 1.5rem 1rem;
-  width: 100%;
+  margin: 2rem 1.5rem 1rem;
+  padding-top: 1rem;
 }
 
 /* Paragraphs in text */
@@ -183,7 +183,7 @@
 
   .Section-title {
     font-size: calc(34rem / var(--base-font-size));
-    margin: 3rem 6rem 0.5rem;
+    margin: 2rem 6rem 0.5rem;
     max-width: var(--width-md);
   }
 
