@@ -65,15 +65,17 @@
 }
 
 .Section-link {
-  border-bottom: 1px solid var(--color-ocean);
-  color: var(--color-ocean);
+  border-bottom: 2px solid var(--color-trueblue);
+  color: var(--color-trueblue);
+  font-weight: var(--font-weight-bold);
+  padding-bottom: 0.05rem;
   transition: border 250ms ease-out, color 250ms ease-out;
 }
 
 .Section-link:hover,
 .Section-link:focus {
-  border-bottom: 1px solid var(--color-mint);
-  color: var(--color-mint);
+  border-bottom: 2px solid var(--color-blue);
+  color: var(--color-blue);
 }
 
 /* Quotes */

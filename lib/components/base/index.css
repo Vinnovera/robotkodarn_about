@@ -29,12 +29,14 @@
   --color-slush: #ebebeb;
   --color-transparent: rgba(255, 255, 255, 0.8);
   --color-white: #fff;
+  --color-trueblue: #026dde;
+  --color-blue: #00abf9;
 
   /* Gradients */
   --gradient-celestial: linear-gradient(44deg, #98128d 0%, #202b89 100%);
   --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
   --gradient-grass: linear-gradient(12deg, #0e7352, #3cbd59);
-  --gradient-ocean: linear-gradient(49deg, #499ac5, #34d8de);
+  --gradient-ocean: linear-gradient(49deg, #0b76ae, #17a0a5);
   --gradient-mauve: linear-gradient(-94deg, #b41e4c, #851359 100%);
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
 
@@ -42,7 +44,7 @@
   --color-celestial: #98128d;
   --color-sun: #f5913b;
   --color-grass: #0b855d;
-  --color-ocean: #499ac5;
+  --color-ocean: #0b76ae;
   --color-mauve: #851359;
   --color-mint: #05e5b1;
 }
