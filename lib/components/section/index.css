@@ -138,7 +138,7 @@
   border-bottom: 7px solid var(--color-slush);
   opacity: 0;
   transform: translateY(400px);
-  padding: 2rem 1.5rem 2rem;
+  padding: 1rem 1.5rem 2rem;
 }
 
 .has-js .Section-content--appear .Section-paragraph {
