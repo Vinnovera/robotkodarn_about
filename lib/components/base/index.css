@@ -19,14 +19,16 @@
   --expander-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   /* Base colors */
-  --color-metal: #1e222a;
-  --color-smoke: #f2f2f2;
-  --color-light-grey: #e5e7eb;
-  --color-grey: #757575;
   --color-dark-grey: #393f51;
-  --color-white: #fff;
-  --color-transparent: rgba(255, 255, 255, 0.8);
+  --color-grey: #757575;
+  --color-light-grey: #e5e7eb;
+  --color-metal: #1e222a;
   --color-purple-light: #ebedff;
+  --color-smoke: #f2f2f2;
+  --color-snow: #f5f4f4;
+  --color-slush: #ebebeb;
+  --color-transparent: rgba(255, 255, 255, 0.8);
+  --color-white: #fff;
 
   /* Gradients */
   --gradient-celestial: linear-gradient(44deg, #98128d 0%, #202b89 100%);
@@ -34,9 +36,6 @@
   --gradient-grass: linear-gradient(12deg, #0e7352, #3cbd59);
   --gradient-ocean: linear-gradient(49deg, #499ac5, #34d8de);
   --gradient-mauve: linear-gradient(-94deg, #b41e4c, #851359 100%);
-
-  --gradient-brightblue: linear-gradient(-90deg, #05c8e5, #008bff 100%);
-  --gradient-babyblue: linear-gradient(115deg, #6becff, #5ab4ff);
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
 
   /* Bright colors corresponding to gradients */

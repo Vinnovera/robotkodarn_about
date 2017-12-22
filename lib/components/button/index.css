@@ -3,105 +3,41 @@
 @import "../base";
 
 .Button {
-  border: 3px solid var(--color-white);
-  border-radius: 2px;
-  color: var(--color-white);
-  display: inline-block;
+  background-color: none;
+  cursor: pointer;
   font-family: var(--font-family-sans);
   font-size: calc(16rem / var(--base-font-size));
+  text-decoration: none;
+}
+
+/* Styling for expanding/imploding sections */
+
+.Button--toggle {
+  align-items: center;
+  display: flex;
+  font-size: var(14rem / var(--base-font-size));
+  font-weight: var(--font-weight-bold);
+}
+
+/* Styling for form buttons */
+
+.Button--form {
+  border: 3px solid var(--color-metal);
+  border-radius: 2px;
+  color: var(--color-metal);
+  display: inline-block;
   font-weight: var(--font-weight-extrabold);
-  margin: 1rem auto;
   padding: 1rem 1rem 0.9rem;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
   transition: 200ms ease;
   transition-property: background, border-color, color;
   width: 100%;
 }
 
-.Button:not(.Button--loading) {
-  cursor: pointer;
-}
-
-.Button:hover,
-.Button:focus {
+.Button--form:hover,
+.Button--form:focus {
   background: var(--color-metal);
-  color: var(--color-white);
-}
-
-/* Modifiers */
-
-.Button--article {
-  border: 3px solid var(--color-white);
-  border-radius: 2px;
-  color: var(--color-white);
-  margin: 0.3rem 0;
-}
-
-.Button--article:hover,
-.Button--article:focus {
-  background-color: var(--color-white);
-  border: 3px solid var(--color-white);
-}
-
-/* Colors 🌈 */
-
-.Button--grass {
-  background-color: var(--color-grass);
-}
-
-.Button--grass:hover,
-.Button--grass:focus {
-  color: var(--color-grass);
-}
-
-.Button--sun {
-  background-color: var(--color-sun);
-}
-
-.Button--sun:hover,
-.Button--sun:focus {
-  border: 3px solid var(--color-sun);
-  color: var(--color-sun);
-}
-
-.Button--ocean {
-  background-color: var(--color-ocean);
-}
-
-.Button--ocean:hover,
-.Button--ocean:focus {
-  color: var(--color-ocean);
-}
-
-.Button--celestial {
-  background-color: var(--color-celestial);
-}
-
-.Button--celestial:hover,
-.Button--celestial:focus {
-  color: var(--color-celestial);
-}
-
-.Button--mauve {
-  background-color: var(--color-mauve);
-}
-
-.Button--mauve:hover,
-.Button--mauve:focus {
-  color: var(--color-mauve);
-}
-
-.Button--inverted {
-  background: none;
-  border: 3px solid var(--color-metal);
-  color: var(--color-metal);
-}
-
-.Button--inverted:focus
-.Button--inverted:hover {
-  background-color: var(--color-metal);
   color: var(--color-white);
 }
 
@@ -109,34 +45,7 @@
 
 .Button--loading {
   background-color: var(--color-white);
-  border: 3px solid var(--color-white);
   color: var(--color-white);
   opacity: 0.3;
   pointer-events: none;
-}
-
-@media (--md-viewport), (--lg-viewport) {
-
-  .Button {
-    padding: 1rem 3rem 0.9rem;
-  }
-
-  .Button--article {
-    margin: 0.4rem 0.4rem 0 0;
-    width: auto;
-  }
-
-  .Button--md {
-    border: 4px solid var(--color-white);
-    font-size: calc(21rem / var(--base-font-size));
-    margin-top: 1.5rem;
-  }
-}
-
-@media (--lg-viewport) {
-
-  .Button--md {
-    font-size: calc(24rem / var(--base-font-size));
-    margin-top: 2.5rem;
-  }
 }

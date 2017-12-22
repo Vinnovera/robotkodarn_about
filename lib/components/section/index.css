@@ -2,10 +2,6 @@
 
 @import "../base";
 
-.Section {
-  margin: 2rem 1.5rem;
-}
-
 .Section-heading3--card {
   color: var(--color-ocean);
   display: inline;
@@ -54,18 +50,14 @@
   font-size: calc(26rem / var(--base-font-size));
   font-weight: var(--font-weight-extrabold);
   line-height: 1.2;
-  padding-top: 0.5rem;
+  margin: 3rem 1.5rem 1rem;
   width: 100%;
 }
 
 /* Paragraphs in text */
 
 .Section-paragraph {
-  margin-bottom: 2rem;
-}
-
-.Section-paragraph:last-of-type {
-  margin-bottom: 1.8rem;
+  margin: 0 1.5rem 1rem;
 }
 
 .Section-paragraph:first-of-type {
@@ -97,37 +89,60 @@
 }
 
 .Section-content--celestial .Section-quote::first-line,
-.Section-content--sun .Section-quote::first-line,
-.Section-content--ocean .Section-quote::first-line {
+.Section-icon--celestial {
   color: var(--color-celestial);
 }
 
-.Section-content--mauve .Section-quote::first-line {
+.Section-content--mauve .Section-quote::first-line,
+.Section-icon--mauve {
   color: var(--color-mauve);
 }
 
-.Section-content--grass .Section-quote::first-line {
+.Section-content--grass .Section-quote::first-line,
+.Section-icon--grass {
   color: var(--color-grass);
+}
+
+.Section-content--sun .Section-quote::first-line,
+.Section-icon--sun {
+  color: var(--color-sun);
+}
+
+.Section-content--ocean .Section-quote::first-line,
+.Section-icon--ocean {
+  color: var(--color-ocean);
 }
 
 /* Animations */
 
 /* stylelint-disable */
 
-.has-js .Section-expander--implode {
-  animation: Section-expander--imploding 170ms forwards var(--expander-easing);
-  transform-origin: 0 0;
+.has-js .Section-expander {
+  padding: 0 1.5rem;
 }
 
-.has-js .Section-expander--implode button {
-  color: var(--color-metal);
+.has-js .Section-expander--implode {
+  animation: Section-expander--imploding 170ms forwards var(--expander-easing);
+}
+
+.has-js .Section-expander--appearing {
+  animation: Section-expander--appearing 170ms forwards var(--expander-easing);
+  opacity: 0;
+  transform: translateX(-150px);
 }
 
 .has-js .Section-content--appear {
-  margin-top: 1.5rem;
   animation: Section-content--appearing 260ms forwards var(--expander-easing) 90ms;
+  background-color: var(--color-snow);
+  border-top: 7px solid var(--color-slush);
+  border-bottom: 7px solid var(--color-slush);
   opacity: 0;
-  transform: translateY(200px);
+  transform: translateY(400px);
+  padding: 2rem 1.5rem 2rem;
+}
+
+.has-js .Section-content--appear .Section-paragraph {
+  margin: 0 0 1rem;
 }
 
 /* stylelint-enable */
@@ -135,7 +150,16 @@
 @keyframes Section-expander--imploding {
 
   to {
-    transform: scaleY(0);
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+}
+
+@keyframes Section-expander--appearing {
+
+  to {
+    opacity: 0;
+    transform: translateX(0);
   }
 }
 
@@ -147,12 +171,37 @@
   }
 }
 
+@keyframes Section-content--disappearing {
+
+  to {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+}
+
 @media (--md-viewport), (--lg-viewport) {
 
-  .Section:not(.Section--team) {
+  .Section-title {
+    font-size: calc(34rem / var(--base-font-size));
+    margin: 3rem 6rem 0.5rem;
+    max-width: var(--width-md);
+  }
+
+  .Section-paragraph {
     margin-left: 6rem;
     max-width: var(--width-md);
   }
+
+  /* stylelint-disable */
+
+  .has-js .Section-expander,
+  .has-js .Section-content--appear {
+    padding-left: 6rem;
+  }
+
+  /* stylelint-enable */
+
+  /* Team */
 
   .Section--team {
     padding-left: 6rem;
@@ -166,23 +215,6 @@
 
   .Section-card {
     padding: 2rem 5rem 2rem 0;
-  }
-
-  .Section-title {
-    font-size: calc(34rem / var(--base-font-size));
-    margin: 3rem 0 0.5rem;
-  }
-
-  .Section-title--team {
-    margin-top: 0;
-  }
-
-  .Section-paragraph:last-of-type {
-    margin-bottom: 1.8rem;
-  }
-
-  .Section-quote {
-    margin: 3rem 2.5rem;
   }
 }
 
