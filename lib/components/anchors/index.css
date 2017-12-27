@@ -2,7 +2,19 @@
 
 .Anchors {
   background-color: var(--color-offwhite);
-  padding: 1.2rem 1.5rem 1.4rem;
+  box-shadow: 0 4px 0 var(--color-snow);
+  padding: 1.4rem 1.5rem 1.4rem;
+  position: relative;
+  width: 100%;
+}
+
+.Anchors::after {
+  box-shadow: 0 5px 0 var(--color-slush);
+  content: "";
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
@@ -13,7 +25,6 @@
   font-family: var(--font-family-sans);
   font-size: calc(15rem / var(--base-font-size));
   font-weight: 600;
-  line-height: 1.9;
   padding-bottom: 0.2em;
   transition: color 250ms var(--easing);
 }
@@ -22,6 +33,10 @@
 
 .Anchors-listitem--grass:not(:last-of-type)::after {
   color: var(--color-grass);
+}
+
+.Anchors--grass::after {
+  background-image: var(--gradient-grass);
 }
 
 .Anchors-link--grass:hover,
@@ -33,6 +48,10 @@
   color: var(--color-sun);
 }
 
+.Anchors--sun::after {
+  background-image: var(--gradient-sun);
+}
+
 .Anchors-link--sun:hover,
 .Anchors-link--sun:focus {
   color: var(--color-sun);
@@ -40,6 +59,10 @@
 
 .Anchors-listitem--ocean:not(:last-of-type)::after {
   color: var(--color-ocean);
+}
+
+.Anchors--ocean::after {
+  background-image: var(--gradient-ocean);
 }
 
 .Anchors-link--ocean:hover,
@@ -51,6 +74,10 @@
   color: var(--color-celestial);
 }
 
+.Anchors--celestial::after {
+  background-image: var(--gradient-celestial);
+}
+
 .Anchors-link--celestial:hover,
 .Anchors-link--celestial:focus {
   color: var(--color-celestial);
@@ -58,6 +85,10 @@
 
 .Anchors-listitem--mauve:not(:last-of-type)::after {
   color: var(--color-mauve);
+}
+
+.Anchors--mauve::after {
+  background-image: var(--gradient-mauve);
 }
 
 .Anchors-link--mauve:hover,

@@ -40,12 +40,14 @@
 }
 
 .Form-link {
+  border-bottom: 3px solid transparent;
   font-weight: 800;
+  transition: border 250ms var(--easing);
 }
 
 .Form-link:hover,
 .Form-link:focus {
-  color: var(--color-white);
+  border-bottom: 3px solid var(--color-metal);
 }
 
 @media (--sm-viewport) {

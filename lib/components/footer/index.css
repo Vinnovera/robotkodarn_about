@@ -16,11 +16,6 @@
   font-family: var(--font-family-sans);
 }
 
-.Footer-link:hover,
-.Footer-link:active {
-  font-weight: 700;
-}
-
 .Footer-link--expressive {
   border-bottom: 2px solid var(--color-ocean);
   color: var(--color-ocean);
