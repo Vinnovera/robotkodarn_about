@@ -64,6 +64,14 @@
   margin-top: 1rem;
 }
 
+/*
+* 1. To align lists with other content
+*/
+
+.Section-list {
+  padding: 0 1.1rem; /* 1. */
+}
+
 .Section-link {
   border-bottom: 2px solid var(--color-trueblue);
   color: var(--color-trueblue);
@@ -189,7 +197,8 @@
     max-width: var(--width-md);
   }
 
-  .Section-paragraph {
+  .Section-paragraph,
+  .Section-quote {
     margin-left: 6rem;
     max-width: var(--width-md);
   }
