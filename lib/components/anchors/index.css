@@ -1,0 +1,93 @@
+/** @define Anchors */
+
+.Anchors {
+  background-color: var(--color-offwhite);
+  padding: 1.2rem 1.5rem 1.4rem;
+  width: 100%;
+}
+
+/* Links */
+
+.Anchors-link {
+  color: var(--color-metal);
+  font-family: var(--font-family-sans);
+  font-size: calc(15rem / var(--base-font-size));
+  font-weight: 600;
+  line-height: 1.9;
+  padding-bottom: 0.2em;
+  transition: color 250ms var(--easing);
+}
+
+/* Colors 🌈 */
+
+.Anchors-listitem--grass:not(:last-of-type)::after {
+  color: var(--color-grass);
+}
+
+.Anchors-link--grass:hover,
+.Anchors-link--grass:focus {
+  color: var(--color-grass);
+}
+
+.Anchors-listitem--sun:not(:last-of-type)::after {
+  color: var(--color-sun);
+}
+
+.Anchors-link--sun:hover,
+.Anchors-link--sun:focus {
+  color: var(--color-sun);
+}
+
+.Anchors-listitem--ocean:not(:last-of-type)::after {
+  color: var(--color-ocean);
+}
+
+.Anchors-link--ocean:hover,
+.Anchors-link--ocean:focus {
+  color: var(--color-ocean);
+}
+
+.Anchors-listitem--celestial:not(:last-of-type)::after {
+  color: var(--color-celestial);
+}
+
+.Anchors-link--celestial:hover,
+.Anchors-link--celestial:focus {
+  color: var(--color-celestial);
+}
+
+.Anchors-listitem--mauve:not(:last-of-type)::after {
+  color: var(--color-mauve);
+}
+
+.Anchors-link--mauve:hover,
+.Anchors-link--mauve:focus {
+  color: var(--color-mauve);
+}
+
+/* List items */
+
+.Anchors-listitem {
+  display: inline;
+}
+
+.Anchors-listitem:not(:last-of-type)::after {
+  content: "\2023";
+  margin: 0 0.6rem;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Anchors {
+    padding-left: 6rem;
+  }
+
+  .Anchors-link {
+    font-size: calc(16rem / var(--base-font-size));
+  }
+
+  .Anchors-list {
+    max-width: var(--width-lg);
+  }
+
+}

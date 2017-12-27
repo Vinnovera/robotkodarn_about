@@ -10,8 +10,22 @@
   position: relative;
 }
 
+.Hero-main {
+  margin: 0 1.5rem 2rem;
+}
+
+.Hero--article,
+.Hero--contact {
+  align-items: flex-end;
+  padding-top: 8rem;
+}
+
 .Hero-content--homepage {
   max-width: var(--width-lg);
+}
+
+.Hero-content--article {
+  width: 100%;
 }
 
 .Hero-introduction {
@@ -19,7 +33,6 @@
   font-size: calc(21rem / var(--base-font-size));
   font-weight: 700;
   line-height: 1.4;
-  margin-bottom: 1.5rem;
 }
 
 .Hero-introduction--lg {
@@ -46,46 +59,34 @@
   padding: 1.5rem;
 }
 
-.Hero--article,
 .Hero--contact {
-  align-items: flex-end;
-  padding: 8rem 1.5rem 2rem;
-}
-
-@media (--sm-viewport) {
-
-  .Hero-buttons {
-    width: 100%;
-  }
+  padding: 8rem 1.5rem 2.5rem;
 }
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Hero:not(.Hero--homepage) {
-    min-height: 90vh;
-  }
-
-  .Hero-introduction {
+  .Hero-main {
+    margin: 0 0 4rem 6rem;
     max-width: var(--width-lg);
   }
 
   .Hero-introduction--lg {
     font-size: calc(28rem / var(--base-font-size));
+    max-width: var(--width-xl);
   }
 
-  .Hero--article,
+  .Hero--article {
+    padding: 8rem 0 0;
+  }
+
   .Hero--contact {
     max-width: calc(6rem + 800px);
-    padding: 8rem 0 5rem 6rem;
+    padding: 8rem 0 4rem 6rem;
   }
 
 }
 
 @media (--lg-viewport) {
-
-  .Hero--article {
-    padding: 8rem 0 4rem 6rem;
-  }
 
   .Hero-content--lg {
     max-width: var(--width-xl);
@@ -93,12 +94,6 @@
 
   .Hero-introduction--lg {
     font-size: calc(34rem / var(--base-font-size));
-    max-width: var(--width-xl);
   }
-
-  .Hero-buttons {
-    display: block;
-  }
-
 }
 

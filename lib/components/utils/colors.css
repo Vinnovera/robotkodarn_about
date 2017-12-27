@@ -21,3 +21,16 @@
 .u-backgroundWhite {
   background-color: var(--color-white) !important;
 }
+
+/* Loading states */
+
+.u-loading {
+  background-color: var(--color-light-grey) !important;
+  color: var(--color-light-grey) !important;
+}
+
+.u-loadingTransparent {
+  background-color: var(--color-white) !important;
+  color: var(--color-white) !important;
+  opacity: 0.3 !important;
+}

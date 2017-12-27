@@ -64,15 +64,3 @@
     max-width: var(--width-md);
   }
 }
-
-/* loading */
-
-.Blurb-text--loading {
-  min-height: 60vh;
-}
-
-.Blurb-text--loading .Blurb-content--loading,
-.Blurb-title--loading {
-  background: var(--color-light-grey);
-  color: var(--color-light-grey);
-}

@@ -11,10 +11,3 @@
 .Blurb-content--visible {
   transform: translateY(0);
 }
-
-/* Placeholder styling while waiting for content being fetched from CMS */
-
-.Blurb-content--loading {
-  min-height: 300px;
-  min-width: 100%;
-}

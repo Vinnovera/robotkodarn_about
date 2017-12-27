@@ -69,7 +69,8 @@
 */
 
 .Section-list {
-  padding: 0 1.1rem; /* 1. */
+  list-style-type: initial;
+  margin: 0 1.3rem 1rem; /* 1. */
 }
 
 .Section-link {
@@ -239,17 +240,4 @@
     padding-left: 6rem;
   }
 
-}
-
-/* Loading state */
-
-.Section-text--loading {
-  background-color: var(--color-light-grey);
-  color: var(--color-light-grey);
-  height: 200px;
-}
-
-.Section-title--loading {
-  background-color: var(--color-light-grey);
-  color: var(--color-light-grey);
 }

@@ -26,6 +26,7 @@
   --color-purple-light: #ebedff;
   --color-smoke: #f2f2f2;
   --color-snow: #f5f4f4;
+  --color-offwhite: #f8f8f8;
   --color-slush: #ebebeb;
   --color-transparent: rgba(255, 255, 255, 0.8);
   --color-white: #fff;
@@ -36,7 +37,7 @@
   --gradient-celestial: linear-gradient(44deg, #98128d 0%, #202b89 100%);
   --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
   --gradient-grass: linear-gradient(12deg, #0e7352, #3cbd59);
-  --gradient-ocean: linear-gradient(49deg, #044978, #0099E0);
+  --gradient-ocean: linear-gradient(49deg, #044978, #0099e0);
   --gradient-mauve: linear-gradient(-94deg, #b41e4c, #851359 100%);
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
 
@@ -108,10 +109,6 @@ ol {
   font-size: calc(19rem / var(--base-font-size));
   line-height: 1.5;
   margin: 0;
-}
-
-li {
-  list-style-type: initial;
 }
 
 ol li {

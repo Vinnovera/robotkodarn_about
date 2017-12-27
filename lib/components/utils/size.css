@@ -10,12 +10,12 @@
   max-width: var(--width-md) !important;
 }
 
-.u-heightL {
-  min-height: 350px !important;
-}
-
 .u-width50 {
   width: 50% !important;
+}
+
+.u-width100 {
+  width: 100% !important;
 }
 
 .u-widthL {
@@ -25,6 +25,21 @@
 .u-widthXL {
   max-width: var(--width-xl) !important;
 }
+
+/* Height */
+
+.u-heightS {
+  min-height: 100px !important;
+}
+
+.u-heightM {
+  min-height: 200px !important;
+}
+
+.u-heightL {
+  min-height: 350px !important;
+}
+
 
 /* Paddings */
 
