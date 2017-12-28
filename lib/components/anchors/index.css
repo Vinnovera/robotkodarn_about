@@ -23,7 +23,7 @@
 
 .Anchors-listitem {
   float: left;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.4rem 0.2rem;
 }
 
 /* Links */
@@ -34,7 +34,7 @@
   font-family: var(--font-family-sans);
   font-size: calc(15rem / var(--base-font-size));
   font-weight: 600;
-  padding: 0.2rem 0.5rem 0.2rem 0.4rem;
+  padding: 0.2rem 0.4rem 0.2rem 0.2rem;
   transition: color 250ms var(--easing), background 250ms var(--easing);
   white-space: nowrap;
 }
