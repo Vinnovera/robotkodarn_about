@@ -21,9 +21,9 @@
   color: var(--color-grass);
 }
 
-.Pattern--sun {
-  background-image: var(--gradient-sun);
-  color: var(--color-sun);
+.Pattern--autumn {
+  background-image: var(--gradient-autumn);
+  color: var(--color-autumn);
 }
 
 .Pattern--celestial {

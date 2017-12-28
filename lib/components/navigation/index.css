@@ -270,8 +270,8 @@
     color: var(--color-grass);
   }
 
-  .Navigation-listLink--active.Navigation-listLink--sun {
-    color: var(--color-sun);
+  .Navigation-listLink--active.Navigation-listLink--autumn {
+    color: var(--color-autumn);
   }
 
   .Navigation-listLink--active.Navigation-listLink--mauve {

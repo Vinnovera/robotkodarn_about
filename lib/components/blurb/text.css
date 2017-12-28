@@ -18,12 +18,12 @@
 
 .Blurb-title,
 .Blurb-heading3 {
-  background: var(--gradient-sun);
+  background: var(--gradient-autumn);
   /* stylelint-disable */
   -webkit-background-clip: text;
   /* stylelint-enable */
   background-clip: text;
-  color: var(--color-sun);
+  color: var(--color-autumn);
   font-weight: 800;
   line-height: 1.4;
   -webkit-text-fill-color: transparent;

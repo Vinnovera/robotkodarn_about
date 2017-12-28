@@ -35,18 +35,18 @@
 
   /* Gradients */
   --gradient-celestial: linear-gradient(44deg, #98128d 0%, #202b89 100%);
-  --gradient-sun: linear-gradient(155deg, #feac28, #df4b6b);
-  --gradient-grass: linear-gradient(12deg, #0e7352, #3cbd59);
+  --gradient-grass: linear-gradient(79deg, #083d2d, #40a11c 100%);
+  --gradient-autumn: linear-gradient(77deg, #30095d, #b21474);
   --gradient-ocean: linear-gradient(49deg, #044978, #0099e0);
-  --gradient-mauve: linear-gradient(-94deg, #b41e4c, #851359 100%);
+  --gradient-mauve: linear-gradient(-94deg, #a3103d, #5f033b 100%);
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
 
   /* Bright colors corresponding to gradients */
   --color-celestial: #98128d;
-  --color-sun: #f5913b;
-  --color-grass: #0b855d;
+  --color-grass: #1a6b35;
+  --color-autumn: #640e61;
   --color-ocean: #1271b2;
-  --color-mauve: #851359;
+  --color-mauve: #7d063b;
   --color-mint: #05e5b1;
 }
 

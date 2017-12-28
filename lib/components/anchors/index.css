@@ -23,7 +23,7 @@
 
 .Anchors-listitem {
   float: left;
-  margin: 0 0 0.4rem 0.2rem;
+  margin: 0 0 0.4rem 0.6rem;
 }
 
 /* Links */
@@ -62,8 +62,8 @@
   color: var(--color-grass);
 }
 
-.Anchors-arrow--sun {
-  color: var(--color-sun);
+.Anchors-arrow--autumn {
+  color: var(--color-autumn);
 }
 
 .Anchors-arrow--ocean {

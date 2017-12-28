@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.Hero--contact {
+  min-height: 88vh;
+}
+
 .Hero-main {
   margin: 0 1.5rem 2rem;
 }

@@ -1,9 +1,9 @@
 {
     "name": "Robotkodarn",
     "short_name": "Robotkodarn",
-    "background_color": "#f5913b",
+    "background_color": "#30095d",
     "display": "standalone",
-    "theme_color": "#f5913b",
+    "theme_color": "#30095d",
     "orientation": "portrait",
     "icons": [
         {
