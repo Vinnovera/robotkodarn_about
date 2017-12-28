@@ -1,6 +1,6 @@
 {
   "name": "robotkodarn-about",
-  "version": "0.1.2rc1",
+  "version": "0.1.2rc5",
   "description": "A site about the project Robotkodarn.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "node index.js",
     "start:dev": "nodemon -r dotenv/config -i lib/components --inspect index.js",
     "build": "npm run build:css && npm run build:js",
-    "build:js": "browserify lib/app/index.js --transform-key=production -p tinyify -o public/index-$npm_package_version.js",
+    "build:js": "browserify lib/app/index.js -p tinyify -o public/index-$npm_package_version.js",
     "build:css": "postcss lib/app/index.css --no-map -o public/index-$npm_package_version.css",
     "postbuild": "npm run compress",
     "compress": "npm run compress:css && npm run compress:js",
@@ -16,7 +16,7 @@
     "compress:css": "gzip -9 -f -c public/index-$npm_package_version.css > public/index-$npm_package_version.css.gz"
   },
   "browserify": {
-    "production": [
+    "transform": [
       "localenvify",
       "yo-yoify",
       "babelify"
