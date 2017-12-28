@@ -12,6 +12,14 @@
   justify-content: flex-end !important;
 }
 
+/* Fix for vertical align in IE11 */
+
+.u-flexWrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
 .u-inlineBlock {
   display: inline-block;
 }
