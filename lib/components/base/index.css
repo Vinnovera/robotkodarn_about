@@ -87,10 +87,12 @@ button {
 
 button:focus,
 button:active,
+a,
 a:focus,
 a:active {
   box-shadow: none;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
