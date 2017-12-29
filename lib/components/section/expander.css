@@ -1,0 +1,96 @@
+/** @define Section */
+
+@import "../base";
+
+.has-js .Section-expander {
+  padding: 0 1.5rem;
+}
+
+/* Read more icon + Toggle Button */
+
+.has-js .Section-expander--implode {
+  animation: Section-expander--imploding 270ms forwards var(--expander-easing);
+}
+
+.has-js .Section-expander--expand {
+  animation: Section-expander--imploding 270ms forwards var(--expander-easing);
+  animation-direction: reverse;
+}
+
+@keyframes Section-expander--imploding {
+
+  to {
+    opacity: 0;
+  }
+}
+
+.has-js .Section-expander--implode .Section-icon {
+  animation: Section-icon--imploding 270ms forwards var(--expander-easing);
+}
+
+.has-js .Section-expander--expand .Section-icon {
+  animation: Section-icon--imploding 270ms forwards var(--expander-easing);
+  animation-direction: reverse;
+}
+
+@keyframes Section-icon--imploding {
+
+  0% {
+    transform: Scale(1);
+  }
+
+  25% {
+    transform: Scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Content with more information, slides in  */
+
+.has-js .Section-content--expandable {
+  animation: Section-content--expanding 230ms forwards var(--expander-easing) 90ms;
+  background-color: var(--color-snow);
+  border-bottom: 7px solid var(--color-slush);
+  border-top: 7px solid var(--color-slush);
+  opacity: 0;
+  padding: 0 0 0.5rem;
+  transform: translateY(400px);
+}
+
+@keyframes Section-content--expanding {
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.has-js .Section-content--implode {
+  animation: Section-content--imploding 2500ms forwards var(--expander-easing) 200ms;
+}
+
+.has-js .Section-content--implode .Section-icon {
+  animation: Section-icon--imploding 270ms forwards var(--expander-easing);
+}
+
+@keyframes Section-content--imploding {
+
+  to {
+    opacity: 0;
+  }
+}
+
+.has-js .Section-content--appear .Section-paragraph {
+  margin: 0 0 1rem;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .has-js .Section-expander,
+  .has-js .Section-content--appear {
+    padding-left: 6rem;
+  }
+}

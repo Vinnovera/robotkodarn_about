@@ -1,0 +1,43 @@
+/** @define Section */
+
+@import "../base";
+
+.Section--team {
+  margin-bottom: 4rem;
+  padding: 0 1.5rem 0;
+}
+
+.Section-cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+
+.Section-card {
+  background-image: var(--gradient-ice);
+  border: 2.5px solid var(--color-ice);
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+
+.Section-card .Section-list {
+  margin: 1rem 1.5rem;
+}
+
+.Section-date--autumn {
+  color: var(--color-autumn);
+  font-weight: 700;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Section--team {
+    padding-left: 6rem;
+  }
+
+  .Section-cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--width-md);
+  }
+}

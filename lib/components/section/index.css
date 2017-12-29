@@ -1,67 +1,40 @@
 /** @define Section */
 
+@import "./expander";
+@import "./team";
 @import "../base";
-
-.Section-heading3--card {
-  color: var(--color-ocean);
-  display: inline;
-  font-size: calc(16rem / var(--base-font-size));
-}
-
-.Section--team {
-  background-color: var(--color-metal);
-  color: var(--color-white);
-  margin: 6rem 0 0;
-  padding: 2rem;
-  width: 100%;
-}
 
 .Section--article.Section--text:last-of-type {
   margin-bottom: 6rem;
-}
-
-.Section-cards {
-  background-color: var(--color-white);
-  display: grid;
-  grid-gap: 1px 0;
-  grid-template-columns: 1fr;
-}
-
-.Section-card {
-  background-color: var(--color-metal);
-  border-radius: 1px;
-  padding: 1rem 0 2rem;
-  position: relative;
-}
-
-.Section-card .Section-list {
-  margin: 1.5rem 0;
-}
-
-.Section-card .Section-paragraph,
-.Section-card .Section-listitem {
-  font-family: var(--font-family-sans);
-  font-size: calc(18rem / var(--base-font-size));
-  font-weight: var(--font-weight-semi);
-  line-height: 1.4;
 }
 
 .Section-title {
   font-size: calc(26rem / var(--base-font-size));
   font-weight: var(--font-weight-extrabold);
   line-height: 1.2;
-  margin: 2rem 1.5rem 1rem;
   padding-top: 1rem;
+}
+
+.Section-title--text {
+  margin: 2rem 1.5rem 0.5rem;
+}
+
+.Section-title--team {
+  margin: 2rem 0 0.5rem;
 }
 
 /* Paragraphs in text */
 
-.Section-paragraph {
-  margin: 0 1.5rem 1rem;
+.Section--text .Section-paragraph {
+  padding: 0 1.5rem 1rem;
 }
 
-.Section-paragraph:first-of-type {
-  margin-top: 1rem;
+.Section--text .Section-paragraph:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.Section-icon {
+  margin-right: 0.5rem;
 }
 
 /*
@@ -70,7 +43,7 @@
 
 .Section-list {
   list-style-type: initial;
-  margin: 0 1.3rem 1rem; /* 1. */
+  margin: 0 2.8rem 1rem; /* 1. */
 }
 
 .Section-link {
@@ -96,8 +69,14 @@
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: 1.6;
-  margin: 3rem 1rem;
+  margin: 2rem 1.5rem 2rem;
 }
+
+.Section-quote:first-of-type {
+  margin-top: 1rem;
+}
+
+/* Colors on quote 🌈 */
 
 .Section-content--celestial .Section-quote::first-line,
 .Section-icon--celestial {
@@ -114,9 +93,9 @@
   color: var(--color-grass);
 }
 
-.Section-content--sun .Section-quote::first-line,
-.Section-icon--sun {
-  color: var(--color-sun);
+.Section-content--autumn .Section-quote::first-line,
+.Section-icon--autumn {
+  color: var(--color-autumn);
 }
 
 .Section-content--ocean .Section-quote::first-line,
@@ -124,109 +103,30 @@
   color: var(--color-ocean);
 }
 
-/* Animations */
-
-/* stylelint-disable */
-
-.has-js .Section-expander {
-  padding: 0 1.5rem;
-}
-
-.has-js .Section-expander--implode {
-  animation: Section-expander--imploding 170ms forwards var(--expander-easing);
-}
-
-.has-js .Section-expander--appearing {
-  animation: Section-expander--appearing 170ms forwards var(--expander-easing);
-  opacity: 0;
-  transform: translateX(-150px);
-}
-
-.has-js .Section-content--appear {
-  animation: Section-content--appearing 260ms forwards var(--expander-easing) 90ms;
-  background-color: var(--color-snow);
-  border-top: 7px solid var(--color-slush);
-  border-bottom: 7px solid var(--color-slush);
-  opacity: 0;
-  transform: translateY(400px);
-  padding: 1rem 1.5rem 2rem;
-}
-
-.has-js .Section-content--appear .Section-paragraph {
-  margin: 0 0 1rem;
-}
-
-/* stylelint-enable */
-
-@keyframes Section-expander--imploding {
-
-  to {
-    opacity: 0;
-    transform: translateX(-150px);
-  }
-}
-
-@keyframes Section-expander--appearing {
-
-  to {
-    opacity: 0;
-    transform: translateX(0);
-  }
-}
-
-@keyframes Section-content--appearing {
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes Section-content--disappearing {
-
-  to {
-    opacity: 0;
-    transform: translateX(-150px);
-  }
-}
-
 @media (--md-viewport), (--lg-viewport) {
 
   .Section-title {
     font-size: calc(34rem / var(--base-font-size));
-    margin: 2rem 6rem 0.5rem;
+    margin: 2rem 0 0.5rem;
     max-width: var(--width-md);
   }
 
-  .Section-paragraph,
-  .Section-quote {
+  .Section-title--text {
     margin-left: 6rem;
-    max-width: var(--width-md);
   }
 
-  /* stylelint-disable */
-
-  .has-js .Section-expander,
-  .has-js .Section-content--appear {
-    padding-left: 6rem;
+  .Section--text .Section-paragraph,
+  .Section-quote {
+    max-width: calc(6rem + var(--width-md));
+    padding: 0 0 1.5rem 6rem;
   }
 
-  /* stylelint-enable */
-
-  /* Team */
-
-  .Section--team {
-    padding-left: 6rem;
+  .Section-quote {
+    margin: 2rem 0 2rem;
   }
 
-  .Section-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: var(--width-xl);
-  }
-
-  .Section-card {
-    padding: 2rem 5rem 2rem 0;
+  .Section-list {
+    margin-left: 7rem;
   }
 }
 
@@ -235,9 +135,4 @@
   .Section-title {
     font-size: calc(42rem / var(--base-font-size));
   }
-
-  .Section--team {
-    padding-left: 6rem;
-  }
-
 }

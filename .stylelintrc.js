@@ -9,7 +9,8 @@ module.exports = {
   ],
   "rules": {
     "plugin/selector-bem-pattern": {
-      "preset": "suit"
+      "preset": "suit",
+      "ignoreSelectors": /^\.has-js/
     }
   }
 }

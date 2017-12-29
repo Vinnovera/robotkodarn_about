@@ -20,7 +20,7 @@
 .Blurb-heading3 {
   background: var(--gradient-autumn);
   /* stylelint-disable */
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* 1. */
   /* stylelint-enable */
   background-clip: text;
   color: var(--color-autumn);
