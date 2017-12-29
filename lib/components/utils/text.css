@@ -42,6 +42,10 @@
 
 /* Sizes */
 
+.u-textXS {
+  font-size: calc(16rem / var(--base-font-size)) !important;
+}
+
 .u-textS {
   font-size: calc(18rem / var(--base-font-size)) !important;
 }

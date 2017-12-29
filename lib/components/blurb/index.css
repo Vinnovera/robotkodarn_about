@@ -11,3 +11,10 @@
 .Blurb-content--visible {
   transform: translateY(0);
 }
+
+@media (--sm-viewport) {
+
+  .Blurb-content--text {
+    max-width: var(--width-sm);
+  }
+}

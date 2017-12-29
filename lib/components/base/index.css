@@ -40,6 +40,7 @@
   --gradient-ocean: linear-gradient(49deg, #044978, #0099e0);
   --gradient-mauve: linear-gradient(-94deg, #a3103d, #5f033b 100%);
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
+  --gradient-ice: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
   /* Bright colors corresponding to gradients */
   --color-celestial: #98128d;
@@ -48,6 +49,7 @@
   --color-ocean: #1271b2;
   --color-mauve: #7d063b;
   --color-mint: #05e5b1;
+  --color-ice: #ebedee;
 }
 
 @custom-media --sm-viewport (max-width:799px);

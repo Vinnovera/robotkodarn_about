@@ -4,7 +4,6 @@
 
 .Footer {
   background-color: var(--color-metal);
-  border-bottom: 9px solid var(--color-ocean);
   color: var(--color-white);
   padding: 2.5rem 1rem 2rem;
 }
