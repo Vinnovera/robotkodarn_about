@@ -4,7 +4,7 @@
   background-color: var(--color-offwhite);
   box-shadow: 0 4px 0 var(--color-snow);
   overflow: hidden;
-  padding: 1rem 1.5rem 0.5rem;
+  padding: 0.8rem 1.5rem 0.7rem;
   position: relative;
   width: 100%;
 }
@@ -66,6 +66,21 @@
 
 .Anchors-arrow--mauve {
   color: var(--color-mauve);
+}
+
+/**
+ * 1. On very small screens, anchors need to be adjusted to fit the screen
+ */
+
+@media (--xs-viewport) {
+
+  .Anchors-listitem {
+    float: none; /* 1. */
+  }
+
+  .Anchors-link {
+    white-space: normal; /* 1. */
+  }
 }
 
 @media (--md-viewport), (--lg-viewport) {
