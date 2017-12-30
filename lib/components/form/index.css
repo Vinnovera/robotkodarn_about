@@ -4,7 +4,7 @@
 
 .Form {
   background-image: var(--gradient-mint);
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem 4rem;
 }
 
 .Form-title {
@@ -54,10 +54,6 @@
 
   .Form-paragraph {
     margin-bottom: 3rem;
-  }
-
-  .Form {
-    min-height: 100vh;
   }
 
   .Form-text {

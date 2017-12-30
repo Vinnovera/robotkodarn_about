@@ -192,10 +192,6 @@
     font-weight: 800;
   }
 
-  .Navigation-listLink:hover {
-    padding: 0.2rem 1.8rem 0.18rem;
-  }
-
   .Navigation-listLink:hover:not(.Navigation-listLink--active) {
     color: var(--color-dark-grey);
   }

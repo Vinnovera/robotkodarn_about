@@ -3,7 +3,7 @@
 @import "../base";
 
 .has-js .Section-expander {
-  padding: 0 1.5rem;
+  margin: 1.5rem 0;
 }
 
 /* Read more icon + Toggle Button */
@@ -50,13 +50,20 @@
 
 /* Content with more information, slides in  */
 
-.has-js .Section-content--expandable {
-  animation: Section-content--expanding 230ms forwards var(--expander-easing) 90ms;
+.has-js .Section-elaborated {
   background-color: var(--color-snow);
   border-bottom: 7px solid var(--color-slush);
   border-top: 7px solid var(--color-slush);
+  padding-bottom: 2rem;
+}
+
+.has-js .Section-elaborated .Section-paragraph {
+  margin: 0 0 1rem;
+}
+
+.has-js .Section-elaborated--expand {
+  animation: Section-content--expanding 230ms forwards var(--expander-easing) 90ms;
   opacity: 0;
-  padding: 0 0 0.5rem;
   transform: translateY(400px);
 }
 
@@ -68,29 +75,6 @@
   }
 }
 
-.has-js .Section-content--implode {
-  animation: Section-content--imploding 2500ms forwards var(--expander-easing) 200ms;
-}
-
-.has-js .Section-content--implode .Section-icon {
+.has-js .Section-elaborated--implode .Section-icon {
   animation: Section-icon--imploding 270ms forwards var(--expander-easing);
-}
-
-@keyframes Section-content--imploding {
-
-  to {
-    opacity: 0;
-  }
-}
-
-.has-js .Section-content--appear .Section-paragraph {
-  margin: 0 0 1rem;
-}
-
-@media (--md-viewport), (--lg-viewport) {
-
-  .has-js .Section-expander,
-  .has-js .Section-content--appear {
-    padding-left: 6rem;
-  }
 }

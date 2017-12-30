@@ -4,32 +4,32 @@
 @import "./team";
 @import "../base";
 
+.Section--article {
+  padding-top: 1rem;
+}
+
 .Section--article.Section--text:last-of-type {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .Section-title {
   font-size: calc(26rem / var(--base-font-size));
   font-weight: var(--font-weight-extrabold);
   line-height: 1.2;
-  padding-top: 1rem;
-}
-
-.Section-title--text {
-  margin: 2rem 1.5rem 0.5rem;
-}
-
-.Section-title--team {
-  margin: 2rem 0 0.5rem;
+  padding-top: 2rem;
 }
 
 /* Paragraphs in text */
 
-.Section--text .Section-paragraph {
-  padding: 0 1.5rem 1rem;
+.Section-content {
+  margin: 0 1.5rem;
 }
 
-.Section--text .Section-paragraph:first-of-type {
+.Section-paragraph {
+  margin-bottom: 1rem;
+}
+
+.Section-content .Section-paragraph:first-of-type {
   margin-top: 1.5rem;
 }
 
@@ -43,7 +43,7 @@
 
 .Section-list {
   list-style-type: initial;
-  margin: 0 2.8rem 1rem; /* 1. */
+  margin: 0 1.2rem 1rem; /* 1. */
 }
 
 .Section-link {
@@ -69,7 +69,7 @@
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: 1.6;
-  margin: 2rem 1.5rem 2rem;
+  margin: 2rem 0;
 }
 
 .Section-quote:first-of-type {
@@ -107,26 +107,11 @@
 
   .Section-title {
     font-size: calc(34rem / var(--base-font-size));
-    margin: 2rem 0 0.5rem;
-    max-width: var(--width-md);
   }
 
-  .Section-title--text {
+  .Section-content {
     margin-left: 6rem;
-  }
-
-  .Section--text .Section-paragraph,
-  .Section-quote {
-    max-width: calc(6rem + var(--width-md));
-    padding: 0 0 1.5rem 6rem;
-  }
-
-  .Section-quote {
-    margin: 2rem 0 2rem;
-  }
-
-  .Section-list {
-    margin-left: 7rem;
+    max-width: var(--width-md);
   }
 }
 

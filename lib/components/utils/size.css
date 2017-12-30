@@ -40,7 +40,6 @@
   min-height: 350px !important;
 }
 
-
 /* Paddings */
 
 .u-paddingTopL {
@@ -84,6 +83,10 @@
 
 .u-marginTopM {
   margin-top: 1rem !important;
+}
+
+.u-marginTopL {
+  margin-top: 1.5rem !important;
 }
 
 .u-marginTopXL {

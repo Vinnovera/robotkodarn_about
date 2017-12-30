@@ -34,7 +34,7 @@
 
 .Hero-introduction {
   font-family: var(--font-family-sans);
-  font-size: calc(21rem / var(--base-font-size));
+  font-size: calc(20rem / var(--base-font-size));
   font-weight: 700;
   line-height: 1.4;
 }
