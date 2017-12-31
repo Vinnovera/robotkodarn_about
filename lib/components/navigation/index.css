@@ -41,10 +41,6 @@
     z-index: 4; /* 1. */
   }
 
-  .Navigation-link--open {
-    color: var(--color-metal);
-  }
-
   /*
   * 🍔  Menu icon
   */
@@ -73,12 +69,6 @@
     transform: rotate(0deg);
     transition: 200ms ease-in-out;
     width: 100%;
-  }
-
-  .Navigation-span1--open,
-  .Navigation-span2--open,
-  .Navigation-span3--open {
-    background: var(--color-metal);
   }
 
   .Navigation-span1 {
@@ -117,7 +107,7 @@
   /* 1. Needs to be placed above hero component */
 
   .Navigation-list {
-    background-color: var(--color-white);
+    background-color: var(--color-metal);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -127,13 +117,12 @@
     position: fixed;
     right: -100%;
     top: 0;
-    transition: 300ms right ease-out; /* TODO: Fix easing curve */
+    transition: 300ms right var(--easing);
     width: 100%;
   }
 
   .Navigation-list--open,
   .Navigation-list:target {
-    background-color: var(--color-white);
     color: var(--color-metal);
     right: 0;
   }
@@ -141,10 +130,10 @@
   /* List items */
 
   .Navigation-item {
-    margin-bottom: 1.7rem;
+    margin-bottom: 0.8rem;
     opacity: 0;
     transform: translateX(100px);
-    transition: transform 150ms ease-out, opacity 150ms ease-out;
+    transition: transform 150ms var(--easing), opacity 150ms var(--easing);
   }
 
   .Navigation-item--open,
@@ -178,22 +167,21 @@
   /* Links in navigation list */
 
   .Navigation-listLink {
-    border-radius: 2px;
     color: var(--color-grey);
     cursor: pointer;
-    font-size: calc(30rem / 16);
-    font-weight: 600;
+    font-size: calc(28rem / 16);
+    font-weight: 400;
     padding: 0.2rem 1rem 0.18rem;
     transition: padding 100ms ease-in-out, color 100ms ease-in-out;
   }
 
   .Navigation-listLink--active {
-    color: var(--color-metal);
+    color: var(--color-white);
     font-weight: 800;
   }
 
   .Navigation-listLink:hover:not(.Navigation-listLink--active) {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
   }
 }
 
@@ -206,8 +194,13 @@
     padding: 2.5rem 0 2.5rem;
   }
 
+  .Navigation-listLink {
+    font-size: calc(21rem / 16);
+    padding: 0.2rem 1.2rem 0.18rem;
+  }
+
   .Navigation-item {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
   }
 
 }
