@@ -9,15 +9,15 @@
 /* Read more icon + Toggle Button */
 
 .has-js .Section-expander--implode {
-  animation: Section-expander--imploding 270ms forwards var(--expander-easing);
+  animation: Section--imploding 270ms forwards var(--expander-easing);
 }
 
 .has-js .Section-expander--expand {
-  animation: Section-expander--imploding 270ms forwards var(--expander-easing);
+  animation: Section--imploding 270ms forwards var(--expander-easing);
   animation-direction: reverse;
 }
 
-@keyframes Section-expander--imploding {
+@keyframes Section--imploding {
 
   to {
     opacity: 0;
@@ -48,7 +48,7 @@
   }
 }
 
-/* Content with more information, slides in  */
+/* Content with elaborated information, slides in  */
 
 .has-js .Section-elaborated {
   background-color: var(--color-snow);
@@ -73,6 +73,10 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.has-js .Section-elaborated--implode .Section-buttontext {
+  animation: Section--imploding 270ms forwards var(--expander-easing);
 }
 
 .has-js .Section-elaborated--implode .Section-icon {
