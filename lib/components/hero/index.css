@@ -70,13 +70,22 @@
 @media (--md-viewport), (--lg-viewport) {
 
   .Hero-main {
-    margin: 0 0 4rem 6rem;
+    margin: 0 0 4rem 5rem;
     max-width: var(--width-lg);
+  }
+
+  /**
+   * 1. To prevent introduction to flow too close to edges on
+   * medium sized smart phones (i.e. iPhone X)
+   */
+
+  .Hero-introduction {
+    padding-right: 3rem; /* 1. */
   }
 
   .Hero-introduction--lg {
     font-size: calc(28rem / var(--base-font-size));
-    max-width: var(--width-xl);
+    max-width: var(--width-lg);
   }
 
   .Hero--article {
@@ -84,8 +93,8 @@
   }
 
   .Hero--contact {
-    max-width: calc(6rem + 800px);
-    padding: 8rem 0 4rem 6rem;
+    max-width: calc(4rem + 800px);
+    padding: 8rem 0 4rem 5rem;
   }
 
 }
@@ -98,6 +107,7 @@
 
   .Hero-introduction--lg {
     font-size: calc(34rem / var(--base-font-size));
+    max-width: var(--width-xl);
   }
 }
 

@@ -86,7 +86,7 @@
 @media (--md-viewport), (--lg-viewport) {
 
   .Anchors {
-    padding-left: 6rem;
+    padding-left: 5rem;
   }
 
   .Anchors-list {

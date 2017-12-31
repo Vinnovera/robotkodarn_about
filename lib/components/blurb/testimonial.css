@@ -5,7 +5,7 @@
 .Blurb-testimonial {
   color: var(--color-white);
   font-weight: 700;
-  padding: 6rem 1.5rem;
+  padding: 4rem 1.5rem;
   position: relative;
 }
 
@@ -43,7 +43,7 @@
 
   .Blurb-testimonial {
     line-height: 1.4;
-    padding: 10rem 6rem 8rem;
+    padding: 10rem 4rem 8rem;
   }
 
   .Blurb-quote {

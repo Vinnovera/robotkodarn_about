@@ -33,7 +33,7 @@
 @media (--md-viewport), (--lg-viewport) {
 
   .Section--team {
-    padding-left: 6rem;
+    padding-left: 5rem;
   }
 
   .Section-cards {
