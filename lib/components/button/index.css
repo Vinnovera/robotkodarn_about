@@ -17,6 +17,7 @@
   display: flex;
   font-size: var(14rem / var(--base-font-size));
   font-weight: var(--font-weight-bold);
+  padding: 1.5rem 0;
 }
 
 /* Styling for form buttons */

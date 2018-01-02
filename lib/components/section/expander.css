@@ -2,10 +2,6 @@
 
 @import "../base";
 
-.has-js .Section-expander {
-  margin: 1.5rem 0;
-}
-
 /* Read more icon + Toggle Button */
 
 .has-js .Section-expander--implode {
