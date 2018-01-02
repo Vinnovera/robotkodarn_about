@@ -50,7 +50,7 @@
   background-color: var(--color-snow);
   border-bottom: 7px solid var(--color-slush);
   border-top: 7px solid var(--color-slush);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .has-js .Section-elaborated .Section-paragraph {
