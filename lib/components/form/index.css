@@ -19,11 +19,25 @@
 }
 
 .Form-aside {
+  background-color: var(--color-semi-transparent);
+  border: 2px solid var(--color-metal);
+  box-shadow:
+    -1px 1px 0 var(--color-metal),
+    -2px 2px 0 var(--color-metal),
+    -3px 3px 0 var(--color-metal),
+    -4px 4px 0 var(--color-metal),
+    -5px 5px 0 var(--color-metal),
+    -6px 6px 0 var(--color-metal),
+    -7px 7px 0 var(--color-metal),
+    -8px 8px 0 var(--color-metal),
+    -9px 9px 0 var(--color-metal),
+    -10px 10px 0 var(--color-metal);
   display: flex;
   flex-direction: column;
   font-size: calc(18rem / var(--base-font-size));
   justify-content: center;
-  margin-right: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
 }
 
 .Form-text {
@@ -75,7 +89,7 @@
 @media (--md-viewport), (--lg-viewport) {
 
   .Form {
-    padding: 4rem 6rem 3rem;
+    padding: 3.7rem 4rem 4rem;
   }
 
   .Form-content {
@@ -95,10 +109,33 @@
   }
 
   .Form-aside {
+    box-shadow:
+      -1px 1px 0 var(--color-metal),
+      -2px 2px 0 var(--color-metal),
+      -3px 3px 0 var(--color-metal),
+      -4px 4px 0 var(--color-metal),
+      -5px 5px 0 var(--color-metal),
+      -6px 6px 0 var(--color-metal),
+      -7px 7px 0 var(--color-metal),
+      -8px 8px 0 var(--color-metal),
+      -9px 9px 0 var(--color-metal),
+      -10px 10px 0 var(--color-metal),
+      -11px 11px 0 var(--color-metal),
+      -12px 12px 0 var(--color-metal),
+      -13px 13px 0 var(--color-metal),
+      -14px 14px 0 var(--color-metal);
     flex-shrink: 0;
     margin-right: 2.5rem;
-    min-width: 230px;
-    width: 300px;
+    min-width: 400px;
+    padding: 2rem 1.5rem;
+    width: 400px;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Form-aside {
+    padding: 2.5rem 1rem;
   }
 }
 

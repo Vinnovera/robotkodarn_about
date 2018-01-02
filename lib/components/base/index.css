@@ -29,6 +29,7 @@
   --color-offwhite: #f8f8f8;
   --color-slush: #ebebeb;
   --color-transparent: rgba(255, 255, 255, 0.8);
+  --color-semi-transparent: rgba(255, 255, 255, 0.4);
   --color-white: #fff;
   --color-trueblue: #026dde;
   --color-blue: #00abf9;
@@ -74,6 +75,17 @@ h1,
 h2,
 h3 {
   font-family: var(--font-family-sans);
+}
+
+/**
+ * 1. Locally disable stylelint since it's usually not permitted to use
+ * vendor prefixes. Needed to remove default styling in Safari on iPhone.
+ */
+
+input {
+  /* stylelint-disable */
+  -webkit-appearance: none; /* 1. */
+  /* stylelint-enable */
 }
 
 button {

@@ -23,9 +23,10 @@
 /* Styling for form buttons */
 
 .Button--form {
+  background: var(--color-metal);
   border: 3px solid var(--color-metal);
   border-radius: 2px;
-  color: var(--color-metal);
+  color: var(--color-white);
   display: inline-block;
   font-weight: var(--font-weight-extrabold);
   padding: 1rem 1rem 0.9rem;
@@ -38,8 +39,8 @@
 
 .Button--form:hover,
 .Button--form:focus {
-  background: var(--color-metal);
-  color: var(--color-white);
+  background: none;
+  color: var(--color-metal);
 }
 
 /* Used as placeholder when content is loading */

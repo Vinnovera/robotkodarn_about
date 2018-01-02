@@ -10,22 +10,81 @@
   margin-bottom: 1.5rem;
 }
 
-/* 1. Test to make element fill the viewport */
+/* 1. To make element fill the viewport */
 
-.Heading--lg {
+.Heading--home,
+.Heading--contact {
   font-size: calc(42rem / var(--base-font-size));
   font-size: calc((98vw - 3rem) / 7); /* 1. */
   margin-bottom: 0.4rem;
 }
 
-@media (--md-viewport) {
+.Heading--home {
+  margin-bottom: 1rem;
+  text-shadow:
+    var(--color-celestial) 1px 1px,
+    var(--color-celestial) -0 0,
+    var(--color-celestial) -1px 1px,
+    var(--color-celestial) -2px 2px,
+    var(--color-celestial) -3px 3px,
+    var(--color-celestial) -4px 4px,
+    var(--color-celestial) -5px 5px,
+    var(--color-celestial) -6px 6px,
+    var(--color-celestial) -7px 7px,
+    var(--color-celestial) -8px 8px,
+    var(--color-celestial) -9px 9px,
+    var(--color-celestial) -10px 10px,
+    var(--color-celestial) -11px 11px,
+    var(--color-celestial) -12px 12px,
+    var(--color-celestial) -13px 13px,
+    var(--color-celestial) -14px 14px;
+}
+
+@media (--md-viewport), (--lg-viewport) {
 
   .Heading {
     font-size: calc(55rem / var(--base-font-size));
   }
 
-  .Heading--lg {
-    font-size: calc(89rem / var(--base-font-size));
+  .Heading--home,
+  .Heading--contact {
+    font-size: calc(100rem / var(--base-font-size));
+  }
+
+  .Heading--home {
+    margin-bottom: 2rem;
+    text-shadow:
+      var(--color-celestial) 1px 1px,
+      var(--color-celestial) -0 0,
+      var(--color-celestial) -1px 1px,
+      var(--color-celestial) -2px 2px,
+      var(--color-celestial) -3px 3px,
+      var(--color-celestial) -4px 4px,
+      var(--color-celestial) -5px 5px,
+      var(--color-celestial) -6px 6px,
+      var(--color-celestial) -7px 7px,
+      var(--color-celestial) -8px 8px,
+      var(--color-celestial) -9px 9px,
+      var(--color-celestial) -10px 10px,
+      var(--color-celestial) -11px 11px,
+      var(--color-celestial) -12px 12px,
+      var(--color-celestial) -13px 13px,
+      var(--color-celestial) -14px 14px,
+      var(--color-celestial) -15px 15px,
+      var(--color-celestial) -16px 16px,
+      var(--color-celestial) -17px 17px,
+      var(--color-celestial) -18px 18px,
+      var(--color-celestial) -19px 19px,
+      var(--color-celestial) -20px 20px,
+      var(--color-celestial) -21px 21px,
+      var(--color-celestial) -22px 22px,
+      var(--color-celestial) -23px 23px,
+      var(--color-celestial) -24px 24px,
+      var(--color-celestial) -25px 25px,
+      var(--color-celestial) -26px 26px,
+      var(--color-celestial) -27px 27px,
+      var(--color-celestial) -28px 28px,
+      var(--color-celestial) -29px 29px;
   }
 }
 
@@ -35,7 +94,8 @@
     font-size: calc(89rem / var(--base-font-size));
   }
 
-  .Heading--lg {
+  .Heading--home,
+  .Heading--contact {
     font-size: calc(130rem / var(--base-font-size));
   }
 }

@@ -1,5 +1,5 @@
 {
-  "Email": "E-post",
+  "Email": "E-postadress",
   "Your email": "Din e-postadress",
   "Exit": "Stäng",
   "Error": "Ooops!",
@@ -20,5 +20,6 @@
   "Signup": "Anmäl mig",
   "Read more": "Läs mer",
   "Show less": "Visa mindre",
-  "Contributor": "Medskapare"
+  "Contributor": "Medskapare",
+  "example@address.com": "namn@organisation.se"
 }

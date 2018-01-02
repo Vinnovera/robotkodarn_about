@@ -13,7 +13,7 @@
 
 /**
  * 1. Locally disable stylelint since it's usually not permitted to use
- * vendor prefixes. This is an exception.
+ * vendor prefixes.
  */
 
 .Blurb-title,
