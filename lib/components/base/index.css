@@ -43,8 +43,15 @@
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
   --gradient-ice: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
+  /* Use vendor prefixed gradients when used together with background clip,
+   * To avoid background color in IE.
+   */
+  --webkit-gradient-autumn: -webkit-linear-gradient(77deg, #30095d, #b21474);
+  --moz-gradient-autumn: -moz-linear-gradient(77deg, #30095d, #b21474);
+
   /* Bright colors corresponding to gradients */
-  --color-celestial: #98128d;
+  --color-celestial: #791b87;
+  --color-strong-celestial: #98128d;
   --color-grass: #1a6b35;
   --color-autumn: #640e61;
   --color-ocean: #1271b2;

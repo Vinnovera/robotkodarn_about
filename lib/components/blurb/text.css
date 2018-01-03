@@ -12,15 +12,17 @@
 }
 
 /**
- * 1. Locally disable stylelint since it's usually not permitted to use
+ * 1. Using vendor prefixes to avoid background color in IE
+ * 2. Locally disable stylelint since it's usually not permitted to use
  * vendor prefixes.
  */
 
 .Blurb-title,
 .Blurb-heading3 {
-  background: var(--gradient-autumn);
+  background: var(--webkit-gradient-autumn); /* 1. */
+  background: var(--moz-gradient-autumn); /* 1. */
   /* stylelint-disable */
-  -webkit-background-clip: text; /* 1. */
+  -webkit-background-clip: text; /* 2. */
   /* stylelint-enable */
   background-clip: text;
   color: var(--color-autumn);
