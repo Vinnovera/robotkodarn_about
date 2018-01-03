@@ -1,6 +1,7 @@
 const path = require('path')
 const Koa = require('koa')
 const koaStatic = require('koa-static')
+const koaBody = require('koa-body')
 const compress = require('koa-compress')
 const app = require('./lib/app')
 const render = require('./lib/middleware/render')
@@ -17,6 +18,9 @@ if (process.env.NODE_ENV === 'development') {
 
 // Serve static files from public folder
 server.use(koaStatic('public', { maxage: (1000 * 60 * 60 * 24 * 365) }))
+
+// Body parser middleware, needed to handle post requests
+server.use(koaBody())
 
 if (process.env.NODE_ENV !== 'development') {
   // Compress html

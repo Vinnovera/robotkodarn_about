@@ -52,8 +52,7 @@
 }
 
 .Hero--homepage,
-.Hero--error,
-.Hero--thanks {
+.Hero--error {
   align-items: center;
   justify-content: center;
   text-align: center;
