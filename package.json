@@ -15,6 +15,9 @@
     "compress:js": "gzip -9 -f -c public/index-$npm_package_version.js > public/index-$npm_package_version.js.gz",
     "compress:css": "gzip -9 -f -c public/index-$npm_package_version.css > public/index-$npm_package_version.css.gz"
   },
+  "engines": {
+    "node": ">7.6.0"
+  },
   "browserify": {
     "transform": [
       "localenvify",

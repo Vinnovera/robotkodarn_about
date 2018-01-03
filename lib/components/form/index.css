@@ -36,7 +36,8 @@
   flex-direction: column;
   font-size: calc(18rem / var(--base-font-size));
   justify-content: center;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 3rem;
+  position: relative;
   text-align: center;
 }
 
@@ -64,6 +65,42 @@
   border-bottom: 3px solid var(--color-metal);
 }
 
+.Form-feedback {
+  animation: Form-feedback--slide 250ms forwards var(--expander-easing);
+  bottom: 1rem;
+  font-family: var(--font-family-sans);
+  font-size: calc(16rem / var(--base-font-size));
+  font-weight: var(--font-weight-bold);
+  left: 0;
+  margin-top: 0.5rem;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(0.5rem);
+  width: 100%;
+}
+
+@keyframes Form-feedback--slide {
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Form-feedback--fade {
+  animation: Form-feedback--fade 250ms forwards var(--expander-easing);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes Form-feedback--fade {
+
+  to {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+}
+
 @media (--sm-viewport) {
 
   .Form-paragraph {
@@ -74,16 +111,6 @@
     font-weight: 600;
     margin-bottom: 2rem;
   }
-}
-
-/* Visually hide, but keep for a11y purposes */
-
-.Form-label--hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
 }
 
 @media (--md-viewport), (--lg-viewport) {
@@ -127,7 +154,7 @@
     flex-shrink: 0;
     margin-right: 2.5rem;
     min-width: 400px;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 3rem;
     width: 400px;
   }
 }
@@ -135,7 +162,7 @@
 @media (--lg-viewport) {
 
   .Form-aside {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1rem 3.5rem;
   }
 }
 
