@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'development') {
 server.use(koaStatic('public', { maxage: (1000 * 60 * 60 * 24 * 365) }))
 
 // Body parser middleware, needed to handle post requests
-server.use(koaBody())
+server.use(koaBody({ multipart: true }))
 
 if (process.env.NODE_ENV !== 'development') {
   // Compress html
