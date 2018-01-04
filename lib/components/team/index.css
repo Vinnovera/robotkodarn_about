@@ -1,0 +1,66 @@
+/** @define Team */
+
+@import "../base";
+
+.Team {
+  margin-bottom: 4rem;
+}
+
+.Team-content {
+  margin: 0 1.5rem;
+}
+
+.Team-title {
+  font-size: calc(26rem / var(--base-font-size));
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1.2;
+  padding-top: 2rem;
+}
+
+.Team-cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+
+.Team-card {
+  background-image: var(--gradient-ice);
+  border: 2.5px solid var(--color-ice);
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+
+.Team-card .Team-list {
+  list-style-type: initial;
+  margin: 1rem 1.5rem;
+}
+
+.Team-date--autumn {
+  color: var(--color-autumn);
+  font-weight: 700;
+}
+
+@media (--md-viewport), (--lg-viewport) {
+
+  .Team-content {
+    margin-left: 4rem;
+    max-width: var(--width-md);
+  }
+
+  .Team-title {
+    font-size: calc(34rem / var(--base-font-size));
+  }
+
+  .Team-cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--width-md);
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Team-title {
+    font-size: calc(42rem / var(--base-font-size));
+  }
+}
