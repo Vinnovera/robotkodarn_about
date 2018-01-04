@@ -84,15 +84,8 @@ h3 {
   font-family: var(--font-family-sans);
 }
 
-/**
- * 1. Locally disable stylelint since it's usually not permitted to use
- * vendor prefixes. Needed to remove default styling in Safari on iPhone.
- */
-
 input {
-  /* stylelint-disable */
-  -webkit-appearance: none; /* 1. */
-  /* stylelint-enable */
+  -webkit-appearance: none;
 }
 
 /* Remove Chrome's default appearance on autofill */
