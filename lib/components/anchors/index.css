@@ -30,7 +30,7 @@
 }
 
 .Anchors-arrow {
-  margin-left: 0.4rem;
+  margin-left: 0.2rem;
   transform: translate3d(0, 5.5px, 0);
   transition: transform 200ms var(--easing);
   width: 7.5px;
