@@ -1,7 +1,6 @@
 /** @define Section */
 
 @import "./expander";
-@import "./team";
 @import "../base";
 
 .Section--article {
@@ -9,7 +8,7 @@
 }
 
 .Section--article.Section--text:last-of-type {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .Section-title {
@@ -101,6 +100,11 @@
 .Section-content--ocean .Section-quote::first-line,
 .Section-icon--ocean {
   color: var(--color-ocean);
+}
+
+.Section-image {
+  margin-top: 1rem;
+  width: 100%;
 }
 
 @media (--md-viewport), (--lg-viewport) {

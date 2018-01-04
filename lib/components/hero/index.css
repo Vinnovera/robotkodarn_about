@@ -10,28 +10,6 @@
   position: relative;
 }
 
-.Hero--contact {
-  min-height: 88vh;
-}
-
-.Hero-main {
-  margin: 0 1.5rem 2rem;
-}
-
-.Hero--article,
-.Hero--contact {
-  align-items: flex-end;
-  padding-top: 8rem;
-}
-
-.Hero-content--homepage {
-  max-width: var(--width-lg);
-}
-
-.Hero-content--article {
-  width: 100%;
-}
-
 .Hero-introduction {
   font-family: var(--font-family-sans);
   font-size: calc(20rem / var(--base-font-size));
@@ -51,6 +29,8 @@
   opacity: 0.3;
 }
 
+/* Specific styles for different page types. */
+
 .Hero--homepage,
 .Hero--error {
   align-items: center;
@@ -58,29 +38,36 @@
   text-align: center;
 }
 
-.Hero--homepage {
-  padding: 1.5rem;
+.Hero-content--homepage {
+  margin: 1rem;
+  max-width: var(--width-lg);
+}
+
+.Hero--article {
+  align-items: flex-end;
+  padding-top: 8rem;
+}
+
+.Hero-content--article {
+  width: 100%;
+}
+
+/**
+ * Used on article pages to separate heading and introduction from
+ * anchor links, since both are present in hero.
+ */
+
+.Hero-main {
+  margin: 0 1.5rem 2rem;
 }
 
 .Hero--contact {
+  align-items: flex-end;
+  min-height: 88vh;
   padding: 8rem 1.5rem 2.5rem;
 }
 
 @media (--md-viewport), (--lg-viewport) {
-
-  .Hero-main {
-    margin: 0 0 4rem 4rem;
-    max-width: var(--width-lg);
-  }
-
-  /**
-   * 1. To prevent introduction to flow too close to edges on
-   * medium sized smart phones (i.e. iPhone X)
-   */
-
-  .Hero-introduction {
-    padding-right: 3rem; /* 1. */
-  }
 
   .Hero-introduction--lg {
     font-size: calc(28rem / var(--base-font-size));
@@ -89,6 +76,15 @@
 
   .Hero--article {
     padding: 8rem 0 0;
+  }
+
+  .Hero--homepage {
+    padding: 5rem 0;
+  }
+
+  .Hero-main {
+    margin: 0 0 4rem 4rem;
+    max-width: var(--width-lg);
   }
 
   .Hero--contact {

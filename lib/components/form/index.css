@@ -3,7 +3,7 @@
 @import "../base";
 
 .Form {
-  background-image: var(--gradient-mint);
+  background-image: var(--gradient-sun);
   padding: 3rem 1.5rem 4rem;
 }
 
@@ -116,7 +116,7 @@
 @media (--md-viewport), (--lg-viewport) {
 
   .Form {
-    padding: 3.7rem 4rem 4rem;
+    padding: 4rem;
   }
 
   .Form-content {

@@ -29,7 +29,7 @@
   --color-offwhite: #f8f8f8;
   --color-slush: #ebebeb;
   --color-transparent: rgba(255, 255, 255, 0.8);
-  --color-semi-transparent: rgba(255, 255, 255, 0.4);
+  --color-semi-transparent: rgba(255, 255, 255, 0.2);
   --color-white: #fff;
   --color-trueblue: #026dde;
   --color-blue: #00abf9;
@@ -41,6 +41,7 @@
   --gradient-ocean: linear-gradient(49deg, #044978, #0099e0);
   --gradient-mauve: linear-gradient(-94deg, #a3103d, #5f033b 100%);
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
+  --gradient-sun: linear-gradient(to right, #f7971e, #ffd200);
   --gradient-ice: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
   /* Use vendor prefixed gradients when used together with background clip,
