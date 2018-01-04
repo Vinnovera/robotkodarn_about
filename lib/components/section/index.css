@@ -3,11 +3,11 @@
 @import "./expander";
 @import "../base";
 
-.Section--article {
+.Section {
   padding-top: 1rem;
 }
 
-.Section--article.Section--text:last-of-type {
+.Section:last-of-type {
   margin-bottom: 6rem;
 }
 
