@@ -50,66 +50,168 @@
   color: transparent;
 }
 
-/* Animation */
+/* 🎉 Animations 🎉 */
 
-@keyframes Pattern-item--circling {
+/* Flash ⚡️ */
 
-  0% {
-    transform:
-      rotate(0deg),
-      translate(-150px)
-      rotate(0deg);
-  }
-
-  50% {
-    transform:
-      rotate(360deg)
-      translate(-150px)
-      rotate(-360deg);
-  }
-
-  100% {
-    transform:
-      rotate(0deg),
-      translate(-150px)
-      rotate(0deg);
-  }
+.Pattern-item--flash2 {
+  animation: Pattern-item--sidetoside 17000ms infinite linear both;
+  animation-delay: 2000ms;
 }
 
-.Pattern-item--flash1 {
-  animation: Pattern-item--fade 12000ms infinite ease-in-out both;
+/* Ring ⭕️ */
+
+.Pattern-item--ring1,
+.Pattern-item--ring4 {
+  animation: Pattern-item--diagonal 45000ms infinite linear both;
 }
 
-@keyframes Pattern-item--fade {
-
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+.Pattern-item--ring4 {
+  animation-delay: 6000ms;
 }
+
+.Pattern-item--ring2,
+.Pattern-item--ring5 {
+  animation: Pattern-item--upanddown 25000ms infinite linear both;
+  animation-delay: 1000ms;
+}
+
+.Pattern-item--ring5 {
+  animation-delay: 4750ms;
+}
+
+.Pattern-item--ring3 {
+  animation: Pattern-item--sidetoside 27000ms infinite linear both;
+  animation-delay: 2500ms;
+}
+
+/* Small dots 🔘 */
+
+.Pattern-item--dot1,
+.Pattern-item--dot5,
+.Pattern-item--dot9 {
+  animation: Pattern-item--sidetoside 16000ms infinite linear both;
+}
+
+.Pattern-item--dot5 {
+  animation-delay: 2500ms;
+}
+
+.Pattern-item--dot9 {
+  animation-delay: 4500ms;
+}
+
+.Pattern-item--dot2,
+.Pattern-item--dot4,
+.Pattern-item--dot6 {
+  animation: Pattern-item--upanddown 16000ms infinite linear both;
+}
+
+.Pattern-item--dot4 {
+  animation-delay: 2000ms;
+}
+
+.Pattern-item--dot6 {
+  animation-delay: 4000ms;
+}
+
+.Pattern-item--dot3,
+.Pattern-item--dot7
+.Pattern-item--dot10,
+.Pattern-item--dot11 {
+  animation: Pattern-item--diagonal 19000ms infinite linear both;
+}
+
+.Pattern-item--dot7 {
+  animation-delay: 3000ms;
+}
+
+.Pattern-item--dot10 {
+  animation-delay: 6000ms;
+}
+
+.Pattern-item--dot11 {
+  animation-delay: 9000ms;
+}
+
+/* Cross ❌ */
 
 .Pattern-item--cross4 {
-  animation: Pattern-item--jump 12000ms infinite ease-in-out both;
+  animation: Pattern-item--upanddown 25000ms infinite linear both;
 }
 
-@keyframes Pattern-item--jump {
+/* Line */
+
+.Pattern-item--line1 {
+  animation: Pattern-item--diagonal 25000ms infinite linear both;
+  animation-delay: 2000ms;
+}
+
+/* Triangle 🔺 */
+
+.Pattern-item--triangle1 {
+  animation: Pattern-item--sidetoside 22000ms infinite linear both;
+  animation-delay: 1500ms;
+}
+
+.Pattern-item--triangle2 {
+  animation: Pattern-item--upanddown 26000ms infinite linear both;
+  animation-delay: 7500ms;
+}
+
+/* Bow 🏹 */
+
+.Pattern-item--bow1 {
+  animation: Pattern-item--diagonal 30000ms infinite linear both;
+  animation-delay: 10000ms;
+}
+
+.Pattern-item--curve1 {
+  animation: Pattern-item--sidetoside 21000ms infinite linear both;
+  animation-delay: 6500ms;
+}
+
+@keyframes Pattern-item--sidetoside {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes Pattern-item--upanddown {
 
   0% {
     transform: translateY(0);
   }
 
   50% {
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes Pattern-item--diagonal {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(15px, 15px);
+  }
+
+  100% {
+    transform: translate(0, 0);
   }
 }
