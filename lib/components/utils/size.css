@@ -40,6 +40,10 @@
   min-height: 350px !important;
 }
 
+.u-height100 {
+  height: 100% !important;
+}
+
 /* Paddings */
 
 .u-paddingTopL {
