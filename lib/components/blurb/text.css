@@ -85,3 +85,9 @@
     font-size: calc(22rem / var(--base-font-size));
   }
 }
+
+.Blurb-title--loading {
+  background: var(--color-light-grey);
+  background-clip: none;
+  color: var(--color-light-grey);
+}
