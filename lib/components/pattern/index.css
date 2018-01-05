@@ -8,10 +8,15 @@
   color: var(--color-transparent);
   height: 100%;
   left: 0;
+  overflow: hidden;
   position: absolute;
-  transition: opacity 1500ms ease-in-out;
   width: 100vw;
   z-index: -1;
+}
+
+.Pattern-dot {
+  height: 20px;
+  width: 20px;
 }
 
 /* Colors 🌈  */
@@ -47,90 +52,64 @@
 
 /* Animation */
 
-.Pattern-item {
-  animation-duration: 1000ms;
-  animation-fill-mode: forwards;
-  animation-name: fadeIn;
-  opacity: 0;
+@keyframes Pattern-item--circling {
+
+  0% {
+    transform:
+      rotate(0deg),
+      translate(-150px)
+      rotate(0deg);
+  }
+
+  50% {
+    transform:
+      rotate(360deg)
+      translate(-150px)
+      rotate(-360deg);
+  }
+
+  100% {
+    transform:
+      rotate(0deg),
+      translate(-150px)
+      rotate(0deg);
+  }
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.Pattern-item--flash1 {
+  animation: Pattern-item--fade 12000ms infinite ease-in-out both;
 }
 
-/* Rotation flash */
+@keyframes Pattern-item--fade {
 
-.Pattern-flash1 {
-  transform: rotate(15deg);
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-/* Rotation crosses */
-
-.Pattern-cross1 {
-  transform: rotate(60deg) translate(30px, 10px);
-  transform-origin: center;
+.Pattern-item--cross4 {
+  animation: Pattern-item--jump 12000ms infinite ease-in-out both;
 }
 
-.Pattern-cross2 {
-  transform: rotate(-26deg) translate(-132px, 353px);
-  transform-origin: center;
-}
+@keyframes Pattern-item--jump {
 
-.Pattern-cross3 {
-  transform: rotate(9deg) translate(-124px, 528px);
-  transform-origin: center;
-}
+  0% {
+    transform: translateY(0);
+  }
 
-/* Rotation lines */
+  50% {
+    transform: translateY(10px);
+  }
 
-.Pattern-line2 {
-  transform: rotate(-61deg) translate(267px, -330px);
-  transform-origin: center;
-}
-
-.Pattern-line3 {
-  transform: rotate(-130deg) translate(28px, -64px);
-  transform-origin: center;
-}
-
-.Pattern-line4 {
-  transform: rotate(-61deg) translate(-37px, 320px);
-  transform-origin: center;
-}
-
-/* Rotation triangle */
-
-.Pattern-triangle3 {
-  transform: rotate(-56deg) translate(152px, 221px);
-  transform-origin: center;
-}
-
-/* Rotation bows */
-
-.Pattern-bow2 {
-  transform: rotate(-60deg) translate(380px, -43px);
-  transform-origin: center;
-}
-
-.Pattern-bow3 {
-  transform: rotate(100deg);
-  transform-origin: center;
-}
-
-/* Rotation curves (more bent than the "bow" symbols) */
-
-.Pattern-curve2 {
-  transform: rotate(-50deg) translate(20px, -14px);
-  transform-origin: center;
-}
-
-.Pattern-curve3 {
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-
-.Pattern-curve4 {
-  transform: rotate(-93deg) translate(24px, -240px);
-  transform-origin: center;
+  100% {
+    transform: translateY(0);
+  }
 }
