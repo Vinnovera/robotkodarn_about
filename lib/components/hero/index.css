@@ -17,6 +17,10 @@
   line-height: 1.4;
 }
 
+.Hero-introduction--loading {
+  height: 250px;
+}
+
 .Hero-introduction--lg {
   font-size: calc(24rem / var(--base-font-size));
   margin-bottom: 2.5rem;
@@ -72,6 +76,10 @@
   .Hero-introduction--lg {
     font-size: calc(28rem / var(--base-font-size));
     max-width: var(--width-lg);
+  }
+
+  .Hero-introduction--loading {
+    height: 100px;
   }
 
   .Hero--article {
