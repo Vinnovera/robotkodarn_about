@@ -14,11 +14,6 @@
   z-index: -1;
 }
 
-.Pattern-dot {
-  height: 20px;
-  width: 20px;
-}
-
 /* Colors 🌈  */
 
 .Pattern--grass {
@@ -178,7 +173,7 @@
   }
 
   50% {
-    transform: translateX(15px);
+    transform: translateX(16px);
   }
 
   100% {
@@ -193,7 +188,7 @@
   }
 
   50% {
-    transform: translateY(15px);
+    transform: translateY(16px);
   }
 
   100% {
@@ -208,7 +203,7 @@
   }
 
   50% {
-    transform: translate(15px, 15px);
+    transform: translate(16px, 16px);
   }
 
   100% {

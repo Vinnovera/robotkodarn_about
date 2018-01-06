@@ -18,6 +18,14 @@
   margin-top: 2rem;
 }
 
+/* When user interact with an anchor link, Section-title is focused through
+ * tabindex="0". In these cases, remove outline.
+ */
+
+.Section-title:focus {
+  outline: none;
+}
+
 /* Paragraphs in text */
 
 .Section-content {
