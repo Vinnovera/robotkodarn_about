@@ -3,11 +3,13 @@
 @import "../base";
 
 .Team {
-  margin-bottom: 4rem;
+  background-image: var(--gradient-mint);
+  margin-top: 2rem;
+  padding: 1rem 1.5rem 2rem;
 }
 
 .Team-content {
-  margin: 0 1.5rem;
+  max-width: var(--width-xl);
 }
 
 .Team-title {
@@ -18,34 +20,57 @@
 }
 
 .Team-cards {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
   margin-top: 2rem;
 }
 
 .Team-card {
-  background-image: var(--gradient-ice);
-  border: 2.5px solid var(--color-ice);
-  border-radius: 2px;
-  padding: 1.5rem;
+  background-color: var(--color-transparent);
+  border: 2px solid var(--color-metal);
+  box-shadow:
+    -1px 1px 0 var(--color-metal),
+    -2px 2px 0 var(--color-metal),
+    -3px 3px 0 var(--color-metal),
+    -4px 4px 0 var(--color-metal),
+    -5px 5px 0 var(--color-metal),
+    -6px 6px 0 var(--color-metal),
+    -7px 7px 0 var(--color-metal),
+    -8px 8px 0 var(--color-metal),
+    -9px 9px 0 var(--color-metal),
+    -10px 10px 0 var(--color-metal);
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
-.Team-card .Team-list {
-  list-style-type: initial;
-  margin: 1rem 1.5rem;
+.Team-description,
+.Team-list {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-semi);
+  padding-top: 1.5rem;
 }
 
-.Team-date--autumn {
-  color: var(--color-autumn);
-  font-weight: 700;
+.Team-description {
+  border-bottom: 1px solid var(--color-transparent-dark);
+  border-top: 1px solid var(--color-transparent-dark);
+  padding-bottom: 1.5rem;
+}
+
+.Team-cardtitle {
+  font-size: calc(24rem / var(--base-font-size));
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.Team-cardtitle::first-letter {
+  font-size: calc(31rem / var(--base-font-size));
+  line-height: 0.1;
+  margin: 1rem 0 0 -0.2rem;
 }
 
 @media (--md-viewport), (--lg-viewport) {
 
-  .Team-content {
-    margin-left: 4rem;
-    max-width: var(--width-md);
+  .Team {
+    padding-left: 4rem;
   }
 
   .Team-title {
@@ -53,8 +78,32 @@
   }
 
   .Team-cards {
-    grid-template-columns: 1fr 1fr;
-    max-width: var(--width-md);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Team-card {
+    box-shadow:
+      -1px 1px 0 var(--color-metal),
+      -2px 2px 0 var(--color-metal),
+      -3px 3px 0 var(--color-metal),
+      -4px 4px 0 var(--color-metal),
+      -5px 5px 0 var(--color-metal),
+      -6px 6px 0 var(--color-metal),
+      -7px 7px 0 var(--color-metal),
+      -8px 8px 0 var(--color-metal),
+      -9px 9px 0 var(--color-metal),
+      -10px 10px 0 var(--color-metal),
+      -11px 11px 0 var(--color-metal),
+      -12px 12px 0 var(--color-metal),
+      -13px 13px 0 var(--color-metal),
+      -14px 14px 0 var(--color-metal);
+    margin-bottom: 3rem;
+    width: calc(50% - 3rem);
+  }
+
+  .Team-card:nth-child(odd) {
+    margin-right: 3rem;
   }
 }
 

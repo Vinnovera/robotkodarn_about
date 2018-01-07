@@ -28,8 +28,9 @@
   --color-snow: #f5f4f4;
   --color-offwhite: #f8f8f8;
   --color-slush: #ebebeb;
-  --color-transparent: rgba(255, 255, 255, 0.8);
+  --color-transparent: rgba(255, 255, 255, 0.6);
   --color-semi-transparent: rgba(255, 255, 255, 0.2);
+  --color-transparent-dark: rgba(0, 0, 0, 0.3);
   --color-white: #fff;
   --color-trueblue: #026dde;
   --color-blue: #00abf9;
@@ -43,12 +44,6 @@
   --gradient-mint: linear-gradient(-90deg, #05e5b1 0, #00dcff 100%);
   --gradient-sun: linear-gradient(to right, #f7971e, #ffd200);
   --gradient-ice: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-
-  /* Use vendor prefixed gradients when used together with background clip,
-   * To avoid background color in IE.
-   */
-  --webkit-gradient-autumn: -webkit-linear-gradient(77deg, #30095d, #b21474);
-  --moz-gradient-autumn: -moz-linear-gradient(77deg, #30095d, #b21474);
 
   /* Bright colors corresponding to gradients */
   --color-celestial: #98128d;

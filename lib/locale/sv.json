@@ -24,6 +24,10 @@
   "You are now subscribing.": "Du är nu anmäld.",
   "Read more": "Läs mer",
   "Show less": "Visa mindre",
-  "Contributor": "Medskapare",
-  "example@address.com": "namn@organisation.se"
+  "And": "Och",
+  "example@address.com": "namn@organisation.se",
+  "Project member": {
+    "one": "Projektmedlem",
+    "other": "Projektmedlemmar"
+  }
 }
