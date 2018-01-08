@@ -5,6 +5,7 @@
 .Form {
   background-image: var(--gradient-sun);
   padding: 3rem 1.5rem 4rem;
+  width: 100vw;
 }
 
 .Form-title {
@@ -119,10 +120,18 @@
     padding: 4rem;
   }
 
+  /* To prevent IE10 bugs */
+
+  @supports (display: flex) {
+
+    .Form-content {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+  }
+
   .Form-content {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
     max-width: var(--width-xl);
   }
 

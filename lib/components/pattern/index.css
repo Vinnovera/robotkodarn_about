@@ -169,44 +169,44 @@
 @keyframes Pattern-item--sidetoside {
 
   0% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
   }
 
   50% {
-    transform: translateX(16px);
+    transform: translateX(16px) rotate(0.02deg);
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
   }
 }
 
 @keyframes Pattern-item--upanddown {
 
   0% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0deg);
   }
 
   50% {
-    transform: translateY(16px);
+    transform: translateY(16px) rotate(0.02deg);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0deg);
   }
 }
 
 @keyframes Pattern-item--diagonal {
 
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(0deg);
   }
 
   50% {
-    transform: translate(16px, 16px);
+    transform: translate(16px, 16px) rotate(0.02deg);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(0deg);
   }
 }

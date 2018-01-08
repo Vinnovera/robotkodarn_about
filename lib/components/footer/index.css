@@ -6,6 +6,11 @@
   background-color: var(--color-metal);
   color: var(--color-white);
   padding: 2.5rem 1.5rem 2rem;
+  width: 100vw;
+}
+
+.Footer-content {
+  width: 100%;
 }
 
 /* Footer Link */
@@ -44,10 +49,18 @@
     padding: 3.5rem 4rem 4rem;
   }
 
+  /* To prevent IE10 bugs */
+
+  @supports (display: flex) {
+
+    .Footer-content {
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
   .Footer-content {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-around;
     max-width: var(--width-lg);
   }
 
