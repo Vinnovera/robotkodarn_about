@@ -5,6 +5,7 @@ node_modules
 .vscode
 .DS_Store
 .env*
+!.env.example
 *.log
 public/index-*.css*
 public/index-*.js*
