@@ -15,7 +15,7 @@
   font-size: calc(26rem / var(--base-font-size));
   font-weight: var(--font-weight-extrabold);
   line-height: 1.2;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 /* When user interact with an anchor link, Section-title is focused through
