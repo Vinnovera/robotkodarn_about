@@ -58,16 +58,16 @@
       display: flex;
       justify-content: space-around;
     }
+
+    .Footer-address {
+      border-left: 1px solid var(--color-white);
+      margin-left: 2rem;
+      padding-left: 2rem;
+      width: 100%;
+    }
   }
 
   .Footer-content {
     max-width: var(--width-lg);
-  }
-
-  .Footer-address {
-    border-left: 1px solid var(--color-white);
-    margin-left: 2rem;
-    padding-left: 2rem;
-    width: 100%;
   }
 }
