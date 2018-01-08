@@ -8,6 +8,10 @@
 A site about Vinnovera's project [Robotkodarn](https://github.com/Vinnovera/robotkodarn), built with [Choo](https://github.com/choojs/) and [Koa](https://github.com/koajs/koa). The content is fetched from [Prismic.io](https://prismic.io), an API based headless CMS.
 
 ## Setup
+
+Add a `.env` file with all needed environmental variables.
+You can copy `.env.example` as a start.
+
 To start project:
 
 ```bash
