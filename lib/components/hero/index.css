@@ -42,7 +42,8 @@
   text-align: center;
 }
 
-.Hero-content--homepage {
+.Hero-content--homepage,
+.Hero-content--error {
   margin: 1rem;
   max-width: var(--width-lg);
 }
