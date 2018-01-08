@@ -30,8 +30,8 @@
 }
 
 .Anchors-arrow {
-  margin-left: 0.3rem;
-  transform: translate3d(0, 5.5px, 0);
+  margin-left: 0.4rem;
+  transform: translate(0, 5.5px);
   transition: transform 200ms var(--easing);
   width: 7.5px;
 }
@@ -43,7 +43,7 @@
 
 .Anchors-link:hover .Anchors-arrow,
 .Anchors-link:focus .Anchors-arrow {
-  transform: translate3d(2px, 5.5px, 0);
+  transform: translate(2px, 5.5px);
 }
 
 /* Colors 🌈 */

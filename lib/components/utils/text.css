@@ -4,6 +4,10 @@
   word-wrap: break-word !important;
 }
 
+.u-noWrap {
+  white-space: nowrap !important;
+}
+
 .u-textUppercase {
   text-transform: uppercase !important;
 }
