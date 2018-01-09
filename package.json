@@ -1,6 +1,6 @@
 {
   "name": "robotkodarn-about",
-  "version": "0.1.3rc3",
+  "version": "0.1.3rc4",
   "description": "A site about the project Robotkodarn.",
   "main": "index.js",
   "scripts": {
