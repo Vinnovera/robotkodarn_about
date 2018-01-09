@@ -52,10 +52,6 @@
     width: 48px;
   }
 
-  .Navigation-icon--open {
-    width: 58px;
-  }
-
   .Navigation-span1,
   .Navigation-span2,
   .Navigation-span3 {
@@ -91,6 +87,7 @@
     right: 8px;
     top: -3px;
     transform: rotate(-45deg);
+    width: 120%;
   }
 
   .Navigation-span2--open {
@@ -102,6 +99,7 @@
     right: 8px;
     top: 39px;
     transform: rotate(45deg);
+    width: 120%;
   }
 
   /* 1. Needs to be placed above hero component */
@@ -134,6 +132,7 @@
     opacity: 0;
     transform: translateX(100px);
     transition: transform 150ms var(--easing), opacity 150ms var(--easing);
+    will-change: transform;
   }
 
   .Navigation-item--open,
@@ -172,7 +171,7 @@
     font-size: calc(28rem / 16);
     font-weight: 400;
     padding: 0.2rem 1rem 0.18rem;
-    transition: padding 100ms ease-in-out, color 100ms ease-in-out;
+    transition: color 100ms ease-in-out;
   }
 
   .Navigation-listLink--active {
@@ -196,7 +195,6 @@
 
   .Navigation-listLink {
     font-size: calc(21rem / 16);
-    padding: 0.2rem 1.2rem 0.18rem;
   }
 
   .Navigation-item {
