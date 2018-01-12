@@ -5,7 +5,7 @@
 ![The website on different devices](https://github.com/Vinnovera/robotkodarn_about/blob/master/README-cover.png "Screenshots of the website")
 
 ## Description
-A site about Vinnovera's project [Robotkodarn](https://github.com/Vinnovera/robotkodarn), built with [Choo](https://github.com/choojs/) and [Koa](https://github.com/koajs/koa). The content is fetched from [Prismic.io](https://prismic.io), an API based headless CMS. The site can be found live at [https://robotkodarn-info-test.now.sh/](https://robotkodarn-info-test.now.sh/).
+A site about Vinnovera's project [Robotkodarn](https://github.com/Vinnovera/robotkodarn), built with [Choo](https://github.com/choojs/) and [Koa](https://github.com/koajs/koa). The content is fetched from [Prismic.io](https://prismic.io), an API based headless CMS.
 
 ## Setup
 
