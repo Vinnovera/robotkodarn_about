@@ -3,9 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing zip...
-      - apt-get update
-      - apt-get install -y zip
+      - echo Starting up....
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -15,7 +13,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Node.js code
       - NODE_ENV=production npm run build
-      - zip -r -x=*node_modules* dist.zip ./
+      - rm -rf node_modules
   post_build:
     commands:
       - echo Build completed on `date`
